@@ -1,0 +1,22 @@
+/* Prevent unwanted line breaks */
+/* .animatedText {
+    display: inline-block;
+    white-space: nowrap;
+  } */
+
+/* Ensure characters stay in place during animation */
+.animated-text span {
+  display: inline-block;
+}
+
+/* Highlight the special word (Dgtalists) */
+.highlightedWord {
+  color: #0096cf; /* Change this to any color you prefer */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Optional: Hover effect for better interaction */
+.highlighted-word:hover {
+  color: #d32f2f;
+}

@@ -1,19 +1,138 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Header from "@/component/Header/Header";
+import { Typewriter } from "react-simple-typewriter";
+import Link from "next/link";
+import { HiOutlineArrowRight } from "react-icons/hi";
+import ImageReveal from "@/component/ImageReveal/ImageReveal";
+import AnimatedText from "@/component/AnimatedText/AnimatedText";
+import { GoArrowRight, GoArrowUpRight } from "react-icons/go";
+import ContinuousScrollingSlider from "@/component/Continious/ContinuousScrolig";
+import ParallaxBanner from "@/component/ParralaxBanner/ParallaxBanner";
+import Counter from "@/component/Counter/Counter";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { useRef, useState } from "react";
+import { BiSolidQuoteRight } from "react-icons/bi";
+import { IoArrowBack } from "react-icons/io5";
+import { IoArrowForward } from "react-icons/io5";
+import Footer from "@/component/Footer/Footer";
 
 export default function Home() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef(null);
+
+  const serviceData = [
+    {
+      title: "Custom Software Development",
+      description:
+        "We build tailored software solutions, from web and mobile apps to enterprise systems, ensuring scalability and security.",
+      image: "/images/csd.jpg",
+      link: "#",
+    },
+    {
+      title: "Enterprise Software Development",
+      description:
+        "Developing robust and secure enterprise solutions to streamline operations and enhance productivity.",
+      image: "/images/erp.png",
+      link: "/enterprise",
+    },
+    {
+      title: "Custom Web Development",
+      description:
+        "Building responsive websites and high-performance web applications for seamless functionality and user experience.",
+      image: "/images/web.png",
+      link: "#",
+    },
+    {
+      title: "Mobile App Development",
+      description:
+        "Creating feature-rich iOS and Android apps for optimal performance and user engagement.",
+      image: "/images/appdev.png",
+      link: "#",
+    },
+    {
+      title: "AI Software Development",
+      description:
+        "Enhancing efficiency with AI-driven solutions like chatbots, automation, and predictive analytics.",
+      image: "/images/ai-dev.png",
+      link: "#",
+    },
+    {
+      title: "Internet of Things (IoT)",
+      description:
+        "Developing smart IoT applications for real-time monitoring, analytics, and seamless connectivity.",
+      image: "/images/iot.png",
+      link: "#",
+    },
+  ];
+  const industries = [
+    {
+      title: "AI-Driven Data Insights",
+      subtitle: "AI / ML",
+      image: "/images/ai-ml.jpg",
+    },
+    {
+      title: "Custom E-Commerce Solutions",
+      subtitle: "E-Commerce",
+      image: "/images/ecommerce.jpg",
+    },
+    {
+      title: "Blockchain Integration",
+      subtitle: "Blockchain",
+      image: "/images/blockchain.jpg",
+    },
+    {
+      title: "Education Through Technology",
+      subtitle: "Edutech",
+      image: "/images/edutech.jpg",
+    },
+    {
+      title: "Cyber Security",
+      subtitle: "Digital Safety",
+      image: "/images/cyber-security.jpg",
+    },
+    {
+      title: "Banking and Finance",
+      subtitle: "Security & reliability",
+      image: "/images/banking.jpg",
+    },
+    {
+      title: " Healthcare",
+      subtitle: "Telemedicine platforms",
+      image: "/images/health.jpg",
+    },
+  ];
+  const portfolioData = [
+    {
+      title: "Operation Atlas",
+      subtitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/images/works-img-4.png",
+    },
+    {
+      title: "Quantum Quest",
+      subtitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/images/1.jpg",
+    },
+    {
+      title: "Blue Horizon Initiative",
+      subtitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/images/works-img-3.jpg",
+    },
+    {
+      title: "Blue Horizon Initiative",
+      subtitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/images/works-img-4.jpg",
+    },
+  ];
   return (
     <>
       <Head>
@@ -22,96 +141,402 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
-        <main className={styles.main}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
-          <ol>
-            <li>
-              Get started by editing <code>src/pages/index.js</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
-
-          <div className={styles.ctas}>
-            <a
-              className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Deploy now
-            </a>
-            <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.secondary}
-            >
-              Read our docs
-            </a>
+      <Header />
+      <ParallaxBanner backgroundImage="/images/hero-bg.jpg">
+        <div className="container">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-lg-11">
+              <div className={styles.sectionLeft}>
+                <h1>               
+                  <AnimatedText
+                    text={
+                      "Your End-to-End Partner for Digital Transformation Let’s Innovate and Grow  Together!"
+                    }
+                    highlightText={"Digital Transformation"}
+                  />
+                </h1>
+                <h2>
+                  <Typewriter
+                    words={["Technology  | Strategy  | Growth"]}
+                    loop={0} // Infinite loop
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                  />
+                </h2>
+                <p>
+                  Leading software solutions provider specializing in
+                  innovative, scalable, and secure technology solutions. We
+                  empower businesses with cutting-edge software to drive
+                  efficiency and growth.
+                </p>
+                <Link href="/" className={styles.cmnBtn}>
+                  get started
+                  <HiOutlineArrowRight className={styles.arrowRight} />
+                </Link>
+              </div>
+            </div>
           </div>
-        </main>
-        <footer className={styles.footer}>
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        </div>
+      </ParallaxBanner>
+      <ContinuousScrollingSlider />
+      <section className={styles.aboutUs}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className={styles.aboutLeft}>
+                <div className={styles.aboutUsTitle}>
+                  <h2>about us</h2>
+                </div>
+                <div className={styles.imageAbout}>
+                  <div className={styles.imageWrap}>
+                    <ImageReveal
+                      className={styles.aboutImage}
+                      src={"/images/about-us-image.jpg"}
+                      alt={"about img"}
+                    />
+                  </div>
+                  <div className={styles.exploreMore}>
+                    <Link href={"#"}>
+                      <img src="/images/explore-more-circle.png" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className={styles.aboutRight}>
+                <span className={styles.subtitle}>About us</span>
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={
+                      "Experience the Dgtalists Difference! Your End-to-End Partner for Digital Transformation"
+                    }
+                    highlightText={"Dgtalists"}
+                  />
+                </h4>
+                <p>
+                  Welcome to Dgtalists, your end-to-end digital transformation
+                  partner. We go beyond software development, addressing all
+                  facets of digital work with personalized solutions that
+                  inspire innovation and achieve success in every aspect of your
+                  business.Experience unparalleled expertise and support in
+                  achieving your digital goals with us.
+                </p>
+                {/* <Link href="/" className={styles.cmnBtn}>
+                  get started
+                  <HiOutlineArrowRight className={styles.arrowRight} />
+                </Link> */}
+                <div className={styles.counterSec}>
+                  <div className={styles.eachCounter}>
+                    <Counter value={130} suffix="+" />
+                    <p>Project Complete</p>
+                  </div>
+                  <div className={styles.eachCounter}>
+                    <Counter value={20} suffix="+" />
+                    <p>Team Members</p>
+                  </div>
+                  <div className={styles.eachCounter}>
+                    <Counter value={5} />
+                    <p>Years Of Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.ourService}>
+        <div className="container">
+          <div className={styles.headerSection}>
+            <span className={styles.subtitle}>Services</span>
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Services We Provide"}
+                highlightText={"Services"}
+              />
+            </h4>
+          </div>
+          <div className="row">
+            {serviceData.map((service, i) => (
+              <div className="col-lg-4" key={i}>
+                <div className={styles.eachServiceSec}>
+                  <ImageReveal
+                    src={service.image}
+                    className={styles.serviceImg}
+                  />
+                  <h3>
+                    <Link href={service.link}>{service.title}</Link>
+                  </h3>
+                  <p>{service.description}</p>
+                  <Link className={styles.readMore} href={service.link}>
+                    Read More <GoArrowUpRight />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className={styles.industry}>
+        <div className="container">
+          <div className={styles.headerSection}>
+            <span className={styles.subtitle}>Industries</span>
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Industries We Serve"}
+                highlightText={"Industries"}
+              />
+            </h4>
+          </div>
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            slidesPerView={1}
+            spaceBetween={20}
+            loop={true}
+            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            autoplay={{ delay: 3000 }}
+            // pagination={{ clickable: true }}
+            // navigation={true}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className={styles.swiperContainer}
           >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-            Learn
-          </a>
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            {industries.map((industry, index) => (
+              <SwiperSlide key={index} className={styles.slide}>
+                <div className={styles.industryCard}>
+                  <div className={styles.industryCardImg}>
+                    <figure>
+                      <img
+                        src={industry.image}
+                        alt={industry.title}
+                        className={styles.IndustryImage}
+                      />
+                    </figure>
+                  </div>
+                  <div className={styles.industryContent}>
+                    <p>{industry.subtitle}</p>
+                    <h3>
+                      <Link href={"#"}>{industry.title}</Link>
+                    </h3>
+                  </div>
+                  <div className={styles.industryBtn}>
+                    <Link href={"#"}>
+                      <GoArrowUpRight />
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className={styles.customPagination}>
+            {industries.map((_, index) => (
+              <span
+                key={index}
+                className={`${styles.paginationDot} ${
+                  activeIndex === index ? styles.active : ""
+                }`}
+                onClick={() => {
+                  swiperRef.current?.slideTo(index); // Slide to clicked index
+                  setActiveIndex(index);
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className={styles.portfolio}>
+        <div className="container">
+          <div className={styles.headerSection}>
+            <span className={styles.subtitle}>our works</span>
+            <h4 className={styles.title}>
+              Excellence from <span className={styles.highlight}>concept</span>{" "}
+              to completion
+            </h4>
+            <Link href="/" className={styles.cmnBtn}>
+              View All <HiOutlineArrowRight className={styles.arrowRight} />
+            </Link>
+          </div>
+
+          {/* Swiper */}
+          <Swiper
+            modules={[Autoplay, Navigation]}
+            slidesPerView={1}
+            spaceBetween={20}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 2 },
+            }}
+            className={styles.swiperContainer}
           >
-            <Image
-              aria-hidden
-              src="/window.svg"
-              alt="Window icon"
-              width={16}
-              height={16}
-            />
-            Examples
-          </a>
-          <a
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            {portfolioData.map((portfolio, i) => (
+              <SwiperSlide key={i}>
+                <div className={styles.eachPortfolio}>
+                  <div className={styles.portImgWrap}>
+                    <ImageReveal
+                      src={portfolio.image}
+                      className={styles.portimg}
+                    />
+                    <div className={styles.industryBtn}>
+                      <Link href={"#"}>
+                        <GoArrowUpRight />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className={styles.portfolioContent}>
+                    <h4>
+                      <Link href={"#"}>{portfolio.title}</Link>
+                    </h4>
+                    <p>{portfolio.subtitle}</p>
+                  </div>
+                  <div className={styles.techStack}>
+                    <h6>Tech Stack</h6>
+                    <ul>
+                      <li>
+                        <img src="/images/html-5.png" />
+                      </li>
+                      <li>
+                        <img src="/images/css-3.png" />
+                      </li>
+                      <li>
+                        <img src="/images/science.png" />
+                      </li>
+                      <li>
+                        <img src="/images/programing.png" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Custom Navigation */}
+        </div>
+      </section>
+      <section className={styles.testimonial}>
+        <div className="container">
+          <div className={styles.headerSection}>
+            <span className={styles.subtitle}>client testimonials</span>
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Our clients love us."}
+                highlightText={"clients"}
+              />
+            </h4>
+            <div className={styles.customNav}>
+              <button
+                className={styles.prevBtn}
+                onClick={() => swiperRef.current?.slidePrev()}
+              >
+                <IoArrowBack />
+              </button>
+              <button
+                className={styles.nextBtn}
+                onClick={() => swiperRef.current?.slideNext()}
+              >
+                <IoArrowForward />
+              </button>
+            </div>
+          </div>
+          <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            slidesPerView={1}
+            spaceBetween={20}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            onSwiper={(swiper) => (swiperRef.current = swiper)} // Store swiper instance
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className={styles.swiperContainer}
           >
-            <Image
-              aria-hidden
-              src="/globe.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            />
-            Go to nextjs.org →
-          </a>
-        </footer>
-      </div>
+            {[...Array(6)].map((_, index) => (
+              <SwiperSlide key={index}>
+                <div className={styles.eachTestiSlider}>
+                  <figure>
+                    <img
+                      src={`/images/author-${(index % 2) + 1}.jpg`}
+                      alt="client"
+                    />
+                  </figure>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since.
+                  </p>
+                  <div className={styles.authorDetails}>
+                    <h6>John Doe</h6>
+                    <span>Delta Innovation</span>
+                  </div>
+                  <BiSolidQuoteRight className={styles.quoteIcon} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
+      <section className={styles.latestBlogs}>
+        <div className="container">
+          <div className={styles.headerSection}>
+            <span className={styles.subtitle}>latest blogs</span>
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Stay updated with our latest insights"}
+                highlightText={"insights"}
+              />
+            </h4>
+          </div>
+          <div className="row">
+            <div className="col-lg-4">
+              <div className={styles.eachBlog}>
+                <div className={styles.blogImg}>
+                  <img src="/images/post-1.jpg" alt="post"/>
+                </div>
+                <div className={styles.postContent}>
+                  <h5><Link href={"#"}>The Future of Cybersecurity in the Digital Age</Link></h5>
+                  <Link className={styles.blogLink} href={"#"}>read more <GoArrowUpRight /></Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className={styles.eachBlog}>
+                <div className={styles.blogImg}>
+                  <img src="/images/post-2.jpg" alt="post"/>
+                </div>
+                <div className={styles.postContent}>
+                  <h5><Link href={"#"}>The Importance of Data Privacy in Software Solutions</Link></h5>
+                  <Link className={styles.blogLink} href={"#"}>read more <GoArrowUpRight /></Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className={styles.eachBlog}>
+                <div className={styles.blogImg}>
+                  <img src="/images/post-3.jpg" alt="post"/>
+                </div>
+                <div className={styles.postContent}>
+                  <h5><Link href={"#"}>How AI is Revolutionizing Software Development</Link></h5>
+                  <Link className={styles.blogLink} href={"#"}>read more <GoArrowUpRight /></Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer/>
     </>
   );
 }
