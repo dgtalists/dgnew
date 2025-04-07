@@ -132,14 +132,14 @@
 }
 .cmnBtn::before {
   position: absolute;
-    content: '';
-    width: 0%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    transition: all 500ms ease;
-    background: linear-gradient(219deg, #052441 0%, #0096cf 100%);
+  content: "";
+  width: 0%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 500ms ease;
+  background: linear-gradient(219deg, #052441 0%, #0096cf 100%);
 }
 .cmnBtn:hover:before {
   width: 100%;
@@ -186,50 +186,96 @@
   margin-bottom: 20px;
 }
 /* ============introSection========= */
-.introSection{
+.introSection {
   position: relative;
   padding: 60px 0;
 }
-.introSection .introContent img{
+.introSection .introContent img {
   width: 100%;
   border-radius: 10px;
   height: 350px;
   object-fit: cover;
 }
-.introText{
+.introText {
   position: relative;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
-.introText ul{
+.introText h4 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.introText ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-top: 10px;
 }
 .introText ul li,
-.introText p{
+.introText p {
   font-size: 18px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  /* align-items: center; */
 }
-.projectDetails{
+.introText ul.solutionList li {
+  display: block;
+  list-style: decimal;
+}
+.introText ul li svg {
+  font-size: 18px;
+  flex: 0 0 auto;
+  margin-top: 5px;
+}
+.introText h5 {
+  margin-bottom: 0;
+  color: #0096cf;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dropdownSection {
+  position: relative;
+  border: 1px solid #ffffff1a;
+  background: #091e2a66;
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+}
+.projectDetails {
   position: relative;
   padding: 20px;
   border: 1px solid #ffffff1a;
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
+  background: #091e2a66;
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 30px;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
-.eachDetails img{
-  width: 30px;
-  height: 30px;
+.caseImage {
+  margin: 30px 0;
 }
-.eachDetails ul{
+.eachDetails img {
+  width: auto;
+  height: 40px;
+}
+.eachDetails .sliderImg {
+  width: 100%;
+  height: auto;
+}
+.eachDetails h4 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.eachDetails ul {
   padding: 0;
   display: flex;
   gap: 10px;
-  grid-template-columns: auto;
+  flex-wrap: wrap;
 }
 /* ================techStack========== */
 .techStack {
@@ -590,73 +636,7 @@
 }
 
 /* ==============workTogether============== */
-.workTogether {
-  position: relative;
-  padding: 60px 0 90px 0;
-}
-.workTogether .headerSection p{
-  font-size: 20px;
-}
-.togetherBox {
-  position: relative;
-}
-.togetherBox::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: url(/images/work-together-bg-gradient9.png) no-repeat;
-  background-position: center center;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.eachContactItem{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.contactIcon {
-  position: relative;
-  height: 54px;
-  width: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #101010;
-  border: 1px solid #313131;
-}
-.contactIcon svg {
-  font-size: 24px;
-  color: #0096cf;
 
-}
-.contactContent{
-  position: relative;
-}
-.contactContent h5 {
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 5px;
-}
-.contactContent a {
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 10px;
-}
-.eachContactItem:hover .contactIcon {
-  background-color: #0096cf;
-  border-color: #0096cf;
-}
-.eachContactItem:hover .contactIcon  svg{
-  color: #fff;
-}
 /* ============portfolio=============== */
 .portfolio {
   position: relative;
@@ -841,65 +821,76 @@
 .nextBtn:hover {
   background: #0096cf;
 }
-
-/* ================latestBlogs============ */
-.latestBlogs {
+/* ==============workTogether============== */
+.workTogether {
   position: relative;
-  padding: 0 0 60px 0;
 }
-.eachBlog {
+.workTogether .headerSection {
+  text-align: center;
   position: relative;
-  width: 100%;
+  margin-bottom: 50px;
 }
-.eachBlog img {
-  width: 100%;
-  border-radius: 20px;
-  transition: all 0.5s ease-in-out;
-}
-.blogImg {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-.blogImg::after {
-  content: "";
-  position: absolute;
-  width: 215%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  z-index: 1;
-}
-.eachBlog:hover .blogImg::after {
-  height: 250%;
-  transition: all 600ms linear;
-  background-color: transparent;
-}
-.eachBlog:hover img {
-  transform: scale(1.1);
-}
-.eachBlog h5 {
-  font-size: 24px;
-  text-transform: capitalize;
-  color: #fff;
-}
-.eachBlog h5 a {
-  color: inherit;
-}
-.postContent .blogLink {
-  color: #0096cf;
-  font-size: 18px;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-.postContent .blogLink svg {
-  transition: all 0.4s;
+.workTogether .headerSection p {
   font-size: 20px;
 }
-.eachBlog:hover .blogLink svg {
-  transform: rotate(45deg);
-  transition: all 0.4s;
+.togetherBox {
+  position: relative;
+  padding: 60px 0 90px 0;
+}
+.togetherBox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(/images/work-together-bg-gradient9.png) no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.eachContactItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contactIcon {
+  position: relative;
+  height: 54px;
+  width: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #101010;
+  border: 1px solid #313131;
+}
+.contactIcon svg {
+  font-size: 24px;
+  color: #0096cf;
+}
+.contactContent {
+  position: relative;
+}
+.contactContent h5 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.contactContent a {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.eachContactItem:hover .contactIcon {
+  background-color: #0096cf;
+  border-color: #0096cf;
+}
+.eachContactItem:hover .contactIcon svg {
+  color: #fff;
 }
