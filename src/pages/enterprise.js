@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Enterprise.module.css";
 import Header from "@/component/Header/Header";
 import { Typewriter } from "react-simple-typewriter";
@@ -222,7 +221,6 @@ export default function Enterprise() {
         { name: "php", icon: "/images/php.png" },
         { name: "Laravel", icon: "/images/Laravel-3.png" },
         { name: "Django", icon: "/images/django-logo.png" },
-        
       ],
     },
     {
@@ -246,28 +244,41 @@ export default function Enterprise() {
     {
       title: "DevOps",
       items: [
-        { name: "PostgreSQL", icon: "/images/postgresql.png" },
-        { name: "MySQL", icon: "/images/sql.png" },
-        { name: "MongoDB", icon: "/images/mongo.png" },
-        { name: "Oracle", icon: "/images/ora-data.png" },
-        { name: "Firebase", icon: "/images/firebase.png" },
+        { name: "AWS", icon: "/images/aws.png" },
+        { name: "Azure", icon: "/images/azure.png" },
+        { name: "Google Cloud", icon: "/images/google-cloud.png" },
+        { name: "Gitlab", icon: "/images/git_lab.png" },
+        { name: "Gradle", icon: "/images/gradle.png" },
+        { name: "Docker", icon: "/images/docker.png" },
+        { name: "Ansible", icon: "/images/ansible_logo.png" },
+        { name: "Jenkins", icon: "/images/jenkins_logo.png" },
+        { name: "CI CD", icon: "/images/ci_cd.png" },
+        { name: "Kubernets", icon: "/images/kubernets.png" },
+        { name: "Selenium", icon: "/images/sele.png" },
+        { name: "Apache", icon: "/images/apache.png" },
+        { name: "Terraform", icon: "/images/terraform-framework.png" },
       ],
     },
     {
       title: "AI & Analytics",
       items: [
-        { name: "TensorFlow", icon: "/images/tech/tensorflow.png" },
-        { name: "Power BI", icon: "/images/tech/powerbi.png" },
-        { name: "Apache Spark", icon: "/images/tech/spark.png" },
+        { name: "TensorFlow", icon: "/images/tensorflow.png" },
+        { name: "Power BI", icon: "/images/powerbi.png" },
+        { name: "Apache Spark", icon: "/images/apache-spark.png" },
+        { name: "Tableu", icon: "/images/tableu.png" },
       ],
     },
     {
-      title: "DevOps Tools",
+      title: "CMS",
       items: [
-        { name: "Docker", icon: "/images/tech/docker.png" },
-        { name: "Kubernetes", icon: "/images/tech/kubernetes.png" },
-        { name: "Jenkins", icon: "/images/tech/jenkins.png" },
-        { name: "Terraform", icon: "/images/tech/terraform.png" },
+        { name: "PHP", icon: "/images/php.png" },
+        { name: "Wordpress", icon: "/images/wordpress.png" },
+        { name: "Shopify", icon: "/images/shopify.png" },
+        { name: "Magento", icon: "/images/magento.png" },
+        { name: "Drupal", icon: "/images/drupal.png" },
+        { name: "Woocommerce", icon: "/images/woocommerce-product-logo.png" },
+        { name: "Strapi", icon: "/images/strapi.png" },
+        { name: "Webflow", icon: "/images/webflow.png" },
       ],
     },
   ];
@@ -281,43 +292,17 @@ export default function Enterprise() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/hero-bg.jpg">
+      <ParallaxBanner backgroundImage="/images/enterprise_soft.jpg">
         <div className="container">
-          <div className="row align-items-center justify-center">
+          <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
-                  {/* Your End-to-End Partner for
-                  <span> Digital Transformation </span> <br/> Let’s Innovate and Grow
-                  Together! */}
                   <AnimatedText
-                    text={
-                      "Your End-to-End Partner for Digital Transformation Let’s Innovate and Grow  Together!"
-                    }
-                    highlightText={"Digital Transformation"}
+                    text={"Custom Enterprise Software Development "}
+                    highlightText={"Enterprise"}
                   />
                 </h1>
-                <h2>
-                  <Typewriter
-                    words={["Development | Marketing | Training"]}
-                    loop={0} // Infinite loop
-                    cursor
-                    cursorStyle="|"
-                    typeSpeed={100}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                  />
-                </h2>
-                <p>
-                  Leading software solutions provider specializing in
-                  innovative, scalable, and secure technology solutions. We
-                  empower businesses with cutting-edge software to drive
-                  efficiency and growth.
-                </p>
-                <Link href="/" className={styles.cmnBtn}>
-                  get started
-                  <HiOutlineArrowRight className={styles.arrowRight} />
-                </Link>
               </div>
             </div>
           </div>
@@ -541,7 +526,7 @@ export default function Enterprise() {
               </p>
             </div>
           </div>
-          <div className={styles.howWorkList}>
+          {/* <div className={styles.howWorkList}>
             <div className={styles.eachList}>
               <div className={styles.iconWrap}>
                 <div className={styles.howWorkStep}>
@@ -593,6 +578,46 @@ export default function Enterprise() {
               <h5>launch & support</h5>
               <p>Seamless launch with continuous maintenance</p>
             </div>
+          </div> */}
+          <div className={styles.howWorkList}>
+            <ul>
+              <li>
+                <div className={styles.iconWrap}>
+                  <h2>Discovery</h2>
+                  <img src="/images/step-1.png" alt="consultation" />
+                </div>
+              </li>
+              <li>
+                <div className={styles.iconWrap}>
+                  <h2>Planning & Design</h2>
+                  <img src="/images/step-2.png" alt="consultation" />
+                </div>
+              </li>
+              <li>
+                <div className={styles.iconWrap}>
+                  <h2>Development</h2>
+                  <img src="/images/step-3.png" alt="consultation" />
+                </div>
+              </li>
+              <li>
+                <div className={styles.iconWrap}>
+                  <h2>Testing & QA</h2>
+                  <img src="/images/step-4.png" alt="consultation" />
+                </div>
+              </li>
+              <li>
+                <div className={styles.iconWrap}>
+                  <h2>Deployment</h2>
+                  <img src="/images/step-5.png" alt="consultation" />
+                </div>
+              </li>
+              <li>
+                <div className={styles.iconWrap}>
+                  <h2>Support & Maintenance</h2>
+                  <img src="/images/step-6.png" alt="consultation" />
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -693,29 +718,33 @@ export default function Enterprise() {
                   <div className={styles.contactContent}>
                     <h5>Contact Us</h5>
                     <Link href={"tel:+1 234 567 890"}>+1 234 567 890</Link>
-                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className={styles.eachContactItem}>
                   <div className={styles.contactIcon}>
-                  <GoGlobe />
+                    <GoGlobe />
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.vercel.app/"}>dgtalists.com</Link>
-                    </div>
+                    <Link href={"https://dgtalists.vercel.app/"}>
+                      dgtalists.com
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className={styles.eachContactItem}>
                   <div className={styles.contactIcon}>
-                  <RxEnvelopeClosed />
+                    <RxEnvelopeClosed />
                   </div>
                   <div className={styles.contactContent}>
                     <h5>e-mail address</h5>
-                    <Link href={"mailto:contact@dgtalists.com"}>contact@dgtalists.com </Link>
-                    </div>
+                    <Link href={"mailto:contact@dgtalists.com"}>
+                      contact@dgtalists.com{" "}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

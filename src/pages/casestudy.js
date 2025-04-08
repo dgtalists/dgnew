@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Casestudy.module.css";
 import Header from "@/component/Header/Header";
 import Link from "next/link";
 import ImageReveal from "@/component/ImageReveal/ImageReveal";
 import AnimatedText from "@/component/AnimatedText/AnimatedText";
-import {  GoGlobe } from "react-icons/go";
+import { GoGlobe } from "react-icons/go";
 import ParallaxBanner from "@/component/ParralaxBanner/ParallaxBanner";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -13,7 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useEffect, useRef, useState } from "react";
-import { BiSolidPhoneCall, } from "react-icons/bi";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import Footer from "@/component/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,7 +28,7 @@ export default function CaseStudy() {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Customize duration if needed
   }, []);
-  
+
   const images = [
     "/images/mobile-1.png",
     "/images/mab-2.png",
@@ -225,9 +224,9 @@ export default function CaseStudy() {
                     >
                       1. Backend Implementation
                       {showBackend ? (
-                        < HiOutlineChevronUp  className={styles.arrowIcon} />
+                        <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
-                        <HiOutlineChevronDown  className={styles.arrowIcon} />
+                        <HiOutlineChevronDown className={styles.arrowIcon} />
                       )}
                     </h5>
                     {showBackend && (
@@ -285,9 +284,9 @@ export default function CaseStudy() {
                     >
                       2. Frontend Implementation
                       {showFrontend ? (
-                        < HiOutlineChevronUp  className={styles.arrowIcon} />
+                        <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
-                        <HiOutlineChevronDown  className={styles.arrowIcon} />
+                        <HiOutlineChevronDown className={styles.arrowIcon} />
                       )}
                     </h5>
                     {showFrontend && (
@@ -335,92 +334,6 @@ export default function CaseStudy() {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Result Archived"}
-                      highlightText={"Result"}
-                    />
-                  </h4>
-
-                  <ul className={styles.solutionList}>
-                    <li>
-                      <strong>Improved Operational Efficiency:</strong>{" "}
-                      Automation reduced manual workload and streamlined
-                      logistics processes.
-                    </li>
-                    <li>
-                      <strong>Enhanced User Experience:</strong> A
-                      well-structured admin panel and intuitive booking system
-                      simplified operations.
-                    </li>
-                    <li>
-                      <strong>Secure and Scalable:</strong> Role-based access
-                      and robust APIs ensured a secure and scalable solution.
-                    </li>
-                    <li>
-                      <strong>Seamless Document Handling:</strong> PandaDoc
-                      integration enabled easy digital document management.
-                    </li>
-                    <li>
-                      <strong>Accurate Cost Estimation:</strong> AI-driven image
-                      analysis helped users get precise quotations based on
-                      their inventory and moving requirements.
-                    </li>
-                    <li>
-                      <strong>Real-Time Tracking:</strong> Users and moving
-                      companies can monitor bookings at every stage, improving
-                      transparency.
-                    </li>
-                    <li>
-                      <strong>Admin Insights:</strong> Enhanced admin control
-                      over user information and step completion status.
-                    </li>
-                  </ul>
-                  {/* <Swiper
-                    modules={[Navigation]}
-                    // navigation
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    loop={true}
-                    autoplay={true}
-                    className="mySwiper"
-                  >
-                    {webImg.map((src, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                        className={styles.sliderImg}
-                          src={src}
-                          alt={`Slide ${index}`}
-                          style={{ width: "100%", borderRadius: "10px" }}
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper> */}
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Conclusion"}
-                      highlightText={"Conclusion"}
-                    />
-                  </h4>
-
-                  <p>
-                    AI enabled logistic based solution successfully enhances the
-                    moving management experience by integrating automation,
-                    digital documentation, and seamless booking workflows. The
-                    addition of AI-powered image recognition for inventory
-                    estimation significantly improves accuracy in cost
-                    calculation and resource planning. With its scalable and
-                    efficient system architecture, MoveLogic AI optimizes the
-                    logistics industry for both customers and service providers.
-                    Additionally, the ability for users and moving companies to
-                    monitor bookings in real time, along with detailed admin
-                    insights, makes This is a comprehensive and intelligent
-                    logistics solution.
-                  </p>
                 </div>
               </div>
             </div>
@@ -512,7 +425,65 @@ export default function CaseStudy() {
                   </Swiper>
                 </div>
               </div>
+             
             </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Result Archived"} highlightText={"Result"} />
+            </h4>
+
+            <ul className={styles.solutionList}>
+              <li>
+                <strong>Improved Operational Efficiency:</strong> Automation
+                reduced manual workload and streamlined logistics processes.
+              </li>
+              <li>
+                <strong>Enhanced User Experience:</strong> A well-structured
+                admin panel and intuitive booking system simplified operations.
+              </li>
+              <li>
+                <strong>Secure and Scalable:</strong> Role-based access and
+                robust APIs ensured a secure and scalable solution.
+              </li>
+              <li>
+                <strong>Seamless Document Handling:</strong> PandaDoc
+                integration enabled easy digital document management.
+              </li>
+              <li>
+                <strong>Accurate Cost Estimation:</strong> AI-driven image
+                analysis helped users get precise quotations based on their
+                inventory and moving requirements.
+              </li>
+              <li>
+                <strong>Real-Time Tracking:</strong> Users and moving companies
+                can monitor bookings at every stage, improving transparency.
+              </li>
+              <li>
+                <strong>Admin Insights:</strong> Enhanced admin control over
+                user information and step completion status.
+              </li>
+            </ul>
+            
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Conclusion"} highlightText={"Conclusion"} />
+            </h4>
+
+            <p>
+              AI enabled logistic based solution successfully enhances the
+              moving management experience by integrating automation, digital
+              documentation, and seamless booking workflows. The addition of
+              AI-powered image recognition for inventory estimation
+              significantly improves accuracy in cost calculation and resource
+              planning. With its scalable and efficient system architecture,
+              MoveLogic AI optimizes the logistics industry for both customers
+              and service providers. Additionally, the ability for users and
+              moving companies to monitor bookings in real time, along with
+              detailed admin insights, makes This is a comprehensive and
+              intelligent logistics solution.
+            </p>
           </div>
         </div>
       </section>

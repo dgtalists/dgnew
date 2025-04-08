@@ -556,19 +556,48 @@
   text-align: left;
   position: relative;
 }
-.howWorkList {
+.howWorkList{
+  padding-top: 30px;
+}
+.howWorkList ul{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 30px;
+  padding: 0;
+  margin: 0;
 }
-.howWorkList .iconWrap {
+.howWorkList .iconWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.iconWrap img {
+  animation: upDown 2s ease-in-out infinite;
+}
+
+.howWorkList ul li:nth-child(even) .iconWrap{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.howWorkList .iconWrap  h2{
   position: relative;
-  /* background-image: url(/images/line9.png); */
-  background-repeat: no-repeat;
-  background-position: left 120px center;
-  background-size: auto;
-  margin-bottom: 30px;
-  /* margin-left: 5px; */
+  margin-bottom: 0;
+  font-size: 20px;
 }
 .eachList {
   width: calc(25% - 22.5px);
