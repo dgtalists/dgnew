@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "Vehicle Booking Mobile App "
+                      "Real-Time Logistic App for Consignment Tracking "
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -82,12 +82,8 @@ export default function CaseStudy() {
                     />
                   </h4>
                   <p>
-                    This is an AI enabled smart logistics and moving management
-                    system designed to streamline the moving process for both
-                    customers and moving companies. The platform leverages
-                    advanced automation and digital documentation to enhance
-                    efficiency, reduce manual workload, and ensure seamless
-                    coordination between all parties involved.
+                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
+
                   </p>
                 </div>
                 <div className={styles.introText} data-aos="fade-up">
@@ -100,46 +96,29 @@ export default function CaseStudy() {
                         />
                       </h4>
                       <ul>
+                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
+                        </li>
                         <li>
-                          <FaRegCircleCheck /> A centralized system to manage
-                          moving bookings and logistics.
+                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Automated workflows to reduce manual intervention.
+                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Digital document handling for contracts, invoices, and
-                          other paperwork.
+                          Provide warehouse managers with specific access to their assigned warehouses.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Secure authentication and role-based access control.
+                          Track drivers’ travel history and customer locations visited.
                         </li>
                         <li>
-                          <FaRegCircleCheck />A comprehensive admin panel to
-                          manage users, bookings, and payments.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          AI-driven estimation and quotation system based on
-                          image analysis.
+                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Booking monitoring for both moving companies
-                          (partners) and users.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Entity calculation based on AI analysis of uploaded
-                          images.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Admin access to view phone numbers and track completed
-                          steps in the booking process.
+                          Streamline driver delivery assignments with clear instructions.
                         </li>
                       </ul>
                     </div>
@@ -174,28 +153,23 @@ export default function CaseStudy() {
                       <ul>
                         <li>
                           <FaRegCircleCheck />
-                          Ensuring seamless communication between different
-                          system components.
+                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Handling large volumes of bookings and digital
-                          documents efficiently.
+                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Providing a secure and intuitive admin panel for
-                          operational control.
+                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Integrating with third-party document handling
-                          services like PandaDoc.
+                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Implementing AI-powered item recognition and
-                          estimation.
+                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
                         </li>
                         <li>
                           <FaRegCircleCheck />
@@ -222,7 +196,7 @@ export default function CaseStudy() {
                       onClick={() => setShowBackend(!showBackend)}
                       className={styles.dropdownHeader}
                     >
-                      1. Backend Implementation
+                      1. Key Features
                       {showBackend ? (
                         <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
@@ -232,10 +206,11 @@ export default function CaseStudy() {
                     {showBackend && (
                       <ul className={styles.solutionList}>
                         <li>
-                          <strong>API Development:</strong> Designed and
-                          implemented RESTful APIs to handle user
-                          authentication, booking management, and document
-                          workflows.
+                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
+                           </li>
+                        <li>Detailed vehicle statistics including engine start/stop status and travel distances.
+                        </li>
+                         </ul>
                         </li>
                         <li>
                           <strong>User Role Management:</strong> Implemented
