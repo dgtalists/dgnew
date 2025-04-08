@@ -233,7 +233,7 @@ export default function Enterprise() {
               />
             </h4>
           </div>
-          <div className="row justify-content-center">
+          <div className="row gx-5 justify-content-center">
             <div className="col-lg-3">
               <div className={styles.teamMemberBox}>
                 <div className={styles.teamMemberImage}>
@@ -244,12 +244,8 @@ export default function Enterprise() {
                   />
                 </div>
                 <div className={styles.teamMemberContent}>
-                  <h5>John Doe</h5>
+                  <h5>Sujay Saha</h5>
                   <p>CEO & Founder</p>
-                  <Link href={"#"} className={styles.viewProfile}>
-                    View Profile
-                    <GoArrowUpRight />
-                  </Link>
                 </div>
               </div>
             </div>
@@ -271,12 +267,8 @@ export default function Enterprise() {
                   </div> */}
                 </div>
                 <div className={styles.teamMemberContent}>
-                  <h5>John Doe</h5>
-                  <p>CEO & Founder</p>
-                  <Link href={"#"} className={styles.viewProfile}>
-                    View Profile
-                    <GoArrowUpRight />
-                  </Link>
+                  <h5>Dipanjan Mondal</h5>
+                  <p>Co-Founder & Director</p>
                 </div>
               </div>
             </div>

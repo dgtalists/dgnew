@@ -389,6 +389,7 @@
 .teamHeader {
   position: relative;
   text-align: center;
+  margin-bottom: 50px;
 }
 .teamMemberImage {
   position: relative;
@@ -440,12 +441,20 @@
     transition: all 0.3s ease-in-out;
     z-index: 1;
 }
-.teamImage:hover:after {
+.teamMemberBox:hover  .teamImage:after {
   height: 250%;
     transition: all .6s linear;
     background-color: #0000;
 }
-
+.teamMemberContent{
+  text-align: center;
+}
+.teamMemberContent h5{
+  font-size: 24px;
+}
+.teamMemberBox:hover .teamMemberContent h5{
+  color: #0096cf;
+}
 .iconbox {
   position: relative;
 }
