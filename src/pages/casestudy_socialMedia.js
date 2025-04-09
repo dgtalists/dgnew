@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "Real-Time Logistic App for Consignment Tracking "
+                      "Case Study: Social Media Listening & Digital Outreach Platform"
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -82,43 +82,42 @@ export default function CaseStudy() {
                     />
                   </h4>
                   <p>
-                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
-
-                  </p>
+                  As digital conversations shape public opinion, government institutions must tap into real-time social data to respond quickly, effectively, and transparently. DGTALISTS with his partner designed and developed a social media listening and digital outreach platform to transform how authorities gather insights, engage citizens, and act on emerging trends.</p>
+                 
                 </div>
                 <div className={styles.introText} data-aos="fade-up">
                   <div className="row">
                     <div className="col-lg-7">
                       <h4 className={styles.title}>
                         <AnimatedText
-                          text={"Client Requirements"}
-                          highlightText={"Client"}
+                          text={"Objective"}
+                          highlightText={"Objective"}
                         />
                       </h4>
                       <ul>
-                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
-                        </li>
-                        <li>
-                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
+                         <li>“To create a robust and reliable system of listening, reporting, and analysis to achieve actionable decisions, communication, and activation, through data-driven intelligence.”
+                         </li>
+                         <li>The primary aim was to:</li>
+                         <li>
+                          <FaRegCircleCheck />Monitor real-time public sentiment across social and digital media.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Provide warehouse managers with specific access to their assigned warehouses.
+                          Automate reporting and trend analysis.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Track drivers’ travel history and customer locations visited.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
+                          Enable strategic digital outreach and community engagement.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Streamline driver delivery assignments with clear instructions.
+                          Improve governance with data-backed decisions.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />Provide actionable insights for fleet utilization and order analytics.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />Support regulatory compliance and safety monitoring.
                         </li>
                       </ul>
                     </div>
@@ -133,53 +132,51 @@ export default function CaseStudy() {
                   </div>
                 </div>
 
+
                 <div className={styles.introText} data-aos="fade-up">
                   <div className="row">
+                    <div className="col-lg-7">
+                      <h4 className={styles.title}>
+                        <AnimatedText
+                          text={"Challenges Faced"}
+                          highlightText={"Challenges Faced"}
+                        />
+                      </h4>
+                      <ul>
+                         <li>“To create a robust and reliable system of listening, reporting, and analysis to achieve actionable decisions, communication, and activation, through data-driven intelligence.”
+                         </li>
+                         <li>The primary aim was to:</li>
+                         <li>
+                          <FaRegCircleCheck />Lack of centralized listening across social and news platforms.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />
+                          Manual, inconsistent reporting of public issues and sentiment.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />
+                          Delays in response to critical incidents or viral content.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />
+                          Absence of data-driven insights for public communication strategy
+
+                        </li>
+                       
+                      </ul>
+                    </div>
                     <div className="col-lg-5">
                       <div className={styles.introImage}>
                         <ImageReveal
-                          src={"/images/case-2.png"}
+                          src={"/images/challenges.png"}
                           alt="case-study-1"
                         />
                       </div>
                     </div>
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Our Challenges"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />
-                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
-                        </li>
-                      </ul>
-                    </div>
                   </div>
                 </div>
+
+             
                 <div className={styles.introText} data-aos="fade-up">
                   <h4 className={styles.title}>
                     <AnimatedText
@@ -187,13 +184,15 @@ export default function CaseStudy() {
                       highlightText={"Solution"}
                     />
                   </h4>
-                
+                  <p>
+                  DGTALISTS implemented a comprehensive digital governance platform built around three core pillars: Social Media Listening, Real-Time Analysis, and Targeted Outreach.
+                 </p>
                   <div className={styles.dropdownSection}>
                     <h5
                       onClick={() => setShowBackend(!showBackend)}
                       className={styles.dropdownHeader}
                     >
-                      1. Key Features
+                      1. Core Platform Modules:
                       {showBackend ? (
                         <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
@@ -202,65 +201,36 @@ export default function CaseStudy() {
                     </h5>
                     {showBackend && (
                       <ul className={styles.solutionList}>
-                        <li>
-                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
-                            </li>
-                          <li>Detailed vehicle statistics including engine start/stop status and travel distances.
+                          <li>
+                         <strong>Social Media & News Listening:</strong>
+                          <ul>
+                            <li>Automated listening of content from Facebook, Twitter, Instagram, YouTube, and online news portals</li>
+                            <li>Real-time keyword and hashtag tracking for topics of public interest.</li>
+                          <li>Sentiment classification (positive/neutral/negative) using AI and NLP.</li>
+                          <li>Monitoring of influential handles, media houses, and trending topics. </li>
+                          </ul>
                           </li>
-                         </ul>
-                        </li>
 
-                        <li>
-                           <strong>Cargo Monitoring:</strong> <ul><li>Continuous monitoring of freezer temperatures.
-                            </li>
-                          <li>Automated alerts for critical temperature deviations.
+                          <li>
+                         <strong> Smart Dashboards & Insights :</strong>
+                          <ul>
+                            <li>Custom dashboards for ministry departments, field offices, and communication teams. </li>
+                            <li>Visualization of public engagement, trending conversations, and influencer activities.</li>
+                            <li>Crisis detection and alerts for issues gaining traction.</li>
+                            <li>Sentiment shifts and regional breakdown of conversations.</li>
+                          </ul>
                           </li>
-                          <li>Notifications for prolonged vehicle non-functionality to prevent product damage.
+                          
+                          <li>
+                         <strong>Digital Outreach Engine:</strong>
+                          <ul>
+                            <li>Planning and distribution of verified, responsive messages to counter misinformation  . </li>
+                            <li>Content calendar for proactive citizen engagement.</li>
+                            <li>Community-specific messaging with support for local languages.</li>
+                            <li>Feedback loop through social engagement tracking and surveys</li>
+                          </ul>
                           </li>
-                         </ul>
-                        </li>
-
-                        <li>
-                           <strong>Role-Based User Access:</strong><ul><li>Warehouse Managers: <ul><li>Restricted access to manage consignments only within their assigned warehouses.
-                           </li>
-                           <li>Ability to track drivers’ travel history and visited customer locations.
-                           </li>
-                           </ul></li>
-
-                          <li>Drivers: 
-                            <ul>
-                            <li>Access to assigned deliveries with details on destinations, recipients, and time.</li>
-                            </ul>
-                          </li>
-                          <li>Customers:
-                            <ul>
-                              <li>Notifications for consignment confirmation and driver assignment.</li>
-                              <li>Real-time updates on consignment status and expected delivery time.
-                              </li>
-                            </ul>
-                          </li>
-                         </ul>
-                        </li>
-
-                        <li>
-                           <strong>Customer Notifications:</strong> <ul><li>Push notifications for consignment updates.
-                            </li>
-                          <li>Transparency regarding delivery details, driver assignment, and estimated delivery times.
-                          </li>
-                         </ul>
-                        </li>
-
-                        <li>
-                           <strong>Scalability and Performance:</strong> <ul><li>Robust back-end system built with Node.js and MongoDB for efficient data management.
-                            </li>
-                          <li>Front-end developed in React.js for a user-friendly experience.
-                          </li>
-                          <li>Android app providing mobility for drivers and customers.</li>
-                         </ul>
-                        </li>
                        
-
-                        
                       </ul>
                     )}
                   </div>
@@ -304,20 +274,26 @@ export default function CaseStudy() {
                 <div className={styles.eachDetails}>
                   <h4>Technology Stack</h4>
                   <ul>
+                  <li>
+                      <img src="/images/sentiment-analysis.png" />
+                    </li>
+                   
                     <li>
                       <img src="/images/node.png" />
                     </li>
-
+                    <li>
+                      <img src="/images/python.png" />
+                    </li>
                     <li>
                       <img src="/images/react.png" />
                     </li>
                     <li>
-                      <img src="/images/mongo.png" />
+                      <img src="/images/api.png" />
                     </li>
                     <li>
-                      <img src="/images/mobapp.png" />
+                      <img src="/images/cloud-server.png"/>
                     </li>
-                  
+                   
                   </ul>
                 </div>
               </div>
@@ -351,36 +327,55 @@ export default function CaseStudy() {
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Results and Benefits"} highlightText={"Results"} />
+              <AnimatedText text={"Real-World Impact"} highlightText={"Impact"} />
             </h4>
 
             <ul className={styles.solutionList}>
-              <li>
-                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking and consignment monitoring reduced delays and increased operational efficiency.
-              </li>
-              <li>
-                <strong>Reduced Losses:</strong> Immediate alerts for temperature deviations and vehicle inactivity prevented product spoilage.
-              </li>
-              <li>
-                <strong>Improved Transparency:</strong> Customers gained real-time insights into their consignment’s status, improving trust and satisfaction.
-              </li>
-              <li>
-                <strong>Streamlined Operations:</strong> Warehouse managers and drivers operated more efficiently with role-specific app functionalities.
-              </li>
-              <li>
-                <strong>Scalability:</strong> The technology stack ensured the platform could handle growing data and user demands.
-              </li>
-            </ul>
+                        <li>
+                         <strong>Operational Improvements:</strong>
+                          <ul>
+                            <li>30% reduction in planning time using the drag-and-drop board.</li>
+                           <li>40% increase in trailer & tractor utilization.</li>
+                            <li>25% reduction in delays via predictive planning.</li>
+                            <li>50% better SLA adherence through real-time monitoring and alerts.</li>
+                          </ul>
+                          </li>
+
+                          <li>
+                         <strong>Cost & Resource Savings:</strong>
+                          <ul>
+                            <li>Reduced fuel costs via optimized route suggestions  .</li>
+                           <li>Lowered idle driver hours and unutilized trailer instances.</li>
+                            <li>Significant cut in paper-based processes and documentation time.</li>
+                          </ul>
+                          </li>
+
+                          <li>
+                         <strong> Customer Experience:</strong>
+                          <ul>
+                            <li>Improved order transparency through live updates .</li>
+                           <li>Reduced disputes due to digital logs and proof of delivery.</li>
+                            <li>Enhanced driver safety and tracking reassured clients.</li>
+                          </ul>
+                          </li>
+
+
+                 </ul>
             
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Conclusion"} highlightText={"Conclusion"} />
+              <AnimatedText text={"Why Dgtalists?"} highlightText={"Why Dgtalists?"} />
             </h4>
-
             <p>
-            The Real-Time Logistic App successfully addressed the client’s challenges, ensuring efficient consignment tracking, temperature management, and enhanced customer satisfaction. The use of advanced technologies like Node.js, React.js, and MongoDB provided a robust, scalable, and user-friendly platform to meet the client’s logistics needs.
+            DGTALISTS enables government institutions to become proactive, transparent, and citizen-focused by transforming data into insights and insights into action.
             </p>
+            <p>With our expertise in digital intelligence, AI, and platform development, we empower public sector organizations to:
+            </p>
+            <p>Stay ahead of the curve.</p>
+            <p>Respond with clarity and speed  .</p>
+            <p>Build public trust in a connected world </p>
+
           </div>
         </div>
       </section>
@@ -388,17 +383,14 @@ export default function CaseStudy() {
         <div className="container">
           <div className={styles.togetherBox}>
             <div className={styles.headerSection}>
-              <span className={styles.subtitle}>Let's Collaborate</span>
+              <span className={styles.subtitle}>Looking to build a citizen-centric governance platform?</span>
               <h4 className={styles.title}>
                 <AnimatedText
-                  text={"Let’s Build Your Next-Gen Enterprise Solution"}
-                  highlightText={"Next-Gen Enterprise"}
+                  text={"Let DGTALISTS power your digital transformation"}
+                  highlightText={"DGTALISTS"}
                 />
               </h4>
-              <p>
-                Looking to enhance your enterprise operations with a scalable,
-                secure, and high-performance software solution? Let’s talk!
-              </p>
+
             </div>
             <div className="row">
               <div className="col-lg-4">

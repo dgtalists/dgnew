@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "Real-Time Logistic App for Consignment Tracking "
+                      "Web-Based B2B Wholesale Marketplace"
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -82,8 +82,7 @@ export default function CaseStudy() {
                     />
                   </h4>
                   <p>
-                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
-
+                  This is a B2B market place for whole sellers in the middle east market. Its web-based platform is built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It closely resembles an e-commerce platform but with a key difference: instead of placing orders, users can only place enquiries. The add-to-cart functionality remains the same, allowing users to add products to their cart before submitting an inquiry.
                   </p>
                 </div>
                 <div className={styles.introText} data-aos="fade-up">
@@ -96,29 +95,23 @@ export default function CaseStudy() {
                         />
                       </h4>
                       <ul>
-                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
-                        </li>
                         <li>
-                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
+                          <FaRegCircleCheck />A platform similar to an e-commerce system but focused on enquiries instead of direct orders.
+                           </li>
+                        <li>
+                          <FaRegCircleCheck />
+                          Role-based access control for different user types.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
+                          Bulk product upload via Excel.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Provide warehouse managers with specific access to their assigned warehouses.
+                          A CMS for managing pages dynamically.
                         </li>
                         <li>
-                          <FaRegCircleCheck />
-                          Track drivers’ travel history and customer locations visited.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Streamline driver delivery assignments with clear instructions.
+                          <FaRegCircleCheck />A user dashboard for tracking enquiries.
                         </li>
                       </ul>
                     </div>
@@ -132,6 +125,7 @@ export default function CaseStudy() {
                     </div>
                   </div>
                 </div>
+
 
                 <div className={styles.introText} data-aos="fade-up">
                   <div className="row">
@@ -153,33 +147,25 @@ export default function CaseStudy() {
                       <ul>
                         <li>
                           <FaRegCircleCheck />
-                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
+                          Implementing a seamless enquiry-based workflow.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
+                          Managing access control efficiently for different roles.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
+                          Providing an intuitive and user-friendly interface.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
+                          Ensuring scalability and performance.
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
+
                 <div className={styles.introText} data-aos="fade-up">
                   <h4 className={styles.title}>
                     <AnimatedText
@@ -187,13 +173,15 @@ export default function CaseStudy() {
                       highlightText={"Solution"}
                     />
                   </h4>
-                
+                  <p>
+                  We developed a structured workflow with the following key implementations:
+                  </p>
                   <div className={styles.dropdownSection}>
                     <h5
                       onClick={() => setShowBackend(!showBackend)}
                       className={styles.dropdownHeader}
                     >
-                      1. Key Features
+                      1. Backend Implementation
                       {showBackend ? (
                         <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
@@ -202,70 +190,71 @@ export default function CaseStudy() {
                     </h5>
                     {showBackend && (
                       <ul className={styles.solutionList}>
-                        <li>
-                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
-                            </li>
-                          <li>Detailed vehicle statistics including engine start/stop status and travel distances.
-                          </li>
-                         </ul>
+                        <li>The backend is structured to support four types of users:
                         </li>
-
                         <li>
-                           <strong>Cargo Monitoring:</strong> <ul><li>Continuous monitoring of freezer temperatures.
-                            </li>
-                          <li>Automated alerts for critical temperature deviations.
-                          </li>
-                          <li>Notifications for prolonged vehicle non-functionality to prevent product damage.
-                          </li>
-                         </ul>
+                          <strong>Super Admin:</strong> Has full control over the system, including user and role management.
                         </li>
-
                         <li>
-                           <strong>Role-Based User Access:</strong><ul><li>Warehouse Managers: <ul><li>Restricted access to manage consignments only within their assigned warehouses.
-                           </li>
-                           <li>Ability to track drivers’ travel history and visited customer locations.
-                           </li>
-                           </ul></li>
-
-                          <li>Drivers: 
-                            <ul>
-                            <li>Access to assigned deliveries with details on destinations, recipients, and time.</li>
-                            </ul>
-                          </li>
-                          <li>Customers:
-                            <ul>
-                              <li>Notifications for consignment confirmation and driver assignment.</li>
-                              <li>Real-time updates on consignment status and expected delivery time.
-                              </li>
-                            </ul>
-                          </li>
-                         </ul>
+                          <strong>Product Manager:</strong> Responsible for uploading and managing products via individual entries or bulk upload through Excel.
                         </li>
-
                         <li>
-                           <strong>Customer Notifications:</strong> <ul><li>Push notifications for consignment updates.
-                            </li>
-                          <li>Transparency regarding delivery details, driver assignment, and estimated delivery times.
-                          </li>
-                         </ul>
+                          <strong>Support People:</strong> Handles customer queries and manages user interactions.
                         </li>
-
                         <li>
-                           <strong>Scalability and Performance:</strong> <ul><li>Robust back-end system built with Node.js and MongoDB for efficient data management.
-                            </li>
-                          <li>Front-end developed in React.js for a user-friendly experience.
-                          </li>
-                          <li>Android app providing mobility for drivers and customers.</li>
-                         </ul>
+                          <strong>User:</strong> Can browse products and place enquiries if eligible.
                         </li>
-                       
-
-                        
+                        <li>
+                          <strong>AI-Powered Estimation:</strong> Users can
+                          upload pictures, and AI will analyze the number of
+                          items in the image.
+                        </li>
+                        <li>Key backend features include:
+                        </li>
+                        <li>
+                          <strong>Role Management:</strong>  Different access levels and permissions based on user roles.
+                        </li>
+                        <li>
+                          <strong>Menu Management:</strong> Dynamic menu configuration for different roles.
+                        </li>
+                        <li>
+                          <strong>Content Management System (CMS):</strong> Allows admins to manage pages and content dynamically.
+                        </li>
+                        <li>
+                          <strong>Product Management:</strong> Products can be added individually or via bulk upload using Excel.
+                        </li>
                       </ul>
                     )}
                   </div>
 
-                
+                  <div className={styles.dropdownSection}>
+                    <h5
+                      onClick={() => setShowFrontend(!showFrontend)}
+                      className={styles.dropdownHeader}
+                    >
+                      2. Frontend Implementation
+                      {showFrontend ? (
+                        <HiOutlineChevronUp className={styles.arrowIcon} />
+                      ) : (
+                        <HiOutlineChevronDown className={styles.arrowIcon} />
+                      )}
+                    </h5>
+                    {showFrontend && (
+                      <ul className={styles.solutionList}>
+                        <li>The frontend is designed to provide a seamless user experience with the following features:
+                        </li>
+                        <li>
+                          <strong>Login & Authentication:</strong> Secure login functionality.
+                        </li>
+                        <li>
+                          <strong>User Dashboard:</strong>Users can track their placed enquiries.
+                        </li>
+                        <li>
+                          <strong>Restricted Access:</strong> Newly registered users cannot place an enquiry until approved.
+                        </li>
+                      </ul>
+                    )}
+                  </div>
                   <div className={styles.caseImage}>
                     <div className="row">
                       <div className="col-lg-6">
@@ -305,19 +294,24 @@ export default function CaseStudy() {
                   <h4>Technology Stack</h4>
                   <ul>
                     <li>
-                      <img src="/images/node.png" />
-                    </li>
-
-                    <li>
                       <img src="/images/react.png" />
+                    </li>
+                    <li>
+                      <img src="/images/node.png" />
                     </li>
                     <li>
                       <img src="/images/mongo.png" />
                     </li>
                     <li>
-                      <img src="/images/mobapp.png" />
+                      <img src="/images/json.png" />
                     </li>
-                  
+                    <li>
+                      <img src="/images/excel.png"/>
+                    </li>
+                    <li>
+                      <img src="/images/cms.png" />
+                    </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -356,19 +350,16 @@ export default function CaseStudy() {
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking and consignment monitoring reduced delays and increased operational efficiency.
+                <strong>Improved Enquiry Management:</strong> Users can efficiently submit and track their enquiries.
               </li>
               <li>
-                <strong>Reduced Losses:</strong> Immediate alerts for temperature deviations and vehicle inactivity prevented product spoilage.
+                <strong> Enhanced User Roles & Permissions:</strong>Different users have appropriate access levels.
               </li>
               <li>
-                <strong>Improved Transparency:</strong> Customers gained real-time insights into their consignment’s status, improving trust and satisfaction.
+                <strong>Scalability:</strong>The system is designed to handle large amounts of product data.
               </li>
               <li>
-                <strong>Streamlined Operations:</strong> Warehouse managers and drivers operated more efficiently with role-specific app functionalities.
-              </li>
-              <li>
-                <strong>Scalability:</strong> The technology stack ensured the platform could handle growing data and user demands.
+                <strong>Streamlined Product Upload:</strong>  Bulk product upload via Excel improves efficiency.
               </li>
             </ul>
             
@@ -379,7 +370,7 @@ export default function CaseStudy() {
             </h4>
 
             <p>
-            The Real-Time Logistic App successfully addressed the client’s challenges, ensuring efficient consignment tracking, temperature management, and enhanced customer satisfaction. The use of advanced technologies like Node.js, React.js, and MongoDB provided a robust, scalable, and user-friendly platform to meet the client’s logistics needs.
+            The Safco platform successfully meets the client's requirements by offering an enquiry-based e-commerce-like experience. With structured role management, a CMS, and a robust backend, the system ensures an intuitive and efficient user experience. The project demonstrates the power of MERN stack in building scalable and user-friendly applications.
             </p>
           </div>
         </div>
