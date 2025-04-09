@@ -144,9 +144,47 @@ const Header = () => {
                       router.pathname === "/about" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="about" className={Styles.eachNavMenu}>
-                      About
-                    </Link>
+                    <a
+                      className={Styles.eachNavMenu}
+                      onClick={() =>
+                        setActiveMenu(
+                          activeMenu === "company" ? null : "company"
+                        )
+                      }
+                    >
+                      Company
+                    </a>
+                    {activeMenu === "company" ? (
+                      <GoChevronUp
+                        className={Styles.eachNavMenuIcon}
+                        onClick={() =>
+                          setActiveMenu(
+                            activeMenu === "company" ? null : "company"
+                          )
+                        }
+                      />
+                    ) : (
+                      <GoChevronDown
+                        className={Styles.eachNavMenuIcon}
+                        onClick={() =>
+                          setActiveMenu(
+                            activeMenu === "services" ? null : "services"
+                          )
+                        }
+                      />
+                    )}
+                    {activeMenu === "company" && (
+                      <div ref={megaMenuRef} className={Styles.dropdownMenu}>
+                        <ul>
+                          <li>
+                            <Link href="/about">About Us <GoArrowUpRight /></Link>
+                          </li>
+                          <li>
+                            <Link href="/career">Team <GoArrowUpRight /></Link>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
                   </li>
                   <li
                     className={`${Styles.eachNav} ${
@@ -236,7 +274,6 @@ const Header = () => {
                               >
                                 {/* <h3>Case Study</h3> */}
                                 <img src="/images/menu_img.jpg" />
-                                
                               </div>
                             </div>
                           </div>
