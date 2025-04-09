@@ -12,12 +12,18 @@ import {
   FaLinkedinIn,
   FaXTwitter,
 } from "react-icons/fa6";
+import { GoArrowUpRight, GoChevronDown, GoChevronUp } from "react-icons/go";
+import { FiChevronRight } from "react-icons/fi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const router = useRouter(); // Get current route
   const [isMobile, setIsMobile] = useState(false);
   const menuRef = useRef(null); // Reference for menu container
+  const [activeMenu, setActiveMenu] = useState(null); // Track active mega menu
+  const megaMenuRef = useRef(null);
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 50);
@@ -55,7 +61,9 @@ const Header = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
-
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Customize duration if needed
+  }, []);
   return (
     <>
       {/* <div className={Styles.topBar}>
@@ -145,9 +153,96 @@ const Header = () => {
                       router.pathname === "/services" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="services" className={Styles.eachNavMenu}>
-                    Services
-                    </Link>
+                    <a
+                      className={Styles.eachNavMenu}
+                      onClick={() =>
+                        setActiveMenu(
+                          activeMenu === "services" ? null : "services"
+                        )
+                      }
+                    >
+                      Services
+                    </a>
+                    {activeMenu === "services" ? (
+                      <GoChevronUp
+                        className={Styles.eachNavMenuIcon}
+                        onClick={() =>
+                          setActiveMenu(
+                            activeMenu === "services" ? null : "services"
+                          )
+                        }
+                      />
+                    ) : (
+                      <GoChevronDown
+                        className={Styles.eachNavMenuIcon}
+                        onClick={() =>
+                          setActiveMenu(
+                            activeMenu === "services" ? null : "services"
+                          )
+                        }
+                      />
+                    )}
+                    {activeMenu === "services" && (
+                      <div ref={megaMenuRef} className={Styles.megaMenuWrapper}>
+                        <div className="container">
+                          <div className={Styles.megaMenu}>
+                            <div className={Styles.megaMenuLeft}>
+                              <div className={Styles.megamenuTitle}>
+                                <h4>Services</h4>
+                              </div>
+                              <ul>
+                                <li>
+                                  <Link href="/applicationService">
+                                    Custom Software Development{" "}
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link href="#">
+                                    Enterprise Software Development{" "}
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link href="#">
+                                    Custom Web Development
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
+                              </ul>
+                              <ul>
+                                <li>
+                                  <Link href="#">
+                                    Mobile App Development
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link href="#">
+                                    AI Software Development
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link href="#">
+                                    Internet of Things (IoT)
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
+                              </ul>
+                              <div
+                                className={Styles.imdustryImg}
+                                data-aos="fade-left"
+                              >
+                                {/* <h3>Case Study</h3> */}
+                                <img src="/images/menu_img.jpg" />
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </li>
                   {/* <li
                     className={`${Styles.eachNav} ${
@@ -160,12 +255,136 @@ const Header = () => {
                   </li> */}
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "/portfolio" ? Styles.active : ""
+                      router.pathname === "/casestudy" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="/portfolio" className={Styles.eachNavMenu}>
-                    Case Studies
-                    </Link>
+                    <a
+                      className={Styles.eachNavMenu}
+                      onClick={() =>
+                        setActiveMenu(
+                          activeMenu === "casestudy" ? null : "casestudy"
+                        )
+                      }
+                    >
+                      Case Studies
+                    </a>
+                    {activeMenu === "casestudy" ? (
+                      <GoChevronUp
+                        className={Styles.eachNavMenuIcon}
+                        onClick={() =>
+                          setActiveMenu(
+                            activeMenu === "casestudy" ? null : "casestudy"
+                          )
+                        }
+                      />
+                    ) : (
+                      <GoChevronDown
+                        className={Styles.eachNavMenuIcon}
+                        onClick={() =>
+                          setActiveMenu(
+                            activeMenu === "casestudy" ? null : "casestudy"
+                          )
+                        }
+                      />
+                    )}
+                    {activeMenu === "casestudy" && (
+                      <div ref={megaMenuRef} className={Styles.megaMenuWrapper}>
+                        <div className="container">
+                          <div className={Styles.megaMenu}>
+                            <div className={Styles.megaMenuLeft}>
+                              <div className={Styles.megamenuTitle}>
+                                <h4> Case Studies</h4>
+                              </div>
+                              <div className={Styles.megaMenuRightWrap}>
+                                <div className={Styles.megaMenuRight}>
+                                  <div
+                                    className={Styles.imdustryImg}
+                                    data-aos="fade-left"
+                                  >
+                                    <img src="/images/works-img-1.jpg" />
+                                    <h4>
+                                      <Link
+                                        href={"#"}
+                                        className={Styles.megaMenuBtn}
+                                      >
+                                        AI-Enabled Smart Logistics & Moving
+                                        Management Platform
+                                      </Link>
+                                    </h4>
+
+                                    <Link
+                                      href={"/contact"}
+                                      className={Styles.menuBtn}
+                                    >
+                                      Read More
+                                      <FiChevronRight
+                                        className={Styles.arrowRight}
+                                      />
+                                    </Link>
+                                  </div>
+                                  <div
+                                    className={Styles.imdustryImg}
+                                    data-aos="fade-left"
+                                  >
+                                    <img src="/images/works-img-1.jpg" />
+                                    <h4>
+                                      <Link
+                                        href={"#"}
+                                        className={Styles.megaMenuBtn}
+                                      >
+                                        AI-Enabled Smart Logistics & Moving
+                                        Management Platform
+                                      </Link>
+                                    </h4>
+
+                                    <Link
+                                      href={"/contact"}
+                                      className={Styles.menuBtn}
+                                    >
+                                      Read More
+                                      <FiChevronRight
+                                        className={Styles.arrowRight}
+                                      />
+                                    </Link>
+                                  </div>
+                                  <div
+                                    className={Styles.imdustryImg}
+                                    data-aos="fade-left"
+                                  >
+                                    <img src="/images/works-img-1.jpg" />
+                                    <h4>
+                                      <Link
+                                        href={"#"}
+                                        className={Styles.megaMenuBtn}
+                                      >
+                                        AI-Enabled Smart Logistics & Moving
+                                        Management Platform
+                                      </Link>
+                                    </h4>
+
+                                    <Link
+                                      href={"/contact"}
+                                      className={Styles.menuBtn}
+                                    >
+                                      Read More
+                                      <FiChevronRight
+                                        className={Styles.arrowRight}
+                                      />
+                                    </Link>
+                                  </div>
+                                </div>
+                                <Link href={"#"} className={Styles.seeAll}>
+                                  See All Case Studies
+                                  <GoArrowUpRight
+                                    className={Styles.arrowRight}
+                                  />
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </li>
                   <li
                     className={`${Styles.eachNav} ${

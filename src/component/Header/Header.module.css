@@ -146,6 +146,115 @@
   font-size: 24px;
   cursor: pointer;
 }
+.megaMenuWrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.megaMenu {
+  overflow: hidden;
+  width: 100%;
+  background: #121212;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  /* display: flex; */
+  padding: 40px;
+  justify-content: space-between;
+}
+.megaMenuLeft {
+  display: flex;
+  gap: 50px;
+ 
+  justify-content: space-between;
+  width: 100%;
+}
+.megaMenuRight {
+  display: flex;
+  gap: 50px;
+ 
+  justify-content: space-between;
+  width: 100%;
+}
+
+.megaMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.imdustryImg {
+  max-width: 300px;
+  width: 100%;
+}
+
+.megaMenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: inline-flex;
+  gap: 20px;
+  padding: 10px 15px;
+  align-items: center;
+}
+.megaMenu ul li:first-child a {
+  padding-top: 0;
+}
+.megaMenu ul li a:hover {
+  color: #0096cf;
+}
+.imdustryImg img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.imdustryImg  h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.imdustryImg h4 a,
+.imdustryImg h4{
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+
+}
+.imdustryImg h4 a:hover{
+  color: #0096cf;
+} 
+.menuBtn{
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.seeAll:hover{
+  color: #0096cf;
+}
+.menuBtn:hover{
+  color: #0096cf;
+}
+.seeAll{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 30px;
+  padding-top:20px;
+  border-top: 1px solid #ffffff29;
+}
+
+
+
+
+
+
+
 
 /* .hideNav {
   display: none;

@@ -358,7 +358,7 @@ export default function Home() {
               Excellence from <span className={styles.highlight}>concept</span>{" "}
               to completion
             </h4>
-            <Link href="/" className={styles.cmnBtn}>
+            <Link href="/allcase" className={styles.cmnBtn}>
               View All <HiOutlineArrowRight className={styles.arrowRight} />
             </Link>
           </div>
