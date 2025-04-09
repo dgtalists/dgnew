@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "Real-Time Logistic App for Consignment Tracking "
+                      "AI-Driven Smart Logistics & Moving Management Platform"
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -82,8 +82,9 @@ export default function CaseStudy() {
                     />
                   </h4>
                   <p>
-                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
-
+                  In a fast-evolving logistics landscape, companies face challenges in real-time visibility, resource optimization, and customer coordination. DGTALISTS partnered with a leading logistics service provider to create an AI-powered smart logistics and moving management platform that optimizes operational workflows, improves resource planning, and enhances the end-user experience.
+                  </p>
+                  <p>Built for scale and intelligence, the platform integrates advanced automation, digital documentation, mobile access, and real-time tracking into a seamless ecosystem.
                   </p>
                 </div>
                 <div className={styles.introText} data-aos="fade-up">
@@ -91,34 +92,33 @@ export default function CaseStudy() {
                     <div className="col-lg-7">
                       <h4 className={styles.title}>
                         <AnimatedText
-                          text={"Client Requirements"}
-                          highlightText={"Client"}
+                          text={"Goals"}
+                          highlightText={"Goals"}
                         />
                       </h4>
                       <ul>
-                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
-                        </li>
+                         <li>The client required a comprehensive digital solution that would:
+                         </li>
                         <li>
-                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
+                          <FaRegCircleCheck />Digitize manual processes in trailer, driver, and resource management.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Provide warehouse managers with specific access to their assigned warehouses.
+                          Enable real-time tracking of vehicles and order statuses.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Track drivers’ travel history and customer locations visited.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
+                          Optimize route and trip planning with AI-based forecasting.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Streamline driver delivery assignments with clear instructions.
+                          Improve communication between operations teams, drivers, and customers.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />Provide actionable insights for fleet utilization and order analytics.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />Support regulatory compliance and safety monitoring.
                         </li>
                       </ul>
                     </div>
@@ -133,53 +133,7 @@ export default function CaseStudy() {
                   </div>
                 </div>
 
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/case-2.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Our Challenges"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />
-                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+             
                 <div className={styles.introText} data-aos="fade-up">
                   <h4 className={styles.title}>
                     <AnimatedText
@@ -187,13 +141,15 @@ export default function CaseStudy() {
                       highlightText={"Solution"}
                     />
                   </h4>
-                
+                  <p>
+                  DGTALISTS developed a modular, intelligent logistics platform using a LaaS (Logistics-as-a-Service) model. The solution is web and mobile compatible, designed with scalability and real-time coordination in mind. Here’s how we delivered:
+                 </p>
                   <div className={styles.dropdownSection}>
                     <h5
                       onClick={() => setShowBackend(!showBackend)}
                       className={styles.dropdownHeader}
                     >
-                      1. Key Features
+                      1. Core Platform Modules:
                       {showBackend ? (
                         <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
@@ -202,65 +158,73 @@ export default function CaseStudy() {
                     </h5>
                     {showBackend && (
                       <ul className={styles.solutionList}>
-                        <li>
-                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
-                            </li>
-                          <li>Detailed vehicle statistics including engine start/stop status and travel distances.
+                          <li>
+                         <strong> Master Data Management:</strong>
+                          <ul>
+                            <li>Centralized system for managing driver, tractor, trailer, and commodity   data. </li>
+                            <li>Location-wise access control and integrated approval workflows.</li>
+                            <li>Role-based dashboard for admins, planners, and operators.</li>
+                          </ul>
                           </li>
-                         </ul>
-                        </li>
 
-                        <li>
-                           <strong>Cargo Monitoring:</strong> <ul><li>Continuous monitoring of freezer temperatures.
-                            </li>
-                          <li>Automated alerts for critical temperature deviations.
+                          <li>
+                         <strong>  AI-Enhanced Planning Engine :</strong>
+                          <ul>
+                            <li>Intuitive drag-and-drop planning board for trip creation. </li>
+                            <li>Forecasts best route combinations based on traffic, distance, and order priority.</li>
+                            <li>Identifies opportunities for return trips and reduces empty runs.</li>
+                            <li>Detects over/under-utilization and recommends reallocation.</li>
+                          </ul>
                           </li>
-                          <li>Notifications for prolonged vehicle non-functionality to prevent product damage.
+                          
+                          <li>
+                         <strong>Real-Time Order & Resource Monitoring:</strong>
+                          <ul>
+                            <li>Live map with dynamic status indicators (Loading, In Transit, Delayed, Delivered). </li>
+                            <li>Tooltip insights, historical trail, and expected delivery timestamps.</li>
+                            <li>GPS and BLE-based tracking of vehicle movements and stoppages.</li>
+                          </ul>
                           </li>
-                         </ul>
-                        </li>
 
-                        <li>
-                           <strong>Role-Based User Access:</strong><ul><li>Warehouse Managers: <ul><li>Restricted access to manage consignments only within their assigned warehouses.
-                           </li>
-                           <li>Ability to track drivers’ travel history and visited customer locations.
-                           </li>
-                           </ul></li>
+                          <li>
+                         <strong>Trailer, Tractor & Driver Efficiency Dashboard:</strong>
+                          <ul>
+                            <li>Manages trailer availability, service schedules, and washing records.</li>
+                            <li>Tracks driver duty hours, fatigue scores, and pending documents.</li>
+                            <li>Triggers alerts for mismatched resource assignments and idle times.</li>
+                          </ul>
+                          </li>
 
-                          <li>Drivers: 
-                            <ul>
-                            <li>Access to assigned deliveries with details on destinations, recipients, and time.</li>
-                            </ul>
+                          <li>
+                         <strong> Digital Documentation & Compliance:</strong>
+                          <ul>
+                            <li>Automated generation of trip sheets, gate passes, and delivery notes.</li>
+                            <li>Role-wise upload and review of digital documents.</li>
+                            <li>Compliance flags for expired licenses, PUC, and insurance.</li>
+                          </ul>
                           </li>
-                          <li>Customers:
-                            <ul>
-                              <li>Notifications for consignment confirmation and driver assignment.</li>
-                              <li>Real-time updates on consignment status and expected delivery time.
-                              </li>
-                            </ul>
-                          </li>
-                         </ul>
-                        </li>
 
-                        <li>
-                           <strong>Customer Notifications:</strong> <ul><li>Push notifications for consignment updates.
-                            </li>
-                          <li>Transparency regarding delivery details, driver assignment, and estimated delivery times.
+                          <li>
+                         <strong> Mobile App (Driver Companion App):</strong>
+                          <ul>
+                            <li>Real-time updates on assignments, navigation, and checkpoints.</li>
+                           <li>Push notifications for gate passes, load changes, and emergency stops.</li>
+                            <li>SOS alerts with location broadcast to control room.</li>
+                            <li>Integrated feedback and incident reporting module</li>
+                          </ul>
                           </li>
-                         </ul>
-                        </li>
 
-                        <li>
-                           <strong>Scalability and Performance:</strong> <ul><li>Robust back-end system built with Node.js and MongoDB for efficient data management.
-                            </li>
-                          <li>Front-end developed in React.js for a user-friendly experience.
+                          
+                          <li>
+                         <strong> Analytics & Insights:</strong>
+                          <ul>
+                            <li>Utilization reports for trailers, drivers, and tractors.</li>
+                           <li>Performance KPIs (On-Time Delivery %, Order Completion, SLA breaches).</li>
+                            <li>Delay root cause analysis and heatmap reports.</li>
+                            <li>Interactive dashboards powered by dynamic data filters.</li>
+                          </ul>
                           </li>
-                          <li>Android app providing mobility for drivers and customers.</li>
-                         </ul>
-                        </li>
                        
-
-                        
                       </ul>
                     )}
                   </div>
@@ -305,19 +269,33 @@ export default function CaseStudy() {
                   <h4>Technology Stack</h4>
                   <ul>
                     <li>
+                      <img src="/images/react.png" />
+                    </li>
+                    <li>
                       <img src="/images/node.png" />
                     </li>
-
                     <li>
-                      <img src="/images/react.png" />
+                      <img src="/images/express-js.png" />
                     </li>
                     <li>
                       <img src="/images/mongo.png" />
                     </li>
                     <li>
-                      <img src="/images/mobapp.png" />
+                      <img src="/images/gps.png" />
                     </li>
-                  
+                    <li>
+                      <img src="/images/bluetooth.png"/>
+                    </li>
+                    <li>
+                      <img src="/images/sms.png" />
+                    </li>
+                    <li>
+                      <img src="/images/json.png" />
+                    </li>
+                    <li>
+                      <img src="/images/aws.png" />
+                    </li>
+                
                   </ul>
                 </div>
               </div>
@@ -351,36 +329,53 @@ export default function CaseStudy() {
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Results and Benefits"} highlightText={"Results"} />
+              <AnimatedText text={"Real-World Impact"} highlightText={"Impact"} />
             </h4>
 
             <ul className={styles.solutionList}>
-              <li>
-                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking and consignment monitoring reduced delays and increased operational efficiency.
-              </li>
-              <li>
-                <strong>Reduced Losses:</strong> Immediate alerts for temperature deviations and vehicle inactivity prevented product spoilage.
-              </li>
-              <li>
-                <strong>Improved Transparency:</strong> Customers gained real-time insights into their consignment’s status, improving trust and satisfaction.
-              </li>
-              <li>
-                <strong>Streamlined Operations:</strong> Warehouse managers and drivers operated more efficiently with role-specific app functionalities.
-              </li>
-              <li>
-                <strong>Scalability:</strong> The technology stack ensured the platform could handle growing data and user demands.
-              </li>
-            </ul>
+                        <li>
+                         <strong>Operational Improvements:</strong>
+                          <ul>
+                            <li>30% reduction in planning time using the drag-and-drop board.</li>
+                           <li>40% increase in trailer & tractor utilization.</li>
+                            <li>25% reduction in delays via predictive planning.</li>
+                            <li>50% better SLA adherence through real-time monitoring and alerts.</li>
+                          </ul>
+                          </li>
+
+                          <li>
+                         <strong>Cost & Resource Savings:</strong>
+                          <ul>
+                            <li>Reduced fuel costs via optimized route suggestions  .</li>
+                           <li>Lowered idle driver hours and unutilized trailer instances.</li>
+                            <li>Significant cut in paper-based processes and documentation time.</li>
+                          </ul>
+                          </li>
+
+                          <li>
+                         <strong> Customer Experience:</strong>
+                          <ul>
+                            <li>Improved order transparency through live updates .</li>
+                           <li>Reduced disputes due to digital logs and proof of delivery.</li>
+                            <li>Enhanced driver safety and tracking reassured clients.</li>
+                          </ul>
+                          </li>
+
+
+                 </ul>
             
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Conclusion"} highlightText={"Conclusion"} />
+              <AnimatedText text={"Why Dgtalists?"} highlightText={"Why Dgtalists?"} />
             </h4>
-
             <p>
-            The Real-Time Logistic App successfully addressed the client’s challenges, ensuring efficient consignment tracking, temperature management, and enhanced customer satisfaction. The use of advanced technologies like Node.js, React.js, and MongoDB provided a robust, scalable, and user-friendly platform to meet the client’s logistics needs.
+            DGTALISTS blends cutting-edge tech with real-world logistics experience to deliver solutions that scale. From digitizing your ground operations to AI-enhancing your decision-making, we help you:
             </p>
+            <p>Eliminate inefficiencies.</p>
+            <p>Improve visibility & accountability.</p>
+            <p>Maximize fleet ROI</p>
+            <p>Delight customers with real-time transparency</p>
           </div>
         </div>
       </section>
@@ -388,7 +383,7 @@ export default function CaseStudy() {
         <div className="container">
           <div className={styles.togetherBox}>
             <div className={styles.headerSection}>
-              <span className={styles.subtitle}>Let's Collaborate</span>
+              <span className={styles.subtitle}>Ready to transform your logistics operations?</span>
               <h4 className={styles.title}>
                 <AnimatedText
                   text={"Let’s Build Your Next-Gen Enterprise Solution"}

@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "Real-Time Logistic App for Consignment Tracking "
+                      "Online Business Directory with Influencer Collaboration Platform "
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -82,8 +82,9 @@ export default function CaseStudy() {
                     />
                   </h4>
                   <p>
-                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
-
+                  In the evolving digital landscape, businesses increasingly seek innovative ways to boost visibility and connect with the right audiences. Our client, a prominent digital platform in the Middle East, envisioned a unique solution that combines a business directory with an influencer collaboration network—bridging brands and creators in one seamless ecosystem.
+                  </p>
+                  <p>Dgtalists was brought in to design, develop, and deploy a scalable, user-friendly web platform that supports thousands of listings and enables strategic influencer partnerships.
                   </p>
                 </div>
                 <div className={styles.introText} data-aos="fade-up">
@@ -91,34 +92,30 @@ export default function CaseStudy() {
                     <div className="col-lg-7">
                       <h4 className={styles.title}>
                         <AnimatedText
-                          text={"Client Requirements"}
+                          text={"Client & Requirements"}
                           highlightText={"Client"}
                         />
                       </h4>
                       <ul>
-                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
-                        </li>
+                         <li>The client aimed to build a centralized platform that would:
+                         </li>
                         <li>
-                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
+                          <FaRegCircleCheck />Allow businesses to register and list services in a professional directory.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Provide warehouse managers with specific access to their assigned warehouses.
+                          Include powerful search and filtering options across categories, locations, and audience reach.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Track drivers’ travel history and customer locations visited.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
+                          Provide personalized dashboards for both business users and influencers.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Streamline driver delivery assignments with clear instructions.
+                          Offer admin-level control for managing users, listings, and collaboration requests.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />Support scalable infrastructure for future enhancements and high user volumes.
                         </li>
                       </ul>
                     </div>
@@ -133,53 +130,7 @@ export default function CaseStudy() {
                   </div>
                 </div>
 
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/case-2.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Our Challenges"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />
-                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+             
                 <div className={styles.introText} data-aos="fade-up">
                   <h4 className={styles.title}>
                     <AnimatedText
@@ -187,13 +138,15 @@ export default function CaseStudy() {
                       highlightText={"Solution"}
                     />
                   </h4>
-                
+                  <p>
+                  Dgtalists delivered a custom web-based solution built on the MERN stack (MongoDB, Express.js, React.js, Node.js), offering performance, flexibility, and a modern user experience.
+                 </p>
                   <div className={styles.dropdownSection}>
                     <h5
                       onClick={() => setShowBackend(!showBackend)}
                       className={styles.dropdownHeader}
                     >
-                      1. Key Features
+                      1. Key modules included:
                       {showBackend ? (
                         <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
@@ -202,65 +155,29 @@ export default function CaseStudy() {
                     </h5>
                     {showBackend && (
                       <ul className={styles.solutionList}>
-                        <li>
-                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
-                            </li>
-                          <li>Detailed vehicle statistics including engine start/stop status and travel distances.
+                          <li>
+                          <strong>Business Listing Directory:</strong>Verified businesses can list their offerings, update profiles, and showcase their work.
                           </li>
-                         </ul>
-                        </li>
 
                         <li>
-                           <strong>Cargo Monitoring:</strong> <ul><li>Continuous monitoring of freezer temperatures.
-                            </li>
-                          <li>Automated alerts for critical temperature deviations.
-                          </li>
-                          <li>Notifications for prolonged vehicle non-functionality to prevent product damage.
-                          </li>
-                         </ul>
+                          <strong>Influencer Profiles :</strong>Creators can register, highlight their reach, link social platforms, and browse businesses.
                         </li>
-
                         <li>
-                           <strong>Role-Based User Access:</strong><ul><li>Warehouse Managers: <ul><li>Restricted access to manage consignments only within their assigned warehouses.
-                           </li>
-                           <li>Ability to track drivers’ travel history and visited customer locations.
-                           </li>
-                           </ul></li>
-
-                          <li>Drivers: 
-                            <ul>
-                            <li>Access to assigned deliveries with details on destinations, recipients, and time.</li>
-                            </ul>
-                          </li>
-                          <li>Customers:
-                            <ul>
-                              <li>Notifications for consignment confirmation and driver assignment.</li>
-                              <li>Real-time updates on consignment status and expected delivery time.
-                              </li>
-                            </ul>
-                          </li>
-                         </ul>
+                          <strong>Collaboration Workflow:</strong>Businesses and influencers can send, receive, and manage collaboration proposals.
                         </li>
-
                         <li>
-                           <strong>Customer Notifications:</strong> <ul><li>Push notifications for consignment updates.
-                            </li>
-                          <li>Transparency regarding delivery details, driver assignment, and estimated delivery times.
-                          </li>
-                         </ul>
+                          <strong>Dynamic Search & Filters:</strong> Users can discover businesses or influencers by category, region, follower count, engagement metrics, and more.
                         </li>
-
                         <li>
-                           <strong>Scalability and Performance:</strong> <ul><li>Robust back-end system built with Node.js and MongoDB for efficient data management.
-                            </li>
-                          <li>Front-end developed in React.js for a user-friendly experience.
-                          </li>
-                          <li>Android app providing mobility for drivers and customers.</li>
-                         </ul>
+                          <strong>Personalized Dashboards:</strong>  Each user has access to a tailored dashboard for managing proposals, connections, and analytics.
                         </li>
-                       
+                        <li>
+                          <strong>Admin Panel:</strong> A powerful backend for managing users, content, reports, and moderation.
 
-                        
+                        </li>
+                        <li>
+                          <strong> Secure Login & Notifications:</strong> Authentication via email and real-time alerts to ensure smooth interactions.
+                        </li>
                       </ul>
                     )}
                   </div>
@@ -305,19 +222,30 @@ export default function CaseStudy() {
                   <h4>Technology Stack</h4>
                   <ul>
                     <li>
+                      <img src="/images/react.png" />
+                    </li>
+                    <li>
                       <img src="/images/node.png" />
                     </li>
-
                     <li>
-                      <img src="/images/react.png" />
+                      <img src="/images/express-js.png" />
                     </li>
                     <li>
                       <img src="/images/mongo.png" />
                     </li>
                     <li>
-                      <img src="/images/mobapp.png" />
+                      <img src="/images/json.png" />
                     </li>
-                  
+                    <li>
+                      <img src="/images/scalable.png"/>
+                    </li>
+                    <li>
+                      <img src="/images/google-map.png" />
+                    </li>
+                    <li>
+                      <img src="/images/emailnoti.png" />
+                    </li>
+                
                   </ul>
                 </div>
               </div>
@@ -351,35 +279,32 @@ export default function CaseStudy() {
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Results and Benefits"} highlightText={"Results"} />
+              <AnimatedText text={"Results & Impact"} highlightText={"Results"} />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking and consignment monitoring reduced delays and increased operational efficiency.
+              Over 5,000 business listings and 1,200 influencer collaborations in the first 90 days.
               </li>
               <li>
-                <strong>Reduced Losses:</strong> Immediate alerts for temperature deviations and vehicle inactivity prevented product spoilage.
+              Streamlined the brand-influencer partnership process with zero manual coordination.
               </li>
               <li>
-                <strong>Improved Transparency:</strong> Customers gained real-time insights into their consignment’s status, improving trust and satisfaction.
+              Increased visibility for local and regional businesses through influencer-driven reach.
               </li>
               <li>
-                <strong>Streamlined Operations:</strong> Warehouse managers and drivers operated more efficiently with role-specific app functionalities.
-              </li>
-              <li>
-                <strong>Scalability:</strong> The technology stack ensured the platform could handle growing data and user demands.
+              Opened monetization channels for influencers and improved customer engagement for brands.
               </li>
             </ul>
             
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Conclusion"} highlightText={"Conclusion"} />
+              <AnimatedText text={"Why Dgtalists?"} highlightText={"Why Dgtalists?"} />
             </h4>
-
             <p>
-            The Real-Time Logistic App successfully addressed the client’s challenges, ensuring efficient consignment tracking, temperature management, and enhanced customer satisfaction. The use of advanced technologies like Node.js, React.js, and MongoDB provided a robust, scalable, and user-friendly platform to meet the client’s logistics needs.
+            Dgtalists combined deep technical expertise with a clear understanding of business goals to bring this innovative platform to life. By focusing on user experience, scalability, and seamless collaboration workflows, we delivered a solution that drives real value for both businesses and influencers.
+
             </p>
           </div>
         </div>

@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "Real-Time Logistic App for Consignment Tracking "
+                      "Comprehensive Learning Management System"
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -82,8 +82,7 @@ export default function CaseStudy() {
                     />
                   </h4>
                   <p>
-                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
-
+                  This is a comprehensive Learning Management System (LMS) designed to offer a structured and interactive learning experience. The platform enables users to enroll in courses, watch instructional videos without skipping, take exams, download study materials, and progress through courses sequentially. Additionally, it includes a CMS for content management, a Hot Deals section for special course offers, and a secure login system for user authentication.
                   </p>
                 </div>
                 <div className={styles.introText} data-aos="fade-up">
@@ -96,29 +95,32 @@ export default function CaseStudy() {
                         />
                       </h4>
                       <ul>
-                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
-                        </li>
                         <li>
-                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
+                          <FaRegCircleCheck /> A robust LMS that supports structured learning with course progression.
+                           </li>
+                        <li>
+                          <FaRegCircleCheck />
+                          Video playback restrictions to ensure students watch lectures in full.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
+                          Interactive exam system with multiple question formats.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Provide warehouse managers with specific access to their assigned warehouses.
+                          Secure study material downloads with access control.
                         </li>
                         <li>
-                          <FaRegCircleCheck />
-                          Track drivers’ travel history and customer locations visited.
+                          <FaRegCircleCheck />Content Management System (CMS) for course and content administration.
                         </li>
                         <li>
-                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
+                          <FaRegCircleCheck /> A Hot Deals section for discounted and limited-time course offers.
                         </li>
                         <li>
-                          <FaRegCircleCheck />
-                          Streamline driver delivery assignments with clear instructions.
+                          <FaRegCircleCheck /> Secure payment gateway for course enrollments and transactions.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck /> Role-based access control for administrators and students.
                         </li>
                       </ul>
                     </div>
@@ -132,6 +134,7 @@ export default function CaseStudy() {
                     </div>
                   </div>
                 </div>
+
 
                 <div className={styles.introText} data-aos="fade-up">
                   <div className="row">
@@ -153,33 +156,33 @@ export default function CaseStudy() {
                       <ul>
                         <li>
                           <FaRegCircleCheck />
-                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
+                          Ensuring seamless video playback with restriction policies.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
+                          Developing a secure and scalable exam system with different question types.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
+                          Implementing controlled study material downloads to prevent unauthorized access.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
+                          Managing and updating content dynamically with an efficient CMS.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
+                          Integrating a smooth and secure payment system for course enrollments.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
+                          Optimizing system performance to handle multiple concurrent users.
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
+
                 <div className={styles.introText} data-aos="fade-up">
                   <h4 className={styles.title}>
                     <AnimatedText
@@ -187,13 +190,15 @@ export default function CaseStudy() {
                       highlightText={"Solution"}
                     />
                   </h4>
-                
+                  <p>
+                  We developed an advanced LMS platform with the following key implementations:
+                  </p>
                   <div className={styles.dropdownSection}>
                     <h5
                       onClick={() => setShowBackend(!showBackend)}
                       className={styles.dropdownHeader}
                     >
-                      1. Key Features
+                      1. Backend Implementation
                       {showBackend ? (
                         <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
@@ -203,69 +208,70 @@ export default function CaseStudy() {
                     {showBackend && (
                       <ul className={styles.solutionList}>
                         <li>
-                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
-                            </li>
-                          <li>Detailed vehicle statistics including engine start/stop status and travel distances.
-                          </li>
-                         </ul>
+                          <strong> Course & Video Management:</strong> Implemented structured course modules with video playback restrictions to prevent skipping.
                         </li>
-
                         <li>
-                           <strong>Cargo Monitoring:</strong> <ul><li>Continuous monitoring of freezer temperatures.
-                            </li>
-                          <li>Automated alerts for critical temperature deviations.
-                          </li>
-                          <li>Notifications for prolonged vehicle non-functionality to prevent product damage.
-                          </li>
-                         </ul>
+                          <strong>Exam & Question-Answer System:</strong> Developed an interactive exam system featuring multiple question formats like MCQs, true/false, and subjective questions.
                         </li>
-
                         <li>
-                           <strong>Role-Based User Access:</strong><ul><li>Warehouse Managers: <ul><li>Restricted access to manage consignments only within their assigned warehouses.
-                           </li>
-                           <li>Ability to track drivers’ travel history and visited customer locations.
-                           </li>
-                           </ul></li>
-
-                          <li>Drivers: 
-                            <ul>
-                            <li>Access to assigned deliveries with details on destinations, recipients, and time.</li>
-                            </ul>
-                          </li>
-                          <li>Customers:
-                            <ul>
-                              <li>Notifications for consignment confirmation and driver assignment.</li>
-                              <li>Real-time updates on consignment status and expected delivery time.
-                              </li>
-                            </ul>
-                          </li>
-                         </ul>
+                          <strong> Progressive Course Unlocking:</strong> Integrated a system where users must complete one course before unlocking the next.
                         </li>
-
                         <li>
-                           <strong>Customer Notifications:</strong> <ul><li>Push notifications for consignment updates.
-                            </li>
-                          <li>Transparency regarding delivery details, driver assignment, and estimated delivery times.
-                          </li>
-                         </ul>
+                          <strong> Secure Study Material Access:</strong> Provided restricted and encrypted study material downloads to prevent unauthorized sharing.
                         </li>
-
                         <li>
-                           <strong>Scalability and Performance:</strong> <ul><li>Robust back-end system built with Node.js and MongoDB for efficient data management.
-                            </li>
-                          <li>Front-end developed in React.js for a user-friendly experience.
-                          </li>
-                          <li>Android app providing mobility for drivers and customers.</li>
-                         </ul>
+                          <strong>CMS Integration:</strong> Developed a robust CMS to manage course content, FAQs, announcements, and other administrative controls.
                         </li>
                        
+                        <li>
+                          <strong> Hot Deals Module:</strong>   Integrated a special Hot Deals section showcasing discounted courses and limited-time offers to boost engagement.
 
-                        
-                      </ul>
+                        </li>
+                        <li>
+                          <strong>Payment Gateway Integration:</strong> Implemented Stripe for secure and seamless transactions.
+                        </li>
+                        <li>
+                          <strong>Role-Based Access Control:</strong> Ensured secure authentication and controlled access based on user roles.
+                        </li>
+                        </ul>
                     )}
                   </div>
 
-                
+                  <div className={styles.dropdownSection}>
+                    <h5
+                      onClick={() => setShowFrontend(!showFrontend)}
+                      className={styles.dropdownHeader}
+                    >
+                      2. Frontend Implementation
+                      {showFrontend ? (
+                        <HiOutlineChevronUp className={styles.arrowIcon} />
+                      ) : (
+                        <HiOutlineChevronDown className={styles.arrowIcon} />
+                      )}
+                    </h5>
+                    {showFrontend && (
+                      <ul className={styles.solutionList}>
+                        <li>
+                          <strong>User Dashboard:</strong> Designed an intuitive user interface allowing learners to track their course progress, access study materials, and take exams.
+                        </li>
+                        <li>
+                          <strong> Video Player with Restrictions::</strong>Integrated a custom video player to prevent skipping and ensure full engagement.
+                        </li>
+                        <li>
+                          <strong>Exam Portal:</strong> Provided an interactive and easy-to-use exam interface for learners.
+                        </li>
+                        <li>
+                          <strong>Admin Panel:</strong> Built a comprehensive dashboard for managing courses, students, payments, and content.
+                        </li>
+                        <li>
+                          <strong>Secure Login System:</strong> Implemented a robust authentication mechanism for user security.
+                        </li>
+                        <li>
+                          <strong>Hot Deals UI:</strong> Designed an engaging section showcasing ongoing offers to attract more users.
+                        </li>
+                      </ul>
+                    )}
+                  </div>
                   <div className={styles.caseImage}>
                     <div className="row">
                       <div className="col-lg-6">
@@ -305,19 +311,39 @@ export default function CaseStudy() {
                   <h4>Technology Stack</h4>
                   <ul>
                     <li>
-                      <img src="/images/node.png" />
-                    </li>
-
-                    <li>
-                      <img src="/images/react.png" />
+                      <img src="/images/php.png" />
                     </li>
                     <li>
-                      <img src="/images/mongo.png" />
+                      <img src="/images/sql.png" />
                     </li>
                     <li>
-                      <img src="/images/mobapp.png" />
+                      <img src="/images/js.png" />
                     </li>
-                  
+                    <li>
+                      <img src="/images/jquery.png" />
+                    </li>
+                    <li>
+                      <img src="/images/ajax.png"/>
+                    </li>
+                    <li>
+                      <img src="/images/html-5.png" />
+                    </li>
+                    <li>
+                      <img src="/images/css.png" />
+                    </li>
+                    <li>
+                      <img src="/images/bootstrap.png" />
+                    </li>
+                    <li>
+                      <img src="/images/api.png" />
+                    </li>
+                    <li>
+                      <img src="/images/stripe.png" />
+                    </li>
+                    <li>
+                      <img src="/images/git.png" />
+                    </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -356,19 +382,19 @@ export default function CaseStudy() {
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking and consignment monitoring reduced delays and increased operational efficiency.
+                <strong>Enhanced Learning Experience:</strong> Structured course modules and exam systems improved user engagement.
               </li>
               <li>
-                <strong>Reduced Losses:</strong> Immediate alerts for temperature deviations and vehicle inactivity prevented product spoilage.
+                <strong>Secure Content Management:</strong>Restricted video playback and secure study material downloads ensured content protection.
               </li>
               <li>
-                <strong>Improved Transparency:</strong> Customers gained real-time insights into their consignment’s status, improving trust and satisfaction.
+                <strong> Revenue Growth:</strong>The Hot Deals section and seamless payment integration increased enrollments.
               </li>
               <li>
-                <strong>Streamlined Operations:</strong> Warehouse managers and drivers operated more efficiently with role-specific app functionalities.
+                <strong>Optimized Performance:</strong> Scalable architecture allows smooth operation even with high user traffic.
               </li>
               <li>
-                <strong>Scalability:</strong> The technology stack ensured the platform could handle growing data and user demands.
+                <strong> Comprehensive Admin Control:</strong> The CMS provided easy course and content management, reducing administrative workload.
               </li>
             </ul>
             
@@ -379,7 +405,7 @@ export default function CaseStudy() {
             </h4>
 
             <p>
-            The Real-Time Logistic App successfully addressed the client’s challenges, ensuring efficient consignment tracking, temperature management, and enhanced customer satisfaction. The use of advanced technologies like Node.js, React.js, and MongoDB provided a robust, scalable, and user-friendly platform to meet the client’s logistics needs.
+            This web successfully provides an interactive and structured e-learning experience. With its progressive learning model, secure content access, and seamless course management, the platform ensures effective knowledge delivery. The addition of a Hot Deals section and a robust payment system enhances user engagement and business growth, making GetCertify a powerful solution in the e-learning industry.
             </p>
           </div>
         </div>

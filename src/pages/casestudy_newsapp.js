@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "Real-Time Logistic App for Consignment Tracking "
+                      "News App for Real-Time Updates & Community Engagement "
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -82,8 +82,9 @@ export default function CaseStudy() {
                     />
                   </h4>
                   <p>
-                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
-
+                  In the era of digital media, having an interactive and engaging news platform is essential for delivering real-time updates and community-driven content. Our client, a leading digital media company, sought a modern hybrid news application to streamline content distribution, enhance audience engagement, and integrate social media channels.
+                  </p>
+                  <p>Dgtalists developed a feature-rich and scalable news hybrid app that empowers users to access, interact with, and share news seamlessly.
                   </p>
                 </div>
                 <div className={styles.introText} data-aos="fade-up">
@@ -91,35 +92,42 @@ export default function CaseStudy() {
                     <div className="col-lg-7">
                       <h4 className={styles.title}>
                         <AnimatedText
-                          text={"Client Requirements"}
-                          highlightText={"Client"}
+                          text={"Challenges & Requirements"}
+                          highlightText={"Challenges"}
                         />
                       </h4>
                       <ul>
-                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
-                        </li>
+                         <li>The client required a robust digital news platform with:
+                         </li>
                         <li>
-                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
+                          <FaRegCircleCheck />User-friendly navigation for browsing different news categories.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Provide warehouse managers with specific access to their assigned warehouses.
+                          Seamless registration & login for readers and contributors.
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Track drivers’ travel history and customer locations visited.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
+                          Advanced search & filtering options for easy content discovery.
+
                         </li>
                         <li>
                           <FaRegCircleCheck />
-                          Streamline driver delivery assignments with clear instructions.
+                          Push notifications for instant updates on trending news.
+
                         </li>
+                        <li>
+                          <FaRegCircleCheck />Social media integration for content sharing across platforms.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />
+                          Multimedia support for articles, videos, and live news updates.
+                        </li>
+                        <li>
+                          <FaRegCircleCheck />
+                        A centralized content management system for easy administration.
+                        </li>
+
                       </ul>
                     </div>
                     <div className="col-lg-5">
@@ -133,53 +141,7 @@ export default function CaseStudy() {
                   </div>
                 </div>
 
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/case-2.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Our Challenges"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />
-                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+             
                 <div className={styles.introText} data-aos="fade-up">
                   <h4 className={styles.title}>
                     <AnimatedText
@@ -187,13 +149,15 @@ export default function CaseStudy() {
                       highlightText={"Solution"}
                     />
                   </h4>
-                
+                  <p>
+                  Dgtalists designed and developed a hybrid mobile and web news platform, ensuring a seamless and engaging experience for both users and content creators. The application was built to handle high traffic, multimedia content, and interactive features while maintaining performance and scalability.
+                 </p>
                   <div className={styles.dropdownSection}>
                     <h5
                       onClick={() => setShowBackend(!showBackend)}
                       className={styles.dropdownHeader}
                     >
-                      1. Key Features
+                      1. Key Features Implemented
                       {showBackend ? (
                         <HiOutlineChevronUp className={styles.arrowIcon} />
                       ) : (
@@ -203,64 +167,36 @@ export default function CaseStudy() {
                     {showBackend && (
                       <ul className={styles.solutionList}>
                         <li>
-                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
-                            </li>
-                          <li>Detailed vehicle statistics including engine start/stop status and travel distances.
-                          </li>
-                         </ul>
+                          <strong>User-Friendly Interface:</strong> Simple and intuitive UI for easy news consumption.
                         </li>
-
                         <li>
-                           <strong>Cargo Monitoring:</strong> <ul><li>Continuous monitoring of freezer temperatures.
-                            </li>
-                          <li>Automated alerts for critical temperature deviations.
-                          </li>
-                          <li>Notifications for prolonged vehicle non-functionality to prevent product damage.
-                          </li>
-                         </ul>
+                          <strong>Quick Registration & Secure Login :</strong> Email and social media-based authentication.
                         </li>
-
                         <li>
-                           <strong>Role-Based User Access:</strong><ul><li>Warehouse Managers: <ul><li>Restricted access to manage consignments only within their assigned warehouses.
-                           </li>
-                           <li>Ability to track drivers’ travel history and visited customer locations.
-                           </li>
-                           </ul></li>
-
-                          <li>Drivers: 
-                            <ul>
-                            <li>Access to assigned deliveries with details on destinations, recipients, and time.</li>
-                            </ul>
-                          </li>
-                          <li>Customers:
-                            <ul>
-                              <li>Notifications for consignment confirmation and driver assignment.</li>
-                              <li>Real-time updates on consignment status and expected delivery time.
-                              </li>
-                            </ul>
-                          </li>
-                         </ul>
+                          <strong>Diverse News Categories:</strong>Organized content based on different topics and regions.
                         </li>
-
                         <li>
-                           <strong>Customer Notifications:</strong> <ul><li>Push notifications for consignment updates.
-                            </li>
-                          <li>Transparency regarding delivery details, driver assignment, and estimated delivery times.
-                          </li>
-                         </ul>
+                          <strong>Advanced Search & Filter Options:</strong> Enabling users to find relevant articles effortlessly.
                         </li>
-
                         <li>
-                           <strong>Scalability and Performance:</strong> <ul><li>Robust back-end system built with Node.js and MongoDB for efficient data management.
-                            </li>
-                          <li>Front-end developed in React.js for a user-friendly experience.
-                          </li>
-                          <li>Android app providing mobility for drivers and customers.</li>
-                         </ul>
+                          <strong>Push Notifications:</strong>  Instant alerts for breaking news and trending topics.
                         </li>
-                       
-
-                        
+                        <li>
+                          <strong>Social Media Integration:</strong> Allows users to share news directly on Facebook, Twitter, and Instagram.
+                        </li>
+                        <li>
+                          <strong> Interactive Content Features:</strong> Users can like, comment, and engage with news articles.
+                        </li>
+                        <li>
+                          <strong>Article & Video Upload Sections:</strong>Integrated YouTube API for video news streaming.
+                        </li>
+                        <li>
+                          <strong>Content Visibility & Engagement Metrics:</strong> Admin panel to track reader interactions.
+                        </li>
+                        <li>
+                          <strong>WordPress CMS Integration:</strong> For easy content management and publishing.
+                        </li>
+      
                       </ul>
                     )}
                   </div>
@@ -305,19 +241,35 @@ export default function CaseStudy() {
                   <h4>Technology Stack</h4>
                   <ul>
                     <li>
-                      <img src="/images/node.png" />
-                    </li>
-
-                    <li>
                       <img src="/images/react.png" />
                     </li>
                     <li>
-                      <img src="/images/mongo.png" />
+                      <img src="/images/php.png" />
                     </li>
                     <li>
-                      <img src="/images/mobapp.png" />
+                      <img src="/images/Laravel-3.png" />
                     </li>
-                  
+                    <li>
+                      <img src="/images/sql.png" />
+                    </li>
+                    <li>
+                      <img src="/images/wordpress.png" />
+                    </li>
+                    <li>
+                      <img src="/images/firebase.png"/>
+                    </li>
+                    <li>
+                      <img src="/images/facebook.png" />
+                    </li>
+                    <li>
+                      <img src="/images/twitter.png" />
+                    </li>
+                    <li>
+                      <img src="/images/instagram.png" />
+                    </li>
+                    <li>
+                      <img src="/images/youtube.png" />
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -351,24 +303,21 @@ export default function CaseStudy() {
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Results and Benefits"} highlightText={"Results"} />
+              <AnimatedText text={"Business Impact"} highlightText={"Business"} />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking and consignment monitoring reduced delays and increased operational efficiency.
+                <strong>Increased User Engagement:</strong> 40% rise in daily active users due to interactive content and real-time updates.
               </li>
               <li>
-                <strong>Reduced Losses:</strong> Immediate alerts for temperature deviations and vehicle inactivity prevented product spoilage.
+                <strong> Seamless Content Distribution:</strong>Enhanced reach through social media integration.
               </li>
               <li>
-                <strong>Improved Transparency:</strong> Customers gained real-time insights into their consignment’s status, improving trust and satisfaction.
+                <strong>Higher Retention Rates:</strong>Push notifications improved user retention by 35%.
               </li>
               <li>
-                <strong>Streamlined Operations:</strong> Warehouse managers and drivers operated more efficiently with role-specific app functionalities.
-              </li>
-              <li>
-                <strong>Scalability:</strong> The technology stack ensured the platform could handle growing data and user demands.
+                <strong>Improved Content Management:</strong> WordPress CMS simplified content updates for the admin team.
               </li>
             </ul>
             
@@ -377,9 +326,8 @@ export default function CaseStudy() {
             <h4 className={styles.title}>
               <AnimatedText text={"Conclusion"} highlightText={"Conclusion"} />
             </h4>
-
             <p>
-            The Real-Time Logistic App successfully addressed the client’s challenges, ensuring efficient consignment tracking, temperature management, and enhanced customer satisfaction. The use of advanced technologies like Node.js, React.js, and MongoDB provided a robust, scalable, and user-friendly platform to meet the client’s logistics needs.
+            Dgtalists successfully developed a highly functional News Channel Hybrid App, transforming the client’s digital media operations. The platform ensures seamless content consumption, real-time updates, and enhanced reader engagement, making it a game-changer in the digital news industry.
             </p>
           </div>
         </div>
