@@ -81,9 +81,9 @@ export default function About() {
             onEnter: () => {
               el.classList.add(styles.inVisible); // only when in view
             },
-            // onLeave: () => {
-            //   el.classList.remove(styles.inVisible); // only when in view
-            // },
+            onLeave: () => {
+              el.classList.remove(styles.inVisible); // only when in view
+            },
           },
         }
       );

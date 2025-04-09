@@ -181,7 +181,7 @@ const Header = () => {
                       router.pathname === "/contact" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="#" className={Styles.eachNavMenu}>
+                    <Link href="contact" className={Styles.eachNavMenu}>
                       Contact
                     </Link>
                   </li>
