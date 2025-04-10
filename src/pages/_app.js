@@ -3,6 +3,7 @@ import LoadingScreen from "@/component/LoadingScreen/LoadingScreen";
 import MagicCursor from "@/component/MagicCursor/MagicCursor";
 import "@/styles/globals.css";
 import BackToTop from "@/component/BackToTop/BackToTop";
+import GSAPParticles from "@/component/GSAPParticle/GSAPParticles";
 
 export default function App({ Component, pageProps }) {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }) {
       {isLoaded && (
         <>
           <MagicCursor />
+          {/* <GSAPParticles/> */}
           <Component {...pageProps} />
           <BackToTop />
         </>

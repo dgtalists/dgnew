@@ -20,20 +20,20 @@ const ImageReveal = ({ src, alt, className }) => {
         toggleActions: "play none none reverse",
       },
     });
-
-    // Left-to-right reveal animation
+  
+    // Animate overlay width from 100% to 0%
     tl.fromTo(
       overlayRef.current,
-      { scaleX: 1 },
-      { scaleX: 0, duration: 1.5, ease: "power3.out" }
-    )
-      .fromTo(
-        imgRef.current,
-        { scale: 1.2, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 1.5, ease: "power3.out" },
-        "-=1.2"
-      );
+      { width: "100%" },
+      { width: "0%", duration: 1.5, ease: "power3.out" }
+    ).fromTo(
+      imgRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5, ease: "power3.out" },
+      "-=1.2"
+    );
   }, []);
+  
 
   return (
     <div className={`${styles.imageContainer} ${className}`} ref={imgContainerRef}>

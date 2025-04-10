@@ -502,7 +502,8 @@ export default function Home() {
             <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
-                  <img src="/images/post-1.jpg" alt="post"/>
+                  {/* <img src="/images/post-1.jpg" alt="post"/> */}
+                  <ImageReveal src={"/images/post-1.jpg"}  alt={"post"}/>
                 </div>
                 <div className={styles.postContent}>
                   <h5><Link href={"#"}>The Future of Cybersecurity in the Digital Age</Link></h5>
@@ -513,7 +514,7 @@ export default function Home() {
             <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
-                  <img src="/images/post-2.jpg" alt="post"/>
+                <ImageReveal src={"/images/post-2.jpg"}  alt={"post"}/>
                 </div>
                 <div className={styles.postContent}>
                   <h5><Link href={"#"}>The Importance of Data Privacy in Software Solutions</Link></h5>
@@ -524,7 +525,7 @@ export default function Home() {
             <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
-                  <img src="/images/post-3.jpg" alt="post"/>
+                <ImageReveal src={"/images/post-3.jpg"}  alt={"post"}/>
                 </div>
                 <div className={styles.postContent}>
                   <h5><Link href={"#"}>How AI is Revolutionizing Software Development</Link></h5>

@@ -1,13 +1,10 @@
 import Head from "next/head";
 import styles from "@/styles/Enterprise.module.css";
 import Header from "@/component/Header/Header";
-import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
-import { HiOutlineArrowRight } from "react-icons/hi";
 import ImageReveal from "@/component/ImageReveal/ImageReveal";
 import AnimatedText from "@/component/AnimatedText/AnimatedText";
-import { GoArrowRight, GoArrowUpRight, GoGlobe } from "react-icons/go";
-import ContinuousScrollingSlider from "@/component/Continious/ContinuousScrolig";
+import { GoArrowUpRight, GoGlobe } from "react-icons/go";
 import { PiSuitcaseSimpleLight } from "react-icons/pi";
 import ParallaxBanner from "@/component/ParralaxBanner/ParallaxBanner";
 import Counter from "@/component/Counter/Counter";
@@ -17,9 +14,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useRef, useState } from "react";
-import { BiSolidPhoneCall, BiSolidQuoteRight } from "react-icons/bi";
-import { IoArrowBack } from "react-icons/io5";
-import { IoArrowForward } from "react-icons/io5";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import Footer from "@/component/Footer/Footer";
 import { DiCode } from "react-icons/di";
 import {
@@ -30,82 +25,82 @@ import {
   BsSuitcaseLg,
 } from "react-icons/bs";
 import { RxEnvelopeClosed } from "react-icons/rx";
-import GSAPParticles from "@/component/GSAPParticle/GSAPParticles";
-export default function Enterprise() {
+import { HiOutlineArrowRight } from "react-icons/hi";
+export default function Customsoftware() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
 
   const serviceData = [
     {
-      title: "Custom Enterprise Software Development",
+      title: "Bespoke Software Development",
       intro:
-        "We design and develop scalable, high-performance enterprise applications that streamline operations, enhance collaboration, and drive productivity.",
+        "From concept to deployment, we develop custom applications tailored to your business needs.",
       features: [
-        "End-to-end custom software development",
-        "Cloud-based and on-premise solutions",
-        "AI-driven and data-centric applications",
+        "Scalable web and mobile applications",
+        "Custom enterprise-grade solutions",
+        "End-to-end software lifecycle management",
       ],
-      image: "/images/custom-enterprise.png",
+      image: "/images/bespoke.png",
       link: "#",
     },
     {
-      title: "Enterprise Application Integration (EAI)",
+      title: "Web & Mobile Application Development",
       intro:
-        "Seamlessly connect disparate business systems for smooth data flow and operational efficiency.",
+        "Deliver high-performing web and mobile applications with intuitive user experiences.",
       features: [
-        "API development and integration",
-        "CRM, ERP, and third-party software integration",
-        "Legacy system modernization",
+        "Cross-platform and native mobile apps (iOS, Android)",
+        "Progressive web apps (PWA)",
+        "Cloud-based and SaaS solutions",
       ],
-      image: "/images/eai.png",
+      image: "/images/web-application.png",
       link: "#",
     },
     {
-      title: "Enterprise Mobility Solutions",
+      title: "AI & Machine Learning Solutions",
       intro:
-        "Enable seamless mobile experiences for employees, customers, and partners with secure enterprise-grade applications.",
+        "Leverage artificial intelligence to automate workflows, analyze data, and enhance decision-making.",
       features: [
-        "Cross-platform mobile app development",
-        "Enterprise-wide security and compliance",
-        "BYOD and MDM implementation",
-      ],
-      image: "/images/enter-mobility.png",
-      link: "#",
-    },
-    {
-      title: "Cloud Enterprise Solutions",
-      intro:
-        "Leverage cloud computing for scalable, flexible, and cost-effective enterprise solutions.",
-      features: [
-        "Cloud migration and optimization",
-        "SaaS, PaaS, and IaaS development",
-        "Multi-cloud and hybrid cloud solutions",
-      ],
-      image: "/images/cloud-enterprise.png",
-      link: "#",
-    },
-    {
-      title: "AI & Automation for Enterprises",
-      intro:
-        "Enhance decision-making, automate processes, and optimize business operations with AI-driven solutions.",
-      features: [
-        "Machine learning and predictive analytics",
-        "RPA (Robotic Process Automation)",
+        "Predictive analytics",
         "Chatbots and virtual assistants",
+        "AI-powered automation",
       ],
-      image: "/images/custom-enterprise.png",
+      image: "/images/aiml.png",
       link: "#",
     },
     {
-      title: "Enterprise Data Management & Analytics",
+      title: "Cloud Application Development",
       intro:
-        "Transform raw data into actionable insights to drive informed business decisions.",
+        "Build and scale applications on secure, cost-effective cloud platforms.",
       features: [
-        "Big data solutions",
-        "Business intelligence dashboards",
-        "Data security and compliance",
+        "Cloud-native applications",
+        "Multi-cloud and hybrid cloud solutions",
+        "Cloud migration and optimization",
       ],
-      image: "/images/enter-mobility.png",
+      image: "/images/cloud-app.png",
+      link: "#",
+    },
+    {
+      title: "Software Integration & API Development",
+      intro:
+        "Seamlessly integrate new software with existing systems to optimize business operations.",
+      features: [
+        "API design and development",
+        "CRM, ERP, and third-party system integration",
+        "Data synchronization and workflow automation",
+      ],
+      image: "/images/api-dev.png",
+      link: "#",
+    },
+    {
+      title: "DevOps & Agile Development",
+      intro:
+        "Accelerate software delivery with agile methodologies and DevOps best practices.",
+      features: [
+        "Continuous integration and deployment (CI/CD)",
+        "Cloud infrastructure automation",
+        "Performance optimization",
+      ],
+      image: "/images/agile.png",
       link: "#",
     },
   ];
@@ -300,8 +295,8 @@ export default function Enterprise() {
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={"Custom Enterprise Software Development "}
-                    highlightText={"Enterprise"}
+                    text={"Custom Software Development Services"}
+                    highlightText={"Software Development"}
                   />
                 </h1>
               </div>
@@ -345,25 +340,16 @@ export default function Enterprise() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Comprehensive Enterprise Software Development Services to Drive Business Growth"
+                      "Drive Digital Transformation with Tailored Software Solutions"
                     }
-                    highlightText={"Business"}
+                    highlightText={"Digital Transformation"}
                   />
                 </h4>
                 <p>
-                  At Dgtalists, we craft enterprise software solutions that
-                  empower organizations to excel in a digital-first world. From
-                  reimagining legacy systems to integrating advanced
-                  technologies like AI, Blockchain, and cloud platforms, our
-                  skilled team delivers applications that drive growth and
-                  streamline operations. With a passion for innovation and a
-                  commitment to excellence, we partner with businesses of all
-                  sizes to create software that’s as unique as your vision. With
-                  deep industry expertise and a business-centric approach, we
-                  empower start-ups, scale-ups, and enterprises to drive
-                  efficiency, innovation, and growth.
+                At DGTALISTS, we specialize in building custom software solutions that align with your unique business goals. Whether you are a start-up, scale-up, or enterprise, our bespoke software solutions enhance efficiency, improve customer experiences, and drive growth.
+
                 </p>
-                <Link href="/contact" className={styles.cmnBtn}>
+                <Link href="/" className={styles.cmnBtn}>
                   get started
                   <HiOutlineArrowRight className={styles.arrowRight} />
                 </Link>
@@ -392,8 +378,8 @@ export default function Enterprise() {
             <span className={styles.subtitle}>Our Services</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Our Enterprise Software Development Services"}
-                highlightText={"Enterprise"}
+                text={"Our Custom Software Development Services"}
+                highlightText={"Custom Software"}
               />
             </h4>
           </div>

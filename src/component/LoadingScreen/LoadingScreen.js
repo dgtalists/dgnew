@@ -65,14 +65,14 @@ const LoadingScreen = ({ onComplete }) => {
             stroke="white"
             strokeWidth="4"
             strokeLinecap="round"
-            style={{ fontSize: "160px", fontWeight: 800 }} // ✅ Bigger text
+            style={{ fontSize: "200px", fontWeight: 800 }} // ✅ Bigger text
           >
             DGTALISTS
           </text>
         </svg>
       </div>
       {/* Progress Bar */}
-      <h1 style={{ color: "white" }}>{progress}%</h1>{" "}
+      {/* <h1 style={{ color: "white" }}>{progress}%</h1>{" "} */}
       {/* Ensuring progress text is also visible */}
       <div className={styles.progressContainer}>
         <div className={styles.progressBar} style={{ width: `${progress}%` }} />

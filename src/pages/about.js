@@ -80,15 +80,13 @@ export default function About() {
             once: true, // will animate only once (better than toggleActions for this)
             onEnter: () => {
               el.classList.add(styles.inVisible); // only when in view
-            },
-            // onLeave: () => {
-            //   el.classList.remove(styles.inVisible); // only when in view
-            // },
+            },         
           },
         }
       );
     });
   }, []);
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;

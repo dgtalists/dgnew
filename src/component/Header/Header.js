@@ -230,13 +230,13 @@ const Header = () => {
                               </div>
                               <ul>
                                 <li>
-                                  <Link href="/applicationService">
-                                    Custom Software Development{" "}
+                                  <Link href="/customsoftware">
+                                    Custom Software Development
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="#">
+                                  <Link href="/enterprise">
                                     Enterprise Software Development{" "}
                                     <GoArrowUpRight />
                                   </Link>
