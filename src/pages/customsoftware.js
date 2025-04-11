@@ -148,30 +148,30 @@ export default function Customsoftware() {
   const whyUsData = [
     {
       count: "01",
-      title: "Industry Expertise & Innovation",
+      title: "Proven Expertise & Innovation",
       description:
-        "With 19+ years of experience, we combine deep industry knowledge with the latest technologies to build solutions that deliver real business value.",
+        "With 19+ years of experience, we build future-proof software using cutting-edge technologies.",
       icon: <BsSuitcaseLg />,
     },
     {
       count: "02",
-      title: "End-to-End Development & Support",
+      title: "Scalable & Secure Development",
       description:
-        "From ideation to deployment and beyond, we provide full-cycle development and support for a seamless enterprise experience.",
+        "We develop software that scales with your business while ensuring top-tier security and compliance.",
       icon: <BsCodeSquare />,
     },
     {
       count: "03",
-      title: "Agile & Scalable Solutions",
+      title: "Agile & Transparent Process",
       description:
-        "Our agile approach ensures flexibility and scalability, enabling your enterprise to adapt to evolving business needs.",
+        "Our agile development approach ensures flexibility, faster time-to-market, and seamless collaboration.",
       icon: <BsBoxSeam />,
     },
     {
       count: "04",
-      title: "Security & Compliance",
+      title: "Tailored Solutions for Business Growth",
       description:
-        "We prioritize your data with enterprise-grade security practices and adhere to global compliance standards.",
+        "We align technology with your business strategy to deliver software that drives results.",
       icon: <BsPatchCheck />,
     },
   ];
@@ -422,7 +422,7 @@ export default function Customsoftware() {
             <span className={styles.subtitle}>Why Choose Us</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Trusted Enterprise Software Development with DGTALISTS"}
+                text={"Trusted Custom Software Development with DGTALISTS"}
                 highlightText={"DGTALISTS"}
               />
             </h4>
@@ -449,7 +449,7 @@ export default function Customsoftware() {
             <span className={styles.subtitle}>Our Tech Stack</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Technologies We Use for Enterprise Solutions"}
+                text={"Technologies We Use for Custom Software Development"}
                 highlightText={"Technologies"}
               />
             </h4>

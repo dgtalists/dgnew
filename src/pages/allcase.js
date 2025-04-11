@@ -24,60 +24,92 @@ export default function AllCase() {
   }, []);
   const portfolioData = [
     {
-      title: "Operation Atlas",
+      title: "AI-Enabled Smart Movers & Packing Management Platform",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "This is an AI enabled smart logistics and moving management system designed to streamline the moving process for both customers and moving companies.",
       image: "/images/works-img-4.png",
+      link:"/casestudy"
     },
     {
-      title: "Quantum Quest",
+      title: "Vehicle Booking Mobile App",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "The rapid evolution of ride-hailing services has transformed urban mobility. Our client, a leading transportation startup, sought a scalable and user-friendly cab booking mobile app to provide a seamless experience for riders and drivers.",
       image: "/images/1.jpg",
+      link:"/casestudy_vehicle"
     },
     {
-      title: "Blue Horizon Initiative",
+      title: "AI-Driven Smart Logistics & Moving Management Platform",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "/images/works-img-3.jpg",
-    },
-    {
-      title: "Blue Horizon Initiative",
-      subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "In a fast-evolving logistics landscape, companies face challenges in real-time visibility, resource optimization, and customer coordination. ",
       image: "/images/works-img-4.jpg",
+      link:"/casestudy_AIdriven"
+    },
+    {
+      title: "Social Media Listening & Digital Outreach Platform",
+      subtitle:
+        "In today's fast-evolving global governance landscape, the need for intelligent automation and real-time decision-making is more pressing than ever.  ",
+      image: "/images/works-img-4.jpg",
+      link:"/casestudy_socialMedia"
+    },
+    {
+      title: "Web-Based Sales Process Automation for the Automobile Industry",
+      subtitle:
+        "Managing sales processes in the automobile industry requires a structured and automated approach to streamline operations, enhance efficiency, and improve overall business performance.",
+      image: "/images/works-img-3.jpg",
+      link:"/casestudy_webbase_sales"
+    },
+    {
+      title: "Food Ordering & Management Platform",
+      subtitle:
+        "In the digital era, seamless food ordering and restaurant management solutions are crucial for enhancing customer experience and increasing business efficiency.",
+      image: "/images/works-img-4.jpg",
+      link:"/casestudy_food_order"
     },
   
     {
-      title: "Operation Atlas",
+      title: "Real-Time Logistic App for Consignment Tracking ",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics.",
       image: "/images/works-img-4.png",
+      link:"/casestudy_logistic"
     },
     {
-      title: "Quantum Quest",
+      title: "Web-Based B2B Wholesale Marketplace",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "This is a B2B market place for whole sellers in the middle east market. It closely resembles an e-commerce platform but with a key difference: instead of placing orders, users can only place enquiries",
       image: "/images/1.jpg",
+      link:"/casestudy_wholesale_market"
     },
     {
-      title: "Blue Horizon Initiative",
+      title: "Comprehensive Learning Management System",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "This is a comprehensive Learning Management System (LMS) designed to offer a structured and interactive learning experience.",
       image: "/images/works-img-3.jpg",
+      link:"/casestudy_management_system"
     },
     {
-      title: "Blue Horizon Initiative",
+      title: "News App for Real-Time Updates & Community Engagement",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "In the era of digital media, having an interactive and engaging news platform is essential for delivering real-time updates and community-driven content.",
       image: "/images/works-img-4.jpg",
+      link:"/casestudy_newsapp"
     },
     {
-      title: "Blue Horizon Initiative",
+      title: "Online Business Directory with Influencer Collaboration Platform",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "In the evolving digital landscape, businesses increasingly seek innovative ways to boost visibility and connect with the right audiences. ",
       image: "/images/works-img-4.jpg",
+      link:"/casestudy_onlineBusiness"
     },
+    {
+      title: "Loan Process Application",
+      subtitle:
+        "The Loan Process Application is a digital solution developed to streamline, automate, and monitor the entire lifecycle of loan processing—from application submission to verification.",
+      image: "/images/works-img-4.jpg",
+      link:""
+    },
+    
+
   ];
   return (
     <>
@@ -138,18 +170,18 @@ export default function AllCase() {
                       className={styles.portimg}
                     />
                     <div className={styles.industryBtn}>
-                      <Link href={"#"}>
+                      <Link href={portfolio.link}>
                         <GoArrowUpRight />
                       </Link>
                     </div>
                   </div>
                   <div className={styles.portfolioContent}>
                     <h4>
-                      <Link href={"#"}>{portfolio.title}</Link>
+                      <Link href={portfolio.link}>{portfolio.title}</Link>
                     </h4>
                     <p>{portfolio.subtitle}</p>
                   </div>
-                  <div className={styles.techStack}>
+                  {/* <div className={styles.techStack}>
                     <h6>Tech Stack</h6>
                     <ul>
                       <li>
@@ -165,7 +197,7 @@ export default function AllCase() {
                         <img src="/images/programing.png" />
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

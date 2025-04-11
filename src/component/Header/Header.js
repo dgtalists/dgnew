@@ -180,7 +180,7 @@ const Header = () => {
                             <Link href="/about">About Us <GoArrowUpRight /></Link>
                           </li>
                           <li>
-                            <Link href="/career">Team <GoArrowUpRight /></Link>
+                            <Link href="/team">Team <GoArrowUpRight /></Link>
                           </li>
                         </ul>
                       </div>
@@ -341,7 +341,7 @@ const Header = () => {
                                     <img src="/images/works-img-1.jpg" />
                                     <h4>
                                       <Link
-                                        href={"#"}
+                                        href={"/casestudy"}
                                         className={Styles.megaMenuBtn}
                                       >
                                         AI-Enabled Smart Logistics & Moving
@@ -350,7 +350,7 @@ const Header = () => {
                                     </h4>
 
                                     <Link
-                                      href={"/contact"}
+                                     href={"/casestudy"}
                                       className={Styles.menuBtn}
                                     >
                                       Read More
@@ -366,16 +366,15 @@ const Header = () => {
                                     <img src="/images/works-img-1.jpg" />
                                     <h4>
                                       <Link
-                                        href={"#"}
+                                        href={"/casestudy_AIdriven"}
                                         className={Styles.megaMenuBtn}
                                       >
-                                        AI-Enabled Smart Logistics & Moving
-                                        Management Platform
+                                        AI-Driven Smart Logistics & Moving Management Platform
                                       </Link>
                                     </h4>
 
                                     <Link
-                                      href={"/contact"}
+                                      href={"/casestudy_AIdriven"}
                                       className={Styles.menuBtn}
                                     >
                                       Read More
@@ -391,16 +390,15 @@ const Header = () => {
                                     <img src="/images/works-img-1.jpg" />
                                     <h4>
                                       <Link
-                                        href={"#"}
+                                        href={"/casestudy_food_order"}
                                         className={Styles.megaMenuBtn}
                                       >
-                                        AI-Enabled Smart Logistics & Moving
-                                        Management Platform
+                                       Food Ordering & Management Platform
                                       </Link>
                                     </h4>
 
                                     <Link
-                                      href={"/contact"}
+                                      href={"/casestudy_food_order"}
                                       className={Styles.menuBtn}
                                     >
                                       Read More
@@ -410,7 +408,7 @@ const Header = () => {
                                     </Link>
                                   </div>
                                 </div>
-                                <Link href={"#"} className={Styles.seeAll}>
+                                <Link href={"/allcase"} className={Styles.seeAll}>
                                   See All Case Studies
                                   <GoArrowUpRight
                                     className={Styles.arrowRight}

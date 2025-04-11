@@ -846,3 +846,69 @@
 .eachContactItem:hover .contactIcon svg {
   color: #fff;
 }
+/* ================latestBlogs============ */
+.latestBlogs {
+  position: relative;
+  padding: 60px 0 30px 0;
+}
+.eachBlog {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.latestBlogs .headerSection{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.eachBlog img {
+  width: 100%;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.blogImg {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.blogImg::after {
+  content: "";
+  position: absolute;
+  width: 215%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 1;
+}
+.eachBlog:hover .blogImg::after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
+}
+.eachBlog:hover img {
+  transform: scale(1.1);
+}
+.eachBlog h5 {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.eachBlog h5 a {
+  color: inherit;
+}
+.postContent .blogLink {
+  color: #0096cf;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.postContent .blogLink svg {
+  transition: all 0.4s;
+  font-size: 20px;
+}
+.eachBlog:hover .blogLink svg {
+  transform: rotate(45deg);
+  transition: all 0.4s;
+}

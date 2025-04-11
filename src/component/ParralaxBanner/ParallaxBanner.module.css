@@ -42,7 +42,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(180.07deg, rgba(0, 0, 0, 0) 0.06%, #000000 116.27%), linear-gradient(359.91deg, rgba(0, 0, 0, 0) 55.58%, #000000 105.69%);
+      background: linear-gradient(0deg, #00000080, #00000080), linear-gradient(180.07deg, #0000 21.06%, #000 154.27%), linear-gradient(359.91deg, #0000 65.58%, #000 105.69%);
       height: 100%;
       width: 100%;
       z-index: 1;
