@@ -98,6 +98,7 @@
   color: #fff;
   font-size: 48px;
   margin-bottom: 30px;
+  text-align: center;
 }
 .sectionLeft h2 {
   color: #fff;
@@ -440,7 +441,8 @@
   border: 1px solid #313131;
   border-radius: 30px 30px 30px 30px;
   transition: 0.3s ease-in-out;
-  min-height: 385px;
+  /* min-height: 385px; */
+  height: 100%;
 }
 .whyUsCount {
   position: absolute;
@@ -872,8 +874,13 @@
   position: relative;
  
 }
+.workTogether .headerSection{
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
 .workTogether .headerSection p{
   font-size: 20px;
+  
 }
 .togetherBox {
   padding: 60px 0 90px 0;
