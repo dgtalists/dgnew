@@ -403,7 +403,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Contact Us</h5>
-                    <Link href={"tel:+1 234 567 890"}>+1 234 567 890</Link>
+                    <Link href={"tel:+91 89104 35874"}>+91 89104 35874</Link>
                   </div>
                 </div>
               </div>
@@ -414,7 +414,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.vercel.app/"}>
+                    <Link href={"https://dgtalists.com"}>
                       dgtalists.com
                     </Link>
                   </div>

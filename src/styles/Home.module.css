@@ -188,7 +188,12 @@
   font-weight: 800;
   line-height: 1em;
   text-transform: uppercase;
-  background:  linear-gradient(to right, #121212 0%, #007bff96 63%, #121212 100%);;
+  background: linear-gradient(
+    to right,
+    #121212 0%,
+    #007bff96 63%,
+    #121212 100%
+  );
   background-size: 200% auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -284,6 +289,9 @@
   font-size: 20px;
   color: #fff;
   margin-bottom: 25px;
+}
+.aboutRight .cmnBtn {
+  margin-top: 40px;
 }
 /* service */
 .ourService {
@@ -631,6 +639,7 @@
   font-size: 24px;
   text-transform: capitalize;
   color: #fff;
+  /* min-height: 60px; */
 }
 .portfolioContent h4 a {
   color: inherit;
@@ -812,4 +821,97 @@
 .eachBlog:hover .blogLink svg {
   transform: rotate(45deg);
   transition: all 0.4s;
+}
+@media (max-width: 992px) {
+  .mainBanner {
+    position: relative;
+    padding: 100px 0 60px;
+  }
+  .mainBanner h1 {
+    font-size: 26px;
+  }
+  .sectionLeft h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .sectionLeft h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .sectionLeft p {
+    font-size: 16px;
+    margin: 0 auto 15px;
+  }
+  .cmnBtn {
+    padding: 6px 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutUs {
+    padding: 30px 0;
+  }
+  .aboutUsTitle h2 {
+    font-size: 66px;
+  }
+  .exploreMore img {
+    max-width: 80px;
+  }
+  .aboutRight {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .subtitle {
+    margin-bottom: 15px;
+  }
+  .title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .aboutRight p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .aboutRight .cmnBtn {
+    margin-top: 40px;
+  }
+  .counterSec {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .eachCounter::before {
+    right: 5px;
+  }
+  .ourService {
+    padding: 30px 0;
+  }
+  .headerSection {
+    margin-bottom: 30px;
+  }
+  .eachServiceSec {
+    padding: 15px;
+  }
+  .eachBlog h5,
+  .portfolioContent h4,
+  .industryContent h3,
+  .eachServiceSec h3 {
+    font-size: 20px;
+  }
+  .portfolio .headerSection .cmnBtn {
+    position: static;
+  }
+  .prevBtn,
+  .nextBtn {
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+  }
+  .latestBlogs {
+    padding-bottom: 30px;
+  }
+  .eachBlog{
+    margin-bottom: 20px;
+  }
 }

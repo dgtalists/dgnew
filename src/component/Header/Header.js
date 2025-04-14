@@ -46,12 +46,30 @@ const Header = () => {
   // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        megaMenuRef.current &&
+        !megaMenuRef.current.contains(event.target)
+      ) {
         setIsOpen(false);
+        setActiveMenu(null);
       }
     };
 
-    if (isOpen) {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (megaMenuRef.current && !megaMenuRef.current.contains(event.target)) {
+        setActiveMenu(null);
+      }
+    };
+
+    if (activeMenu === "company") {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -60,34 +78,12 @@ const Header = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);
+  }, [activeMenu]);
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Customize duration if needed
   }, []);
   return (
     <>
-      {/* <div className={Styles.topBar}>
-        <div className="container">
-          <div className={Styles.topMenu}>
-            <ul>
-              <li>
-                <Link href="/about">ABOUT US</Link>
-              </li>
-              <li>
-                <Link href="/career">CAREERS</Link>
-              </li>
-              <li>
-                <Link href="/contact">CONTACT US</Link>
-              </li>
-              <li>
-                <Link href="/">
-                  <CiGlobe className={Styles.globeIcon} />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
       <header
         className={`${Styles.main_header} ${isSticky ? Styles.sticky : ""}`}
       >
@@ -141,50 +137,12 @@ const Header = () => {
                   </li>
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "/about" ? Styles.active : ""
+                      router.pathname === "#" ? Styles.active : ""
                     }`}
                   >
-                    <a
-                      className={Styles.eachNavMenu}
-                      onClick={() =>
-                        setActiveMenu(
-                          activeMenu === "company" ? null : "company"
-                        )
-                      }
-                    >
-                      Company
-                    </a>
-                    {activeMenu === "company" ? (
-                      <GoChevronUp
-                        className={Styles.eachNavMenuIcon}
-                        onClick={() =>
-                          setActiveMenu(
-                            activeMenu === "company" ? null : "company"
-                          )
-                        }
-                      />
-                    ) : (
-                      <GoChevronDown
-                        className={Styles.eachNavMenuIcon}
-                        onClick={() =>
-                          setActiveMenu(
-                            activeMenu === "services" ? null : "services"
-                          )
-                        }
-                      />
-                    )}
-                    {activeMenu === "company" && (
-                      <div ref={megaMenuRef} className={Styles.dropdownMenu}>
-                        <ul>
-                          <li>
-                            <Link href="/about">About Us <GoArrowUpRight /></Link>
-                          </li>
-                          <li>
-                            <Link href="/team">Team <GoArrowUpRight /></Link>
-                          </li>
-                        </ul>
-                      </div>
-                    )}
+                    <Link href="/about" className={Styles.eachNavMenu}>
+                      About Us
+                    </Link>
                   </li>
                   <li
                     className={`${Styles.eachNav} ${
@@ -243,7 +201,7 @@ const Header = () => {
                                 </li>
                                 <li>
                                   <Link href="/saasaplication">
-                                  SAAS Based Application Development
+                                    SAAS Based Application
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
@@ -251,19 +209,19 @@ const Header = () => {
                               <ul>
                                 <li>
                                   <Link href="/dataanalytics">
-                                  Data analytics & AI
+                                    Data analytics & AI
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
                                   <Link href="/mobileapp">
-                                  Mobile Application Development
+                                    Mobile Application Development
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="#">
-                                    Internet of Things (IoT)
+                                  <Link href="/marketing">
+                                    Marketing & Communication
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
@@ -338,19 +296,18 @@ const Header = () => {
                                     className={Styles.imdustryImg}
                                     data-aos="fade-left"
                                   >
-                                    <img src="/images/works-img-1.jpg" />
+                                    <img src="/images/movelogicai.jpg" />
                                     <h4>
                                       <Link
                                         href={"/casestudy"}
                                         className={Styles.megaMenuBtn}
                                       >
-                                        AI-Enabled Smart Logistics & Moving
-                                        Management Platform
+                                        AI-Enabled Smart Movers & Packing Management Platform
                                       </Link>
                                     </h4>
 
                                     <Link
-                                     href={"/casestudy"}
+                                      href={"/casestudy"}
                                       className={Styles.menuBtn}
                                     >
                                       Read More
@@ -363,37 +320,13 @@ const Header = () => {
                                     className={Styles.imdustryImg}
                                     data-aos="fade-left"
                                   >
-                                    <img src="/images/works-img-1.jpg" />
-                                    <h4>
-                                      <Link
-                                        href={"/casestudy_AIdriven"}
-                                        className={Styles.megaMenuBtn}
-                                      >
-                                        AI-Driven Smart Logistics & Moving Management Platform
-                                      </Link>
-                                    </h4>
-
-                                    <Link
-                                      href={"/casestudy_AIdriven"}
-                                      className={Styles.menuBtn}
-                                    >
-                                      Read More
-                                      <FiChevronRight
-                                        className={Styles.arrowRight}
-                                      />
-                                    </Link>
-                                  </div>
-                                  <div
-                                    className={Styles.imdustryImg}
-                                    data-aos="fade-left"
-                                  >
-                                    <img src="/images/works-img-1.jpg" />
+                                    <img src="/images/food-app.jpg" />
                                     <h4>
                                       <Link
                                         href={"/casestudy_food_order"}
                                         className={Styles.megaMenuBtn}
                                       >
-                                       Food Ordering & Management Platform
+                                        Food Ordering & Management Platform
                                       </Link>
                                     </h4>
 
@@ -407,8 +340,35 @@ const Header = () => {
                                       />
                                     </Link>
                                   </div>
+                                  <div
+                                    className={Styles.imdustryImg}
+                                    data-aos="fade-left"
+                                  >
+                                    <img src="/images/spincab.jpg" />
+                                    <h4>
+                                      <Link
+                                        href={"/casestudy_logistic"}
+                                        className={Styles.megaMenuBtn}
+                                      >
+                                        Real-Time Logistic App for Consignment Tracking
+                                      </Link>
+                                    </h4>
+
+                                    <Link
+                                      href={"/casestudy_logistic"}
+                                      className={Styles.menuBtn}
+                                    >
+                                      Read More
+                                      <FiChevronRight
+                                        className={Styles.arrowRight}
+                                      />
+                                    </Link>
+                                  </div>
                                 </div>
-                                <Link href={"/allcase"} className={Styles.seeAll}>
+                                <Link
+                                  href={"/allcase"}
+                                  className={Styles.seeAll}
+                                >
                                   See All Case Studies
                                   <GoArrowUpRight
                                     className={Styles.arrowRight}
@@ -439,46 +399,6 @@ const Header = () => {
                       Contact
                     </Link>
                   </li>
-                  {isMobile && (
-                    <>
-                      <li
-                        className={`${Styles.eachNav} ${
-                          router.pathname === "/about" ? Styles.active : ""
-                        }`}
-                      >
-                        <Link className={Styles.eachNavMenu} href="/about">
-                          ABOUT US
-                        </Link>
-                      </li>
-                      <li
-                        className={`${Styles.eachNav} ${
-                          router.pathname === "/career" ? Styles.active : ""
-                        }`}
-                      >
-                        <Link className={Styles.eachNavMenu} href="/career">
-                          CAREERS
-                        </Link>
-                      </li>
-                      <li
-                        className={`${Styles.eachNav} ${
-                          router.pathname === "/contact" ? Styles.active : ""
-                        }`}
-                      >
-                        <Link className={Styles.eachNavMenu} href="/contact">
-                          CONTACT US
-                        </Link>
-                      </li>
-                      <li
-                        className={`${Styles.eachNav} ${
-                          router.pathname === "/" ? Styles.active : ""
-                        }`}
-                      >
-                        <Link className={Styles.eachNavMenu} href="/">
-                          <CiGlobe className={Styles.globeIcon} />
-                        </Link>
-                      </li>
-                    </>
-                  )}
                 </ul>
                 <div className={Styles.socialIcon}>
                   <ul>
@@ -497,11 +417,11 @@ const Header = () => {
                         <FaLinkedinIn />
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href={"#"}>
                         <FaXTwitter />
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

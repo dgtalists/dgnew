@@ -5,4 +5,9 @@
     font-weight: bold;
     color: #0096cf;
   }
+  @media (max-width: 575px){
+    .counter {
+      font-size: 22px;
+    }
+  }
   

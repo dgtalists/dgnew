@@ -18,6 +18,7 @@
   color: #fff;
   font-size: 14px;
   font-family: "Aileron", sans-serif;
+  cursor: pointer;
 }
 .globeIcon {
   font-size: 28px;
@@ -37,13 +38,7 @@
   top: 0;
   z-index: 1000;
 }
-/*
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-  } */
+
 .main_header {
   background-color: transparent;
   transition: all 0.3s ease-in-out;
@@ -52,7 +47,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid #FFFFFF1A;
+  border-bottom: 1px solid #ffffff1a;
 }
 
 .main_header.sticky {
@@ -88,23 +83,24 @@
   font-weight: bold;
   color: #007bff;
 }
-.navWrap{
+.navWrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navWrap .socialIcon ul{
+.navWrap .socialIcon ul {
   padding: 0;
   display: flex;
   gap: 15px;
   margin: 0;
 }
-.navWrap .socialIcon ul li{
+.navWrap .socialIcon ul li {
   display: inline-block;
 }
-.navWrap .socialIcon ul li a{
+.navWrap .socialIcon ul li a {
   color: #fff;
   font-size: 18px;
+  cursor: pointer;
 }
 .nav {
   display: flex;
@@ -112,6 +108,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 .navBtn {
   width: 36px;
@@ -119,7 +116,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #007bff;
+  background: #0096cf;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -134,10 +131,11 @@
   text-transform: uppercase;
   transition: color 0.3s;
   font-weight: 600;
+  cursor: pointer;
 }
 .eachNav.active .eachNavMenu,
 .eachNavMenu:hover {
-  color: #007bff;
+  color: #0096cf;
 }
 
 /* Hamburger Menu */
@@ -165,14 +163,14 @@
 .megaMenuLeft {
   display: flex;
   gap: 50px;
- 
+
   justify-content: space-between;
   width: 100%;
 }
 .megaMenuRight {
   display: flex;
   gap: 50px;
- 
+
   justify-content: space-between;
   width: 100%;
 }
@@ -198,11 +196,11 @@
   padding: 10px 15px;
   align-items: center;
 }
-.dropdownMenu ul li:first-child a ,
+.dropdownMenu ul li:first-child a,
 .megaMenu ul li:first-child a {
   padding-top: 0;
 }
-.dropdownMenu ul li a:hover ,
+.dropdownMenu ul li a:hover,
 .megaMenu ul li a:hover {
   color: #0096cf;
 }
@@ -211,21 +209,20 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.imdustryImg  h3{
+.imdustryImg h3 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 .imdustryImg h4 a,
-.imdustryImg h4{
+.imdustryImg h4 {
   color: #fff;
   font-size: 18px;
   margin-bottom: 10px;
-
 }
-.imdustryImg h4 a:hover{
+.imdustryImg h4 a:hover {
   color: #0096cf;
-} 
-.menuBtn{
+}
+.menuBtn {
   font-size: 16px;
   color: #fff;
   text-transform: capitalize;
@@ -233,13 +230,13 @@
   gap: 10px;
   align-items: center;
 }
-.seeAll:hover{
+.seeAll:hover {
   color: #0096cf;
 }
-.menuBtn:hover{
+.menuBtn:hover {
   color: #0096cf;
 }
-.seeAll{
+.seeAll {
   font-size: 18px;
   color: #fff;
   text-transform: capitalize;
@@ -247,11 +244,11 @@
   gap: 10px;
   align-items: center;
   margin-top: 30px;
-  padding-top:20px;
+  padding-top: 20px;
   border-top: 1px solid #ffffff29;
 }
 
-.dropdownMenu{
+.dropdownMenu {
   position: absolute;
   top: 100%;
   left: auto;
@@ -259,21 +256,11 @@
   background-color: #121212;
   padding: 20px 0 10px;
 }
-.dropdownMenu ul{
+.dropdownMenu ul {
   padding: 0;
   margin: 0;
   display: block;
-
 }
-
-
-
-
-
-
-/* .hideNav {
-  display: none;
-} */
 
 /* Responsive Design */
 
@@ -281,8 +268,83 @@
   .eachNavMenu {
     font-size: 12px !important;
   }
-  .topBar{
+  .topBar {
     display: none;
+  }
+  .navWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav a {
+    padding: 10px 12px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  .nav {
+    display: block;
+    width: 100%;
+  }
+  .eachNavMenuIcon {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    right: 10px;
+  }
+  .megamenuTitle {
+    display: none;
+  }
+  .megaMenuWrapper {
+    position: static;
+  }
+  .megaMenuRightWrap .imdustryImg img,
+  .imdustryImg {
+    display: none;
+  }
+  .megaMenuRightWrap .imdustryImg {
+    display: block;
+  }
+  .megaMenuRight {
+    display: block;
+  }
+  .megaMenuRight .menuBtn {
+    display: none;
+  }
+  .megaMenuLeft {
+    padding: 0;
+    display: block;
+  }
+  .megaMenu {
+    background: #000;
+    padding: 0 0;
+  }
+  .megaMenuRight .megaMenuBtn,
+  .dropdownMenu ul li a,
+  .megaMenu ul li a {
+    font-size: 14px;
+    display: block;
+    padding: 6px 12px;
+  }
+  .dropdownMenu {
+    position: static;
+    padding: 0 10px;
+    background: #000;
+  }
+  .dropdownMenu ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  .seeAll {
+    font-size: 14px;
+    display: block;
+    padding: 6px 12px;
+    margin-top:20px;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff29;
+  }
+  .socialIcon{
+    padding: 10px 12px;
   }
 }
 @media (max-width: 768px) {
@@ -298,7 +360,7 @@
     width: 100px;
   }
   .navContainer {
-    width: 280px;
+    width: 100%;
     height: 100%;
     float: none;
     position: fixed;
@@ -329,6 +391,9 @@
   .nav.open {
     display: flex;
   }
+  .eachNav {
+    position: relative;
+  }
   .closeNav {
     position: absolute;
     top: 10px;
@@ -343,11 +408,6 @@
     font-size: 28px;
     color: #fff;
     cursor: pointer;
-  }
-  .nav a {
-    padding: 10px 12px;
-    width: 100%;
-    display: block;
   }
 
   .hamburger {

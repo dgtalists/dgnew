@@ -315,7 +315,7 @@ export default function MobileApp() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/what-we-do-image.jpg"}
+                    src={"/images/about-mobile.png"}
                     alt={"about img"}
                   />
                 </div>
@@ -361,7 +361,7 @@ export default function MobileApp() {
                     <p>Project Complete</p>
                   </div>
                   <div className={styles.eachCounter}>
-                    <Counter value={20} suffix="+" />
+                    <Counter value={35} suffix="+" />
                     <p>Team Members</p>
                   </div>
                   <div className={styles.eachCounter}>
@@ -705,7 +705,7 @@ export default function MobileApp() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Contact Us</h5>
-                    <Link href={"tel:+1 234 567 890"}>+1 234 567 890</Link>
+                    <Link href={"tel:+91 89104 35874"}>+91 89104 35874</Link>
                   </div>
                 </div>
               </div>
@@ -716,7 +716,7 @@ export default function MobileApp() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.vercel.app/"}>
+                    <Link href={"https://dgtalists.com"}>
                       dgtalists.com
                     </Link>
                   </div>

@@ -21,3 +21,14 @@
     display: flex;
     gap: 70px;
 }
+@media (max-width: 992px) {
+    .slide img{
+        height: 30px;
+        width: auto;
+    }
+    
+    .sliderWrap{
+        display: flex;
+        gap: 30px;
+    }
+  }

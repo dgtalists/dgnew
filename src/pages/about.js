@@ -35,26 +35,28 @@ export default function About() {
     }
   };
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      const container = containerRef.current;
-      const left = leftRef.current;
-      const right = rightRef.current;
+    // Only run ScrollTrigger on screens wider than 768px (adjust as needed)
+    if (window.innerWidth > 768) {
+      const ctx = gsap.context(() => {
+        const container = containerRef.current;
+        const left = leftRef.current;
+        const right = rightRef.current;
 
-      // Measure height of right content
-      const rightHeight = right.scrollHeight;
-      const leftHeight = left.scrollHeight;
+        const rightHeight = right.scrollHeight;
+        const leftHeight = left.scrollHeight;
 
-      ScrollTrigger.create({
-        trigger: container,
-        start: "top top",
-        end: () => `+=${rightHeight - leftHeight}`,
-        pin: left,
-        pinSpacing: false,
-        scrub: true,
-      });
-    }, containerRef);
+        ScrollTrigger.create({
+          trigger: container,
+          start: "top top",
+          end: () => `+=${rightHeight - leftHeight}`,
+          pin: left,
+          pinSpacing: false,
+          scrub: true,
+        });
+      }, containerRef);
 
-    return () => ctx.revert();
+      return () => ctx.revert();
+    }
   }, []);
 
   useEffect(() => {
@@ -80,13 +82,13 @@ export default function About() {
             once: true, // will animate only once (better than toggleActions for this)
             onEnter: () => {
               el.classList.add(styles.inVisible); // only when in view
-            },         
+            },
           },
         }
       );
     });
   }, []);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
@@ -201,7 +203,7 @@ export default function About() {
                     <p>Project Complete</p>
                   </div>
                   <div className={styles.eachCounter}>
-                    <Counter value={20} suffix="+" />
+                    <Counter value={35} suffix="+" />
                     <p>Team Members</p>
                   </div>
                   <div className={styles.eachCounter}>
@@ -481,7 +483,7 @@ export default function About() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Contact Us</h5>
-                    <Link href={"tel:+1 234 567 890"}>+1 234 567 890</Link>
+                    <Link href={"tel:+91 89104 35874"}>+91 89104 35874</Link>
                   </div>
                 </div>
               </div>
@@ -492,9 +494,7 @@ export default function About() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.vercel.app/"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

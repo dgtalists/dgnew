@@ -27,14 +27,14 @@ export default function AllCase() {
       title: "AI-Enabled Smart Movers & Packing Management Platform",
       subtitle:
         "This is an AI enabled smart logistics and moving management system designed to streamline the moving process for both customers and moving companies.",
-      image: "/images/works-img-4.png",
+      image: "/images/movelogicai.jpg",
       link:"/casestudy"
     },
     {
       title: "Vehicle Booking Mobile App",
       subtitle:
         "The rapid evolution of ride-hailing services has transformed urban mobility. Our client, a leading transportation startup, sought a scalable and user-friendly cab booking mobile app to provide a seamless experience for riders and drivers.",
-      image: "/images/1.jpg",
+      image: "/images/spincab.jpg",
       link:"/casestudy_vehicle"
     },
     {
@@ -48,7 +48,7 @@ export default function AllCase() {
       title: "Social Media Listening & Digital Outreach Platform",
       subtitle:
         "In today's fast-evolving global governance landscape, the need for intelligent automation and real-time decision-making is more pressing than ever.  ",
-      image: "/images/works-img-4.jpg",
+      image: "/images/carousel.jpg",
       link:"/casestudy_socialMedia"
     },
     {
@@ -62,7 +62,7 @@ export default function AllCase() {
       title: "Food Ordering & Management Platform",
       subtitle:
         "In the digital era, seamless food ordering and restaurant management solutions are crucial for enhancing customer experience and increasing business efficiency.",
-      image: "/images/works-img-4.jpg",
+      image: "/images/food-app.jpg",
       link:"/casestudy_food_order"
     },
   
@@ -70,21 +70,21 @@ export default function AllCase() {
       title: "Real-Time Logistic App for Consignment Tracking ",
       subtitle:
         "A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics.",
-      image: "/images/works-img-4.png",
+      image: "/images/spincab.jpg",
       link:"/casestudy_logistic"
     },
     {
       title: "Web-Based B2B Wholesale Marketplace",
       subtitle:
         "This is a B2B market place for whole sellers in the middle east market. It closely resembles an e-commerce platform but with a key difference: instead of placing orders, users can only place enquiries",
-      image: "/images/1.jpg",
+      image: "/images/safco.jpg",
       link:"/casestudy_wholesale_market"
     },
     {
       title: "Comprehensive Learning Management System",
       subtitle:
         "This is a comprehensive Learning Management System (LMS) designed to offer a structured and interactive learning experience.",
-      image: "/images/works-img-3.jpg",
+      image: "/images/gc.jpg",
       link:"/casestudy_management_system"
     },
     {
@@ -98,14 +98,14 @@ export default function AllCase() {
       title: "Online Business Directory with Influencer Collaboration Platform",
       subtitle:
         "In the evolving digital landscape, businesses increasingly seek innovative ways to boost visibility and connect with the right audiences. ",
-      image: "/images/works-img-4.jpg",
+      image: "/images/carousel.jpg",
       link:"/casestudy_onlineBusiness"
     },
     {
       title: "Loan Process Application",
       subtitle:
         "The Loan Process Application is a digital solution developed to streamline, automate, and monitor the entire lifecycle of loan processing—from application submission to verification.",
-      image: "/images/works-img-4.jpg",
+      image: "/images/banking-app.jpg",
       link:""
     },
     
@@ -230,7 +230,7 @@ export default function AllCase() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Contact Us</h5>
-                    <Link href={"tel:+1 234 567 890"}>+1 234 567 890</Link>
+                    <Link href={"tel:+91 89104 35874"}>+91 89104 35874</Link>
                   </div>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export default function AllCase() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.vercel.app/"}>
+                    <Link href={"https://dgtalists.com"}>
                       dgtalists.com
                     </Link>
                   </div>

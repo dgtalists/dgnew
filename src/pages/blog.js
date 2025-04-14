@@ -71,12 +71,12 @@ export default function Blog() {
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
                   {/* <img src="/images/post-1.jpg" alt="post"/> */}
-                  <ImageReveal src={"/images/post-1.jpg"} alt={"post"} />
+                  <ImageReveal src={"/images/blog-1.png"} alt={"post"} />
                 </div>
                 <div className={styles.postContent}>
                   <h5>
                     <Link href={"#"}>
-                      The Future of Cybersecurity in the Digital Age
+                    The Future of Cybersecurity in the Digital Age 
                     </Link>
                   </h5>
                   <Link className={styles.blogLink} href={"#"}>
@@ -88,7 +88,7 @@ export default function Blog() {
             <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
-                  <ImageReveal src={"/images/post-2.jpg"} alt={"post"} />
+                  <ImageReveal src={"/images/blog-2.png"} alt={"post"} />
                 </div>
                 <div className={styles.postContent}>
                   <h5>
@@ -105,12 +105,12 @@ export default function Blog() {
             <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
-                  <ImageReveal src={"/images/post-3.jpg"} alt={"post"} />
+                  <ImageReveal src={"/images/blog-3.png"} alt={"post"} />
                 </div>
                 <div className={styles.postContent}>
                   <h5>
                     <Link href={"#"}>
-                      How AI is Revolutionizing Software Development
+                    Low-Code & No-Code Development
                     </Link>
                   </h5>
                   <Link className={styles.blogLink} href={"#"}>
@@ -123,12 +123,12 @@ export default function Blog() {
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
                   {/* <img src="/images/post-1.jpg" alt="post"/> */}
-                  <ImageReveal src={"/images/post-1.jpg"} alt={"post"} />
+                  <ImageReveal src={"/images/blog-4.png"} alt={"post"} />
                 </div>
                 <div className={styles.postContent}>
                   <h5>
                     <Link href={"#"}>
-                      The Future of Cybersecurity in the Digital Age
+                    Quantum Computing Advancements in the Healthcare Sector
                     </Link>
                   </h5>
                   <Link className={styles.blogLink} href={"#"}>
@@ -140,12 +140,12 @@ export default function Blog() {
             <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
-                  <ImageReveal src={"/images/post-2.jpg"} alt={"post"} />
+                  <ImageReveal src={"/images/blog-5.png"} alt={"post"} />
                 </div>
                 <div className={styles.postContent}>
                   <h5>
                     <Link href={"#"}>
-                      The Importance of Data Privacy in Software Solutions
+                    Extended Reality (XR) Manufacturing & Industrial Automation 
                     </Link>
                   </h5>
                   <Link className={styles.blogLink} href={"#"}>
@@ -157,12 +157,12 @@ export default function Blog() {
             <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
-                  <ImageReveal src={"/images/post-3.jpg"} alt={"post"} />
+                  <ImageReveal src={"/images/blog-6.png"} alt={"post"} />
                 </div>
                 <div className={styles.postContent}>
                   <h5>
                     <Link href={"#"}>
-                      How AI is Revolutionizing Software Development
+                    AR & VR for supply chain management
                     </Link>
                   </h5>
                   <Link className={styles.blogLink} href={"#"}>
@@ -175,7 +175,7 @@ export default function Blog() {
         </div>
       </section>
 
-      <section className={styles.workTogether}>
+      {/* <section className={styles.workTogether}>
         <div className="container">
           <div className={styles.togetherBox}>
             <div className={styles.headerSection}>
@@ -199,7 +199,7 @@ export default function Blog() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Contact Us</h5>
-                    <Link href={"tel:+1 234 567 890"}>+1 234 567 890</Link>
+                    <Link href={"tel:+91 89104 35874"}>+91 89104 35874</Link>
                   </div>
                 </div>
               </div>
@@ -210,7 +210,7 @@ export default function Blog() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.vercel.app/"}>
+                    <Link href={"https://dgtalists.com"}>
                       dgtalists.com
                     </Link>
                   </div>
@@ -232,7 +232,7 @@ export default function Blog() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

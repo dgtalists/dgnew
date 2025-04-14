@@ -1,156 +1,150 @@
 .parallaxBanner {
-    position: relative;
-    padding: 190px 0 160px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-position: center;
-  }
-  /* @keyframes radialGradientAnimation {
-    0% {
-      background: radial-gradient(circle, red 40%, yellow 100%);
-    }
-    25% {
-      background: radial-gradient(circle, blue 40%, purple 100%);
-    }
-    50% {
-      background: radial-gradient(circle, green 40%, teal 100%);
-    }
-    75% {
-      background: radial-gradient(circle, pink 40%, orange 100%);
-    }
-    100% {
-      background: radial-gradient(circle, red 40%, yellow 100%);
-    }
-  }
-  
-  .mainBanner {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    animation: radialGradientAnimation 10s infinite ease-in-out;
+  position: relative;
+  padding: 190px 0 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.parallaxBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, #00000080, #00000080),
+    linear-gradient(180.07deg, #0000 21.06%, #000 154.27%),
+    linear-gradient(359.91deg, #0000 65.58%, #000 105.69%);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.bgVideo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.bgVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sectionLeft {
+  position: relative;
+  z-index: 2;
+  /* text-align: center; */
+}
+.sectionLeft h1 {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.sectionLeft h2 {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.sectionLeft p {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto 30px;
+  max-width: 900px;
+}
+/* .sectionLeft h1 span {
+    color: var(--btn-color);
   } */
-  .parallaxBanner::before {
-    content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(0deg, #00000080, #00000080), linear-gradient(180.07deg, #0000 21.06%, #000 154.27%), linear-gradient(359.91deg, #0000 65.58%, #000 105.69%);
-      height: 100%;
-      width: 100%;
-      z-index: 1;
-  }
-  .bgVideo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .bgVideo video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .sectionLeft {
+.cmnBtn {
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 15px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.4s;
+  border-radius: 12px;
+}
+.cmnBtn::before {
+  content: "";
+  height: 600px;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0);
+  -ms-transform: translateY(-50%) translateX(-50%) scale(0);
+  transform: translateY(-50%) translateX(-50%) scale(0);
+  transition: 0.4s;
+  z-index: -1;
+}
+.cmnBtn:hover:before {
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+  -ms-transform: translateY(-50%) translateX(-50%) scale(1);
+  transform: translateY(-50%) translateX(-50%) scale(1);
+  color: var(--btn-color);
+}
+.cmnBtn:hover {
+  color: var(--btn-color);
+  transition: 0.4s;
+}
+.sectionRight {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.bannerImg1 {
+  position: relative;
+  margin-top: 50px;
+}
+.bannerImg2 figure,
+.bannerImg1 figure {
+  display: block;
+  /* border-radius: 999px; */
+  overflow: hidden;
+  max-width: 500px;
+}
+.bannerImg2 figure img,
+.bannerImg1 figure img {
+  width: 100%;
+  /* aspect-ratio: 1 / 1.65; */
+  object-fit: cover;
+  /* border-radius: 999px; */
+}
+@media (max-width: 992px) {
+  .parallaxBanner {
     position: relative;
-    z-index: 2;
-    /* text-align: center; */
-   
+    padding: 100px 0 50px;
   }
   .sectionLeft h1 {
     color: #fff;
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   .sectionLeft h2 {
     color: #fff;
     font-size: 34px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   .sectionLeft p {
     color: #fff;
     font-size: 20px;
-    margin:0 auto 30px;
+    margin: 0 auto 30px;
     max-width: 900px;
   }
-  /* .sectionLeft h1 span {
-    color: var(--btn-color);
-  } */
-  .cmnBtn {
-    padding: 10px 25px;
-    font-size: 18px;
-    background-color: var(--btn-color);
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    text-transform: capitalize;
-    gap: 15px;
-    z-index: 1;
-    overflow: hidden;
-    transition: 0.4s;
-    border-radius: 12px;
-  }
-  .cmnBtn::before {
-    content: "";
-    height: 600px;
-    width: 600px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%) scale(0);
-    -ms-transform: translateY(-50%) translateX(-50%) scale(0);
-    transform: translateY(-50%) translateX(-50%) scale(0);
-    transition: 0.4s;
-    z-index: -1;
-  }
-  .cmnBtn:hover:before {
-    -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
-    -ms-transform: translateY(-50%) translateX(-50%) scale(1);
-    transform: translateY(-50%) translateX(-50%) scale(1);
-    color: var(--btn-color);
-  }
-  .cmnBtn:hover {
-    color: var(--btn-color);
-    transition: 0.4s;
-  }
-  .sectionRight {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-  .bannerImg1 {
-    position: relative;
-    margin-top: 50px;
-  }
-  .bannerImg2 figure,
-  .bannerImg1 figure {
-    display: block;
-    /* border-radius: 999px; */
-    overflow: hidden;
-    max-width: 500px;
-  }
-  .bannerImg2 figure img,
-  .bannerImg1 figure img {
-    width: 100%;
-    /* aspect-ratio: 1 / 1.65; */
-    object-fit: cover;
-    /* border-radius: 999px; */
-  }
+}

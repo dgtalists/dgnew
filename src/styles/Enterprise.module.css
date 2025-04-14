@@ -1037,7 +1037,9 @@
   width: 30px;
   height: 30px;
 }
-
+.industrySection{
+  padding-top: 60px;
+}
 /* =====================testimonial================= */
 .testimonial {
   position: relative;

@@ -534,11 +534,11 @@
   will-change: transform, opacity;
   transition: opacity 0.3s ease; */
 }
-.processIcon img{
+.processIcon img {
   width: 50px;
-  height:50px;
+  height: 50px;
 }
-.eachProcess  p{
+.eachProcess p {
   margin: 0;
 }
 .processBoxIndividual:nth-child(2) {
@@ -574,7 +574,7 @@
 
 .collabLine5 {
   left: 350px;
-    bottom: 115px;
+  bottom: 115px;
 }
 
 .collabLine6 {
@@ -748,10 +748,11 @@
     box-shadow: 0 0 15px 14px rgba(0, 150, 207, 0);
   }
 }
-.processBoxIndividual:nth-child(2),.processBoxIndividual:nth-child(3){
+.processBoxIndividual:nth-child(2),
+.processBoxIndividual:nth-child(3) {
   margin-top: 155px;
 }
-.dgLogo{
+.dgLogo {
   width: 200px;
   height: 200px;
   display: flex;
@@ -764,15 +765,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.dgLogo img{
+.dgLogo img {
   width: 120px;
   height: 120px;
 }
-
-
-
-
-
 
 /* ==============workTogether============== */
 .workTogether {
@@ -856,7 +852,7 @@
   width: 100%;
   margin-bottom: 30px;
 }
-.latestBlogs .headerSection{
+.latestBlogs .headerSection {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -911,4 +907,90 @@
 .eachBlog:hover .blogLink svg {
   transform: rotate(45deg);
   transition: all 0.4s;
+}
+@media (max-width: 575px) {
+  .aboutUs {
+    padding: 30px 0;
+  }
+  .aboutUsTitle h2 {
+    font-size: 66px;
+  }
+  .exploreMore img {
+    max-width: 80px;
+  }
+  .aboutRight {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .subtitle {
+    margin-bottom: 15px;
+  }
+  .title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .aboutRight p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .aboutRight .cmnBtn {
+    margin-top: 40px;
+  }
+  .counterSec {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .eachCounter::before {
+    right: 5px;
+  }
+  .cmnBtn {
+    padding: 6px 15px;
+    font-size: 16px;
+  }
+  .missionLeft {
+    position: sticky;
+    padding-right: 0;
+  }
+  .missionLeft p {
+    font-size: 16px;
+  }
+  .processBoxIndividual {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .processBox {
+    padding: 0;
+  }
+  .dgLogo {
+    display: none;
+  }
+  .processBoxIndividual:nth-child(2),
+  .processBoxIndividual:nth-child(3) {
+    margin-top: 20px;
+  }
+  .processBox.inVisible .collabLine1::before,
+  .processBox.inVisible .collabLine2::before,
+  .processBox.inVisible .collabLine3::before,
+  .processBox.inVisible .collabLine4::before,
+  .processBox.inVisible .collabLine5::before,
+  .processBox.inVisible .collabLine6::before {
+    display: none;
+  }
+  .collabLine1Dashed,
+  .collabLine2Dashed,
+  .collabLine3Dashed,
+  .collabLine4Dashed,
+  .collabLine5Dashed,
+  .collabLine6Dashed {
+    display: none;
+  }
+  .eachBox .missionHeader img {
+    width: 30px;
+    height:30px;
+  }
+  .eachBox .missionHeader h5 {
+    font-size: 20px;
+  }
 }

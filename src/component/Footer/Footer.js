@@ -1,7 +1,14 @@
 import Link from "next/link";
 import styles from "./Footer.module.css"; // Adjust the path as per your project structure
 import { ImFacebook2 } from "react-icons/im";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSquareXTwitter, FaSquareYoutube, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaSquareXTwitter,
+  FaSquareYoutube,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { SlSocialInstagram } from "react-icons/sl";
 
 const Footer = () => {
@@ -100,40 +107,14 @@ const Footer = () => {
             {/* Industries */}
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className={styles.footerSingle}>
-                <h4>Industries</h4>
+                <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <Link href="#">Software & Digital Platforms</Link>
+                    <Link href="#">Privacy Policy</Link>
                   </li>
 
                   <li>
-                    <Link href="#">Banking & Financial Services</Link>
-                  </li>
-
-                  <li>
-                    <Link href="#">Healthcare & Life Sciences</Link>
-                  </li>
-                  <li>
-                    <Link href="#">High Tech</Link>
-                  </li>
-
-                  <li>
-                    <Link href="#">Media & Entertainment</Link>
-                  </li>
-
-                  <li>
-                    <Link href="#">Real Estate</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Retail & Consumer Goods</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Software & Digital Platforms</Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      Travel, Transportation, Logistics & Hospitality
-                    </Link>
+                    <Link href="#">Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>
@@ -143,12 +124,15 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footerBottom}>
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-lg-4">
               <div className={styles.eachAddress}>
                 <h2>IND</h2>
                 <div className={styles.oficeAddress}>
-                  <p>Stesalit Towers, 7th floor, Block GP, Sector V,  Kolkata-700091, West Bengal</p>
+                  <p>
+                    Stesalit Towers, 7th floor, Block GP, Sector V,
+                    Kolkata-700091, West Bengal
+                  </p>
                   <Link href={"tel:+91 89104 35874 "}>+91 89104 35874 </Link>
                 </div>
               </div>
@@ -157,12 +141,14 @@ const Footer = () => {
               <div className={styles.eachAddress}>
                 <h2>SG</h2>
                 <div className={styles.oficeAddress}>
-                  <p>68 Circular Road, #02-01, <br/> Singapore 049422</p>
+                  <p>
+                    68 Circular Road, #02-01, <br /> Singapore 049422
+                  </p>
                   <Link href={"tel:+65 8625 4926 "}>+65 8625 4926</Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <div className={styles.eachAddress}>
                 <h2>IND</h2>
                 <div className={styles.oficeAddress}>
@@ -170,31 +156,28 @@ const Footer = () => {
                   <Link href={"tel:+91 89104 35874 "}>+91 89104 35874 </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-
-          
         </div>
         <div className={styles.copyright}>
-            <p>
-              Copyright © 2025 <Link href={"#"}>Dgtalists </Link>
-            </p>
-            <div className={styles.footerQuickLink}>
+          <p>
+            Copyright © 2025 <Link href={"#"}>Dgtalists. All rights resrved. </Link>
+          </p>
+          {/* <div className={styles.footerQuickLink}>
             <ul>
-             
               <li>
                 <Link href={"#"}>Privacy Statement</Link>
               </li>
               <li>
                 <Link href={"#"}>Terms of use </Link>
               </li>
-              
+
               <li>
                 <Link href={"#"}>Raise a Grievance</Link>
               </li>
             </ul>
-          </div>
-          </div>
+          </div> */}
+        </div>
       </div>
     </footer>
   );
