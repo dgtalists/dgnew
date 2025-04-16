@@ -131,13 +131,13 @@ const Header = () => {
                       router.pathname === "/" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="services" className={Styles.eachNavMenu}>
+                    <Link href="/" className={Styles.eachNavMenu}>
                       Home
                     </Link>
                   </li>
                   <li
                     className={`${Styles.eachNav} ${
-                      router.pathname === "#" ? Styles.active : ""
+                      router.pathname === "/about" ? Styles.active : ""
                     }`}
                   >
                     <Link href="/about" className={Styles.eachNavMenu}>
@@ -344,7 +344,7 @@ const Header = () => {
                                     className={Styles.imdustryImg}
                                     data-aos="fade-left"
                                   >
-                                    <img src="/images/spincab.jpg" />
+                                    <img src="/images/shine.jpg" />
                                     <h4>
                                       <Link
                                         href={"/casestudy_logistic"}
@@ -403,17 +403,17 @@ const Header = () => {
                 <div className={Styles.socialIcon}>
                   <ul>
                     <li>
-                      <Link href={"#"}>
+                      <Link target="blank" href={"https://www.facebook.com/Dgtalistsofficial"}>
                         <FaFacebookF />
                       </Link>
                     </li>
                     <li>
-                      <Link href={"#"}>
+                      <Link target="blank" href={"#"}>
                         <FaInstagram />
                       </Link>
                     </li>
                     <li>
-                      <Link href={"#"}>
+                      <Link target="blank" href={"https://www.linkedin.com/company/dgtalists/"}>
                         <FaLinkedinIn />
                       </Link>
                     </li>

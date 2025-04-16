@@ -21,11 +21,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Contact() {
   const subjects = [
-    { label: "Software Development", value: "software" },
-    { label: "Website Development", value: "web" },
-    { label: "Digital Marketing", value: "marketing" },
-    { label: "Support & Maintenance", value: "support" },
-    { label: "Other", value: "other" },
+    { label: "Custom Software Development", value: "software" },
+    { label: "SAAS Based Application", value: "saas" },
+    { label: "Enterprise Software Development", value: "Enterprise" },
+    { label: "Data analytics & AI", value: "ai" },
+    { label: "Mobile Application Development", value: "mobile" },
+    { label: "Marketing & Communication", value: "marketing" },
   ];
   const [selected, setSelected] = useState("");
   const [isOpen, setIsOpen] = useState(false);
@@ -38,9 +39,11 @@ export default function Contact() {
   const selectedLabel =
     subjects.find((s) => s.value === selected)?.label || "Select Subject";
 
-    useEffect(() => {
-        AOS.init({ duration: 1000 }); // Customize duration if needed
-      }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Customize duration if needed
+  }, []);
+ 
+
   return (
     <>
       <Head>
@@ -50,7 +53,7 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/enterprise_soft.jpg">
+      <ParallaxBanner backgroundImage="/images/contact-bg.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -108,7 +111,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                <div className={styles.eachSupportBox} data-aos="fade-up"> 
+                <div className={styles.eachSupportBox} data-aos="fade-up">
                   <div className={styles.eachIcon}>
                     <img src="/images/digital-marketing.png" alt="" />
                   </div>
@@ -234,7 +237,10 @@ export default function Contact() {
                       </div>
                     </div>
                     <div className="col-12">
-                      <button type="submit" className={styles.cmnBtn}>
+                      <button
+                        type="submit"
+                        className={`${styles.cmnBtn} cursorButton`}
+                      >
                         Submit
                         <FiChevronRight className={styles.arrowRight} />
                       </button>
@@ -249,15 +255,18 @@ export default function Contact() {
       <section className={styles.officeAddress}>
         <div className="container">
           <div className={styles.headerSection}>
-          <span className={styles.subtitle}>Our Office Address</span>
+            <span className={styles.subtitle}>Our Office Address</span>
             <h4 className={styles.title}>
-              <AnimatedText text={"Where You Can Find Us"} highlightText={"Find"} />
+              <AnimatedText
+                text={"Where You Can Find Us"}
+                highlightText={"Find"}
+              />
             </h4>
           </div>
           <div className="row justify-content-center">
-            <div className="col-lg-5">
+            <div className="col-lg-4">
               <div
-              data-aos="fade-up"
+                data-aos="fade-up"
                 className={styles.eachAddressBox}
                 style={{ backgroundImage: "url(/images/kolkta.png)" }}
               >
@@ -280,7 +289,7 @@ export default function Contact() {
                   </div>
                   <div className={styles.addressContent}>
                     <h5>Phone</h5>
-                    <Link href={"tel:+91 33 2357 7777"}>+91 33 2357 7777</Link>
+                    <Link href={"tel:+91 89104 35874"}>+91 89104 35874</Link>
                   </div>
                 </div>
                 <div className={styles.eachAddress}>
@@ -296,9 +305,9 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5">
+            <div className="col-lg-4">
               <div
-              data-aos="fade-up"
+                data-aos="fade-up"
                 className={styles.eachAddressBox}
                 style={{ backgroundImage: "url(/images/singapore.png)" }}
               >
@@ -310,8 +319,9 @@ export default function Contact() {
                   <div className={styles.addressContent}>
                     <h5>Address</h5>
                     <p>
-                    68 Circular Road, #02-01,<br/>
-                    Singapore 049422
+                      68 Circular Road, #02-01,
+                      <br />
+                      Singapore 049422
                     </p>
                   </div>
                 </div>
@@ -321,7 +331,7 @@ export default function Contact() {
                   </div>
                   <div className={styles.addressContent}>
                     <h5>Phone</h5>
-                    <Link href={"tel:+65 8625 4926"}>+65 8625 4926</Link>
+                    <Link href={"tel:+91 89104 35874"}>+91 89104 35874</Link>
                   </div>
                 </div>
                 <div className={styles.eachAddress}>
@@ -376,9 +386,7 @@ export default function Contact() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

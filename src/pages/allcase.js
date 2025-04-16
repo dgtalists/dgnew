@@ -37,13 +37,13 @@ export default function AllCase() {
       image: "/images/spincab.jpg",
       link:"/casestudy_vehicle"
     },
-    {
-      title: "AI-Driven Smart Logistics & Moving Management Platform",
-      subtitle:
-        "In a fast-evolving logistics landscape, companies face challenges in real-time visibility, resource optimization, and customer coordination. ",
-      image: "/images/works-img-4.jpg",
-      link:"/casestudy_AIdriven"
-    },
+    // {
+    //   title: "AI-Driven Smart Logistics & Moving Management Platform",
+    //   subtitle:
+    //     "In a fast-evolving logistics landscape, companies face challenges in real-time visibility, resource optimization, and customer coordination. ",
+    //   image: "/images/works-img-4.jpg",
+    //   link:"/casestudy_AIdriven"
+    // },
     {
       title: "Social Media Listening & Digital Outreach Platform",
       subtitle:
@@ -55,7 +55,7 @@ export default function AllCase() {
       title: "Web-Based Sales Process Automation for the Automobile Industry",
       subtitle:
         "Managing sales processes in the automobile industry requires a structured and automated approach to streamline operations, enhance efficiency, and improve overall business performance.",
-      image: "/images/works-img-3.jpg",
+      image: "/images/tera-motors.jpg",
       link:"/casestudy_webbase_sales"
     },
     {
@@ -70,7 +70,7 @@ export default function AllCase() {
       title: "Real-Time Logistic App for Consignment Tracking ",
       subtitle:
         "A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics.",
-      image: "/images/spincab.jpg",
+      image: "/images/shine.jpg",
       link:"/casestudy_logistic"
     },
     {
@@ -87,13 +87,13 @@ export default function AllCase() {
       image: "/images/gc.jpg",
       link:"/casestudy_management_system"
     },
-    {
-      title: "News App for Real-Time Updates & Community Engagement",
-      subtitle:
-        "In the era of digital media, having an interactive and engaging news platform is essential for delivering real-time updates and community-driven content.",
-      image: "/images/works-img-4.jpg",
-      link:"/casestudy_newsapp"
-    },
+    // {
+    //   title: "News App for Real-Time Updates & Community Engagement",
+    //   subtitle:
+    //     "In the era of digital media, having an interactive and engaging news platform is essential for delivering real-time updates and community-driven content.",
+    //   image: "/images/works-img-4.jpg",
+    //   link:"/casestudy_newsapp"
+    // },
     {
       title: "Online Business Directory with Influencer Collaboration Platform",
       subtitle:
@@ -101,13 +101,13 @@ export default function AllCase() {
       image: "/images/carousel.jpg",
       link:"/casestudy_onlineBusiness"
     },
-    {
-      title: "Loan Process Application",
-      subtitle:
-        "The Loan Process Application is a digital solution developed to streamline, automate, and monitor the entire lifecycle of loan processing—from application submission to verification.",
-      image: "/images/banking-app.jpg",
-      link:""
-    },
+    // {
+    //   title: "Loan Process Application",
+    //   subtitle:
+    //     "The Loan Process Application is a digital solution developed to streamline, automate, and monitor the entire lifecycle of loan processing—from application submission to verification.",
+    //   image: "/images/banking-app.jpg",
+    //   link:""
+    // },
     
 
   ];
@@ -120,7 +120,7 @@ export default function AllCase() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/case-study-bg.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">

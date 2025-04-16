@@ -50,17 +50,15 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/real-time-main.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={
-                      "Real-Time Logistic App for Consignment Tracking "
-                    }
-                    highlightText={"AI-Enabled"}
+                    text={"Real-Time Logistic App for Consignment Tracking "}
+                    highlightText={"Logistic App"}
                   />
                 </h1>
               </div>
@@ -73,231 +71,22 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics. This solution helps prevent product loss, improve distribution times, and provide transparency for warehouse managers, drivers, and customers. The app leverages technologies like Node.js, React.js, MongoDB, and Android to deliver a seamless user experience.
-
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Client Requirements"}
-                          highlightText={"Client"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>The client, a leading logistics and supply chain company, faced challenges in monitoring and managing their fleet of vehicles and consignments effectively. They required a robust system to:
-                        </li>
-                        <li>
-                          <FaRegCircleCheck /> Monitor real-time location and vehicle statistics such as engine start/stop status, distance travelled, and freezer temperature.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Trigger alerts for freezer temperature breaches or prolonged vehicle inactivity.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Provide warehouse managers with specific access to their assigned warehouses.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Track drivers’ travel history and customer locations visited.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Notify customers about consignment details and status changes.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Streamline driver delivery assignments with clear instructions.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/case-2.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Our Challenges"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />
-                          Real-Time Monitoring: Ensuring accurate and real-time updates of vehicle locations and metrics.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Temperature Management: Preventing product spoilage by monitoring freezer temperatures and issuing immediate alerts for deviations.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Role-Based Access: Creating user-specific functionalities for warehouse managers, drivers, and customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Customer Transparency: Providing end-to-end visibility for consignment deliveries to customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Scalability: Building a scalable platform to support increasing vehicle and consignment data.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Key Features
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                        <li>
-                           <strong>Real-Time Vehicle Tracking:</strong> <ul> <li>GPS-enabled tracking to monitor live locations.
-                            </li>
-                          <li>Detailed vehicle statistics including engine start/stop status and travel distances.
-                          </li>
-                         </ul>
-                        </li>
-
-                        <li>
-                           <strong>Cargo Monitoring:</strong> <ul><li>Continuous monitoring of freezer temperatures.
-                            </li>
-                          <li>Automated alerts for critical temperature deviations.
-                          </li>
-                          <li>Notifications for prolonged vehicle non-functionality to prevent product damage.
-                          </li>
-                         </ul>
-                        </li>
-
-                        <li>
-                           <strong>Role-Based User Access:</strong><ul><li>Warehouse Managers: <ul><li>Restricted access to manage consignments only within their assigned warehouses.
-                           </li>
-                           <li>Ability to track drivers’ travel history and visited customer locations.
-                           </li>
-                           </ul></li>
-
-                          <li>Drivers: 
-                            <ul>
-                            <li>Access to assigned deliveries with details on destinations, recipients, and time.</li>
-                            </ul>
-                          </li>
-                          <li>Customers:
-                            <ul>
-                              <li>Notifications for consignment confirmation and driver assignment.</li>
-                              <li>Real-time updates on consignment status and expected delivery time.
-                              </li>
-                            </ul>
-                          </li>
-                         </ul>
-                        </li>
-
-                        <li>
-                           <strong>Customer Notifications:</strong> <ul><li>Push notifications for consignment updates.
-                            </li>
-                          <li>Transparency regarding delivery details, driver assignment, and estimated delivery times.
-                          </li>
-                         </ul>
-                        </li>
-
-                        <li>
-                           <strong>Scalability and Performance:</strong> <ul><li>Robust back-end system built with Node.js and MongoDB for efficient data management.
-                            </li>
-                          <li>Front-end developed in React.js for a user-friendly experience.
-                          </li>
-                          <li>Android app providing mobility for drivers and customers.</li>
-                         </ul>
-                        </li>
-                       
-
-                        
-                      </ul>
-                    )}
-                  </div>
-
-                
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/real-time.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>Real-Time Tracking System</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
-                </div>
-                <div className={styles.eachDetails}>
-                  <h4>Duration</h4>
-                  <p>4 month</p>
+                  <p>Logistics & Transportation</p>
                 </div>
               </div>
               <div className={styles.projectDetails}>
@@ -315,13 +104,15 @@ export default function CaseStudy() {
                       <img src="/images/mongo.png" />
                     </li>
                     <li>
-                      <img src="/images/mobapp.png" />
+                      <img src="/images/express-js.png" />
                     </li>
-                  
+                    <li>
+                      <img src="/images/aws.png" />
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
+              {/* <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Mobile App</h4>
                   <Swiper
@@ -345,33 +136,319 @@ export default function CaseStudy() {
                     ))}
                   </Swiper>
                 </div>
-              </div>
-             
+              </div> */}
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Results and Benefits"} highlightText={"Results"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              A cutting-edge logistics application designed to revolutionize
+              supply chain efficiency by enabling real-time tracking of
+              consignment vehicles and monitoring critical metrics. This
+              solution helps prevent product loss, improve distribution times,
+              and provide transparency for warehouse managers, drivers, and
+              customers. The app leverages technologies like Node.js, React.js,
+              MongoDB, and Android to deliver a seamless user experience.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Client Requirements"}
+                    highlightText={"Client"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    The client, a leading logistics and supply chain company,
+                    faced challenges in monitoring and managing their fleet of
+                    vehicles and consignments effectively. They required a
+                    robust system to:
+                  </li>
+                  <li>
+                    <FaRegCircleCheck /> Monitor real-time location and vehicle
+                    statistics such as engine start/stop status, distance
+                    travelled, and freezer temperature.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Trigger alerts for freezer temperature breaches or prolonged
+                    vehicle inactivity.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Provide warehouse managers with specific access to their
+                    assigned warehouses.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Track drivers’ travel history and customer locations
+                    visited.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Notify customers about consignment details and status
+                    changes.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Streamline driver delivery assignments with clear
+                    instructions.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                    className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                    className={styles.keyImg}
+                    src={"/images/case-2.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Our Challenges"}
+                    highlightText={"Challenges"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    <FaRegCircleCheck />
+                    Real-Time Monitoring: Ensuring accurate and real-time
+                    updates of vehicle locations and metrics.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Temperature Management: Preventing product spoilage by
+                    monitoring freezer temperatures and issuing immediate alerts
+                    for deviations.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Role-Based Access: Creating user-specific functionalities
+                    for warehouse managers, drivers, and customers.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Customer Transparency: Providing end-to-end visibility for
+                    consignment deliveries to customers.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Scalability: Building a scalable platform to support
+                    increasing vehicle and consignment data.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Enabling real-time tracking and monitoring for both users
+                    and moving companies.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Key Features
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>Real-Time Vehicle Tracking:</strong>{" "}
+                    <ul>
+                      {" "}
+                      <li>GPS-enabled tracking to monitor live locations.</li>
+                      <li>
+                        Detailed vehicle statistics including engine start/stop
+                        status and travel distances.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Cargo Monitoring:</strong>{" "}
+                    <ul>
+                      <li>Continuous monitoring of freezer temperatures.</li>
+                      <li>
+                        Automated alerts for critical temperature deviations.
+                      </li>
+                      <li>
+                        Notifications for prolonged vehicle non-functionality to
+                        prevent product damage.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Role-Based User Access:</strong>
+                    <ul>
+                      <li>
+                        Warehouse Managers:{" "}
+                        <ul>
+                          <li>
+                            Restricted access to manage consignments only within
+                            their assigned warehouses.
+                          </li>
+                          <li>
+                            Ability to track drivers’ travel history and visited
+                            customer locations.
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        Drivers:
+                        <ul>
+                          <li>
+                            Access to assigned deliveries with details on
+                            destinations, recipients, and time.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Customers:
+                        <ul>
+                          <li>
+                            Notifications for consignment confirmation and
+                            driver assignment.
+                          </li>
+                          <li>
+                            Real-time updates on consignment status and expected
+                            delivery time.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Customer Notifications:</strong>{" "}
+                    <ul>
+                      <li>Push notifications for consignment updates.</li>
+                      <li>
+                        Transparency regarding delivery details, driver
+                        assignment, and estimated delivery times.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Scalability and Performance:</strong>{" "}
+                    <ul>
+                      <li>
+                        Robust back-end system built with Node.js and MongoDB
+                        for efficient data management.
+                      </li>
+                      <li>
+                        Front-end developed in React.js for a user-friendly
+                        experience.
+                      </li>
+                      <li>
+                        Android app providing mobility for drivers and
+                        customers.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/shine-track-1.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/shine-track-2.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/shine-track-3.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Results and Benefits"}
+                highlightText={"Results"}
+              />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking and consignment monitoring reduced delays and increased operational efficiency.
+                <strong>Enhanced Efficiency:</strong> Improved vehicle tracking
+                and consignment monitoring reduced delays and increased
+                operational efficiency.
               </li>
               <li>
-                <strong>Reduced Losses:</strong> Immediate alerts for temperature deviations and vehicle inactivity prevented product spoilage.
+                <strong>Reduced Losses:</strong> Immediate alerts for
+                temperature deviations and vehicle inactivity prevented product
+                spoilage.
               </li>
               <li>
-                <strong>Improved Transparency:</strong> Customers gained real-time insights into their consignment’s status, improving trust and satisfaction.
+                <strong>Improved Transparency:</strong> Customers gained
+                real-time insights into their consignment’s status, improving
+                trust and satisfaction.
               </li>
               <li>
-                <strong>Streamlined Operations:</strong> Warehouse managers and drivers operated more efficiently with role-specific app functionalities.
+                <strong>Streamlined Operations:</strong> Warehouse managers and
+                drivers operated more efficiently with role-specific app
+                functionalities.
               </li>
               <li>
-                <strong>Scalability:</strong> The technology stack ensured the platform could handle growing data and user demands.
+                <strong>Scalability:</strong> The technology stack ensured the
+                platform could handle growing data and user demands.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
@@ -379,7 +456,12 @@ export default function CaseStudy() {
             </h4>
 
             <p>
-            The Real-Time Logistic App successfully addressed the client’s challenges, ensuring efficient consignment tracking, temperature management, and enhanced customer satisfaction. The use of advanced technologies like Node.js, React.js, and MongoDB provided a robust, scalable, and user-friendly platform to meet the client’s logistics needs.
+              The Real-Time Logistic App successfully addressed the client’s
+              challenges, ensuring efficient consignment tracking, temperature
+              management, and enhanced customer satisfaction. The use of
+              advanced technologies like Node.js, React.js, and MongoDB provided
+              a robust, scalable, and user-friendly platform to meet the
+              client’s logistics needs.
             </p>
           </div>
         </div>
@@ -419,9 +501,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

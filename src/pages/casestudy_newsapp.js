@@ -50,7 +50,7 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/news-app-2.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -60,7 +60,7 @@ export default function CaseStudy() {
                     text={
                       "News App for Real-Time Updates & Community Engagement "
                     }
-                    highlightText={"AI-Enabled"}
+                    highlightText={"Real-Time"}
                   />
                 </h1>
               </div>
@@ -73,168 +73,24 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  In the era of digital media, having an interactive and engaging news platform is essential for delivering real-time updates and community-driven content. Our client, a leading digital media company, sought a modern hybrid news application to streamline content distribution, enhance audience engagement, and integrate social media channels.
-                  </p>
-                  <p>Dgtalists developed a feature-rich and scalable news hybrid app that empowers users to access, interact with, and share news seamlessly.
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Challenges & Requirements"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                         <li>The client required a robust digital news platform with:
-                         </li>
-                        <li>
-                          <FaRegCircleCheck />User-friendly navigation for browsing different news categories.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Seamless registration & login for readers and contributors.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Advanced search & filtering options for easy content discovery.
-
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Push notifications for instant updates on trending news.
-
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Social media integration for content sharing across platforms.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Multimedia support for articles, videos, and live news updates.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                        A centralized content management system for easy administration.
-                        </li>
-
-                      </ul>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-             
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                  Dgtalists designed and developed a hybrid mobile and web news platform, ensuring a seamless and engaging experience for both users and content creators. The application was built to handle high traffic, multimedia content, and interactive features while maintaining performance and scalability.
-                 </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Key Features Implemented
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                        <li>
-                          <strong>User-Friendly Interface:</strong> Simple and intuitive UI for easy news consumption.
-                        </li>
-                        <li>
-                          <strong>Quick Registration & Secure Login :</strong> Email and social media-based authentication.
-                        </li>
-                        <li>
-                          <strong>Diverse News Categories:</strong>Organized content based on different topics and regions.
-                        </li>
-                        <li>
-                          <strong>Advanced Search & Filter Options:</strong> Enabling users to find relevant articles effortlessly.
-                        </li>
-                        <li>
-                          <strong>Push Notifications:</strong>  Instant alerts for breaking news and trending topics.
-                        </li>
-                        <li>
-                          <strong>Social Media Integration:</strong> Allows users to share news directly on Facebook, Twitter, and Instagram.
-                        </li>
-                        <li>
-                          <strong> Interactive Content Features:</strong> Users can like, comment, and engage with news articles.
-                        </li>
-                        <li>
-                          <strong>Article & Video Upload Sections:</strong>Integrated YouTube API for video news streaming.
-                        </li>
-                        <li>
-                          <strong>Content Visibility & Engagement Metrics:</strong> Admin panel to track reader interactions.
-                        </li>
-                        <li>
-                          <strong>WordPress CMS Integration:</strong> For easy content management and publishing.
-                        </li>
-      
-                      </ul>
-                    )}
-                  </div>
-
-                
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/news-app-1.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>Real-Time News & Community Platform</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
+                  <p>Social Networking</p>
                 </div>
-                <div className={styles.eachDetails}>
-                  <h4>Duration</h4>
-                  <p>4 month</p>
-                </div>
+                
               </div>
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
@@ -256,7 +112,7 @@ export default function CaseStudy() {
                       <img src="/images/wordpress.png" />
                     </li>
                     <li>
-                      <img src="/images/firebase.png"/>
+                      <img src="/images/firebase.png" />
                     </li>
                     <li>
                       <img src="/images/facebook.png" />
@@ -273,61 +129,221 @@ export default function CaseStudy() {
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
-                <div className={styles.eachDetails}>
-                  <h4>Mobile App</h4>
-                  <Swiper
-                    modules={[Navigation]}
-                    // navigation
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    loop={true}
-                    autoplay={true}
-                    className="mySwiper"
-                  >
-                    {images.map((src, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                          className={styles.sliderImg}
-                          src={src}
-                          alt={`Slide ${index}`}
-                          style={{ width: "100%", borderRadius: "10px" }}
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
              
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Business Impact"} highlightText={"Business"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              In the era of digital media, having an interactive and engaging
+              news platform is essential for delivering real-time updates and
+              community-driven content. Our client, a leading digital media
+              company, sought a modern hybrid news application to streamline
+              content distribution, enhance audience engagement, and integrate
+              social media channels.
+            </p>
+            <p>
+              Dgtalists developed a feature-rich and scalable news hybrid app
+              that empowers users to access, interact with, and share news
+              seamlessly.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Challenges & Requirements"}
+                    highlightText={"Challenges"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    The client required a robust digital news platform with:
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    User-friendly navigation for browsing different news
+                    categories.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Seamless registration & login for readers and contributors.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Advanced search & filtering options for easy content
+                    discovery.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Push notifications for instant updates on trending news.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Social media integration for content sharing across
+                    platforms.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Multimedia support for articles, videos, and live news
+                    updates.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />A centralized content management system
+                    for easy administration.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                  className={styles.keyImg}
+                    src={"/images/challenge.jpg"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+            <p>
+              Dgtalists designed and developed a hybrid mobile and web news
+              platform, ensuring a seamless and engaging experience for both
+              users and content creators. The application was built to handle
+              high traffic, multimedia content, and interactive features while
+              maintaining performance and scalability.
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Key Features Implemented
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>User-Friendly Interface:</strong> Simple and
+                    intuitive UI for easy news consumption.
+                  </li>
+                  <li>
+                    <strong>Quick Registration & Secure Login :</strong> Email
+                    and social media-based authentication.
+                  </li>
+                  <li>
+                    <strong>Diverse News Categories:</strong>Organized content
+                    based on different topics and regions.
+                  </li>
+                  <li>
+                    <strong>Advanced Search & Filter Options:</strong> Enabling
+                    users to find relevant articles effortlessly.
+                  </li>
+                  <li>
+                    <strong>Push Notifications:</strong> Instant alerts for
+                    breaking news and trending topics.
+                  </li>
+                  <li>
+                    <strong>Social Media Integration:</strong> Allows users to
+                    share news directly on Facebook, Twitter, and Instagram.
+                  </li>
+                  <li>
+                    <strong> Interactive Content Features:</strong> Users can
+                    like, comment, and engage with news articles.
+                  </li>
+                  <li>
+                    <strong>Article & Video Upload Sections:</strong>Integrated
+                    YouTube API for video news streaming.
+                  </li>
+                  <li>
+                    <strong>Content Visibility & Engagement Metrics:</strong>{" "}
+                    Admin panel to track reader interactions.
+                  </li>
+                  <li>
+                    <strong>WordPress CMS Integration:</strong> For easy content
+                    management and publishing.
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.caseImage}>
+            <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/spincab.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/spincab.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/spincab.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Business Impact"}
+                highlightText={"Business"}
+              />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Increased User Engagement:</strong> 40% rise in daily active users due to interactive content and real-time updates.
+                <strong>Increased User Engagement:</strong> 40% rise in daily
+                active users due to interactive content and real-time updates.
               </li>
               <li>
-                <strong> Seamless Content Distribution:</strong>Enhanced reach through social media integration.
+                <strong> Seamless Content Distribution:</strong>Enhanced reach
+                through social media integration.
               </li>
               <li>
-                <strong>Higher Retention Rates:</strong>Push notifications improved user retention by 35%.
+                <strong>Higher Retention Rates:</strong>Push notifications
+                improved user retention by 35%.
               </li>
               <li>
-                <strong>Improved Content Management:</strong> WordPress CMS simplified content updates for the admin team.
+                <strong>Improved Content Management:</strong> WordPress CMS
+                simplified content updates for the admin team.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
               <AnimatedText text={"Conclusion"} highlightText={"Conclusion"} />
             </h4>
             <p>
-            Dgtalists successfully developed a highly functional News Channel Hybrid App, transforming the client’s digital media operations. The platform ensures seamless content consumption, real-time updates, and enhanced reader engagement, making it a game-changer in the digital news industry.
+              Dgtalists successfully developed a highly functional News Channel
+              Hybrid App, transforming the client’s digital media operations.
+              The platform ensures seamless content consumption, real-time
+              updates, and enhanced reader engagement, making it a game-changer
+              in the digital news industry.
             </p>
           </div>
         </div>
@@ -367,9 +383,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

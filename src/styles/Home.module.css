@@ -240,7 +240,7 @@
   right: -35px;
   height: 100%;
   width: 1px;
-  background-color: #ffffff1a;
+  background: linear-gradient(to right, #121212 0%, #007bff96 63%, #121212 100%);
 }
 .eachCounter:last-child:before,
 .eachCounter:nth-child(3n + 3):before {
@@ -691,6 +691,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .eachTestiSlider .authorDetails h6 {
   font-size: 20px;

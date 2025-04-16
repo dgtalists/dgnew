@@ -50,17 +50,15 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/b2b-2.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={
-                      "Web-Based B2B Wholesale Marketplace"
-                    }
-                    highlightText={"AI-Enabled"}
+                    text={"Web-Based B2B Wholesale Marketplace"}
+                    highlightText={"B2B Wholesale"}
                   />
                 </h1>
               </div>
@@ -73,220 +71,22 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  This is a B2B market place for whole sellers in the middle east market. Its web-based platform is built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It closely resembles an e-commerce platform but with a key difference: instead of placing orders, users can only place enquiries. The add-to-cart functionality remains the same, allowing users to add products to their cart before submitting an inquiry.
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Client Requirements"}
-                          highlightText={"Client"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />A platform similar to an e-commerce system but focused on enquiries instead of direct orders.
-                           </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Role-based access control for different user types.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Bulk product upload via Excel.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          A CMS for managing pages dynamically.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />A user dashboard for tracking enquiries.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/case-2.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Our Challenges"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />
-                          Implementing a seamless enquiry-based workflow.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Managing access control efficiently for different roles.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Providing an intuitive and user-friendly interface.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Ensuring scalability and performance.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                  We developed a structured workflow with the following key implementations:
-                  </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Backend Implementation
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                        <li>The backend is structured to support four types of users:
-                        </li>
-                        <li>
-                          <strong>Super Admin:</strong> Has full control over the system, including user and role management.
-                        </li>
-                        <li>
-                          <strong>Product Manager:</strong> Responsible for uploading and managing products via individual entries or bulk upload through Excel.
-                        </li>
-                        <li>
-                          <strong>Support People:</strong> Handles customer queries and manages user interactions.
-                        </li>
-                        <li>
-                          <strong>User:</strong> Can browse products and place enquiries if eligible.
-                        </li>
-                        <li>
-                          <strong>AI-Powered Estimation:</strong> Users can
-                          upload pictures, and AI will analyze the number of
-                          items in the image.
-                        </li>
-                        <li>Key backend features include:
-                        </li>
-                        <li>
-                          <strong>Role Management:</strong>  Different access levels and permissions based on user roles.
-                        </li>
-                        <li>
-                          <strong>Menu Management:</strong> Dynamic menu configuration for different roles.
-                        </li>
-                        <li>
-                          <strong>Content Management System (CMS):</strong> Allows admins to manage pages and content dynamically.
-                        </li>
-                        <li>
-                          <strong>Product Management:</strong> Products can be added individually or via bulk upload using Excel.
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowFrontend(!showFrontend)}
-                      className={styles.dropdownHeader}
-                    >
-                      2. Frontend Implementation
-                      {showFrontend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showFrontend && (
-                      <ul className={styles.solutionList}>
-                        <li>The frontend is designed to provide a seamless user experience with the following features:
-                        </li>
-                        <li>
-                          <strong>Login & Authentication:</strong> Secure login functionality.
-                        </li>
-                        <li>
-                          <strong>User Dashboard:</strong>Users can track their placed enquiries.
-                        </li>
-                        <li>
-                          <strong>Restricted Access:</strong> Newly registered users cannot place an enquiry until approved.
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/b2b-1.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>E-commerce Marketplace Solution</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
-                </div>
-                <div className={styles.eachDetails}>
-                  <h4>Duration</h4>
-                  <p>4 month</p>
+                  <p>E-commerce / Online Marketplace / B2B Commerce</p>
                 </div>
               </div>
               <div className={styles.projectDetails}>
@@ -303,66 +103,277 @@ export default function CaseStudy() {
                       <img src="/images/mongo.png" />
                     </li>
                     <li>
+                      <img src="/images/express-js.png" />
+                    </li>
+                    <li>
                       <img src="/images/json.png" />
                     </li>
                     <li>
-                      <img src="/images/excel.png"/>
+                      <img src="/images/excel.png" />
                     </li>
                     <li>
                       <img src="/images/cms.png" />
                     </li>
-                    
+                    <li>
+                      <img src="/images/aws.png" />
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
-                <div className={styles.eachDetails}>
-                  <h4>Mobile App</h4>
-                  <Swiper
-                    modules={[Navigation]}
-                    // navigation
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    loop={true}
-                    autoplay={true}
-                    className="mySwiper"
-                  >
-                    {images.map((src, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                          className={styles.sliderImg}
-                          src={src}
-                          alt={`Slide ${index}`}
-                          style={{ width: "100%", borderRadius: "10px" }}
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-             
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Results and Benefits"} highlightText={"Results"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              This is a B2B market place for whole sellers in the middle east
+              market. Its web-based platform is built using the MERN stack
+              (MongoDB, Express.js, React.js, Node.js). It closely resembles an
+              e-commerce platform but with a key difference: instead of placing
+              orders, users can only place enquiries. The add-to-cart
+              functionality remains the same, allowing users to add products to
+              their cart before submitting an inquiry.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Client Requirements"}
+                    highlightText={"Client"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    <FaRegCircleCheck />A platform similar to an e-commerce
+                    system but focused on enquiries instead of direct orders.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Role-based access control for different user types.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Bulk product upload via Excel.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />A CMS for managing pages dynamically.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />A user dashboard for tracking enquiries.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                    className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                    className={styles.keyImg}
+                    src={"/images/case-2.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Our Challenges"}
+                    highlightText={"Challenges"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    <FaRegCircleCheck />
+                    Implementing a seamless enquiry-based workflow.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Managing access control efficiently for different roles.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Providing an intuitive and user-friendly interface.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Ensuring scalability and performance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+            <p>
+              We developed a structured workflow with the following key
+              implementations:
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Backend Implementation
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    The backend is structured to support four types of users:
+                  </li>
+                  <li>
+                    <strong>Super Admin:</strong> Has full control over the
+                    system, including user and role management.
+                  </li>
+                  <li>
+                    <strong>Product Manager:</strong> Responsible for uploading
+                    and managing products via individual entries or bulk upload
+                    through Excel.
+                  </li>
+                  <li>
+                    <strong>Support People:</strong> Handles customer queries
+                    and manages user interactions.
+                  </li>
+                  <li>
+                    <strong>User:</strong> Can browse products and place
+                    enquiries if eligible.
+                  </li>
+                  <li>
+                    <strong>AI-Powered Estimation:</strong> Users can upload
+                    pictures, and AI will analyze the number of items in the
+                    image.
+                  </li>
+                  <li>Key backend features include:</li>
+                  <li>
+                    <strong>Role Management:</strong> Different access levels
+                    and permissions based on user roles.
+                  </li>
+                  <li>
+                    <strong>Menu Management:</strong> Dynamic menu configuration
+                    for different roles.
+                  </li>
+                  <li>
+                    <strong>Content Management System (CMS):</strong> Allows
+                    admins to manage pages and content dynamically.
+                  </li>
+                  <li>
+                    <strong>Product Management:</strong> Products can be added
+                    individually or via bulk upload using Excel.
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowFrontend(!showFrontend)}
+                className={styles.dropdownHeader}
+              >
+                2. Frontend Implementation
+                {showFrontend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showFrontend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    The frontend is designed to provide a seamless user
+                    experience with the following features:
+                  </li>
+                  <li>
+                    <strong>Login & Authentication:</strong> Secure login
+                    functionality.
+                  </li>
+                  <li>
+                    <strong>User Dashboard:</strong>Users can track their placed
+                    enquiries.
+                  </li>
+                  <li>
+                    <strong>Restricted Access:</strong> Newly registered users
+                    cannot place an enquiry until approved.
+                  </li>
+                </ul>
+              )}
+            </div>
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/Screenshot_27.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/Screenshot_28.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/Screenshot_29.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Results and Benefits"}
+                highlightText={"Results"}
+              />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Improved Enquiry Management:</strong> Users can efficiently submit and track their enquiries.
+                <strong>Improved Enquiry Management:</strong> Users can
+                efficiently submit and track their enquiries.
               </li>
               <li>
-                <strong> Enhanced User Roles & Permissions:</strong>Different users have appropriate access levels.
+                <strong> Enhanced User Roles & Permissions:</strong>Different
+                users have appropriate access levels.
               </li>
               <li>
-                <strong>Scalability:</strong>The system is designed to handle large amounts of product data.
+                <strong>Scalability:</strong>The system is designed to handle
+                large amounts of product data.
               </li>
               <li>
-                <strong>Streamlined Product Upload:</strong>  Bulk product upload via Excel improves efficiency.
+                <strong>Streamlined Product Upload:</strong> Bulk product upload
+                via Excel improves efficiency.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
@@ -370,7 +381,12 @@ export default function CaseStudy() {
             </h4>
 
             <p>
-            The Safco platform successfully meets the client's requirements by offering an enquiry-based e-commerce-like experience. With structured role management, a CMS, and a robust backend, the system ensures an intuitive and efficient user experience. The project demonstrates the power of MERN stack in building scalable and user-friendly applications.
+              The Safco platform successfully meets the client's requirements by
+              offering an enquiry-based e-commerce-like experience. With
+              structured role management, a CMS, and a robust backend, the
+              system ensures an intuitive and efficient user experience. The
+              project demonstrates the power of MERN stack in building scalable
+              and user-friendly applications.
             </p>
           </div>
         </div>
@@ -410,9 +426,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

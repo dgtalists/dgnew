@@ -20,6 +20,7 @@ import { BiSolidQuoteRight } from "react-icons/bi";
 import { IoArrowBack } from "react-icons/io5";
 import { IoArrowForward } from "react-icons/io5";
 import Footer from "@/component/Footer/Footer";
+import { RiDoubleQuotesR } from "react-icons/ri";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -112,30 +113,59 @@ export default function Home() {
       subtitle:
         "This is an AI enabled smart logistics and moving management system designed to streamline the moving process for both customers and moving companies.",
       image: "/images/movelogicai.jpg",
-      link:"/casestudy"
+      link: "/casestudy",
     },
     {
       title: "Web-Based B2B Wholesale Marketplace",
       subtitle:
         "Managing sales processes in the automobile industry requires a structured and automated approach to streamline operations, enhance efficiency.",
       image: "/images/safco.jpg",
-      link:"/casestudy_wholesale_market"
+      link: "/casestudy_wholesale_market",
     },
     {
       title: "Real-Time Logistic App for Consignment Tracking",
       subtitle:
         "A cutting-edge logistics application designed to revolutionize supply chain efficiency by enabling real-time tracking of consignment vehicles and monitoring critical metrics.",
       image: "/images/spincab.jpg",
-      link:"/casestudy_logistic"
+      link: "/casestudy_logistic",
     },
     {
       title: "Comprehensive Learning Management System",
       subtitle:
         "In the era of digital media, having an interactive and engaging news platform is essential for delivering real-time updates and community-driven content.",
       image: "/images/gc.jpg",
-      link:"/casestudy_management_system"
+      link: "/casestudy_management_system",
     },
   ];
+  const testimonials = [
+    {
+      image: "/images/livia.jpeg",
+      text: `The team brought our vision for Global Currency Research to life with precision and creativity. The site is intuitive, beautiful, and works flawlessly across all devices. Highly recommended!`,
+      author: "Livia C.",
+      position: "Founder of Global Currency Database",
+    },
+    {
+      image: "/images/manoj.jpeg",
+      text: `Our custom logistics app has reduced material damage and improved workflow significantly. The team truly understood our challenges and delivered a seamless solution.`,
+      author: "Manoj Thakur",
+      position: "GM-Logistic",
+    },
+    {
+      image: "/images/chris.jpeg",
+      text: `The team delivered exactly what we needed—a powerful Number Analyser and CRM system tailored for real estate agents. It made our sales and client management far more efficient.`,
+      author: "Chris",
+      position: "Real Estate Tech Consultant",
+    },
+    {
+      image: "/images/pete.jpeg",
+      text: "The Warehouse Label Scanning App they built has transformed our logistics. It’s fast, reliable, and easy to use—helping us reduce errors and streamline operations. Highly professional team!",
+      author: "Pete", // replace with actual name if available
+      position: "Operations Manager",
+    }
+    
+  ];
+  
+
   return (
     <>
       <Head>
@@ -148,13 +178,11 @@ export default function Home() {
       <ParallaxBanner backgroundImage="/images/hero-bg.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
-            <div className="col-lg-11">
+            <div className="col-lg-9">
               <div className={styles.sectionLeft}>
-                <h1>               
+                <h1>
                   <AnimatedText
-                    text={
-                      "Your End-to-End Partner for Digital Transformation Let’s Innovate and Grow  Together!"
-                    }
+                    text={"Your End-to-End Partner for Digital Transformation"}
                     highlightText={"Digital Transformation"}
                   />
                 </h1>
@@ -175,7 +203,10 @@ export default function Home() {
                   empower businesses with cutting-edge software to drive
                   efficiency and growth.
                 </p>
-                <Link href="/" className={styles.cmnBtn}>
+                <Link
+                  href="/contact"
+                  className={`${styles.cmnBtn} cursorButton`}
+                >
                   get started
                   <HiOutlineArrowRight className={styles.arrowRight} />
                 </Link>
@@ -228,7 +259,7 @@ export default function Home() {
                   business.Experience unparalleled expertise and support in
                   achieving your digital goals with us.
                 </p>
-               
+
                 <div className={styles.counterSec}>
                   <div className={styles.eachCounter}>
                     <Counter value={130} suffix="+" />
@@ -243,7 +274,10 @@ export default function Home() {
                     <p>Years Of Experience</p>
                   </div>
                 </div>
-                <Link href="/contact" className={styles.cmnBtn}>
+                <Link
+                  href="/contact"
+                  className={`${styles.cmnBtn} cursorButton`}
+                >
                   get started
                   <HiOutlineArrowRight className={styles.arrowRight} />
                 </Link>
@@ -360,10 +394,13 @@ export default function Home() {
           <div className={styles.headerSection}>
             <span className={styles.subtitle}>our works</span>
             <h4 className={styles.title}>
-              Excellence from <span className={styles.highlight}>concept</span>{" "}
-              to completion
+              <AnimatedText
+                text={"Excellence from concept to completion"}
+                highlightText={"concept"}
+              />
             </h4>
-            <Link href="/allcase" className={styles.cmnBtn}>
+           
+            <Link href="/allcase" className={`${styles.cmnBtn} cursorButton`}>
               View All <HiOutlineArrowRight className={styles.arrowRight} />
             </Link>
           </div>
@@ -467,25 +504,18 @@ export default function Home() {
             }}
             className={styles.swiperContainer}
           >
-            {[...Array(6)].map((_, index) => (
+            {testimonials.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.eachTestiSlider}>
                   <figure>
-                    <img
-                      src={`/images/author-${(index % 2) + 1}.jpg`}
-                      alt="client"
-                    />
+                    <img src={item.image} alt={item.author} />
                   </figure>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since.
-                  </p>
+                  <p>{item.text}</p>
                   <div className={styles.authorDetails}>
-                    <h6>John Doe</h6>
-                    <span>Delta Innovation</span>
+                    <h6>{item.author}</h6>
+                    <span>{item.position}</span>
                   </div>
-                  <BiSolidQuoteRight className={styles.quoteIcon} />
+                  <RiDoubleQuotesR className={styles.quoteIcon} />
                 </div>
               </SwiperSlide>
             ))}
@@ -504,7 +534,7 @@ export default function Home() {
             </h4>
           </div>
           <div className="row">
-          <div className="col-lg-4">
+            <div className="col-lg-4">
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
                   {/* <img src="/images/post-1.jpg" alt="post"/> */}
@@ -513,7 +543,7 @@ export default function Home() {
                 <div className={styles.postContent}>
                   <h5>
                     <Link href={"#"}>
-                    The Future of Cybersecurity in the Digital Age 
+                      The Future of Cybersecurity in the Digital Age
                     </Link>
                   </h5>
                   <Link className={styles.blogLink} href={"#"}>
@@ -546,9 +576,7 @@ export default function Home() {
                 </div>
                 <div className={styles.postContent}>
                   <h5>
-                    <Link href={"#"}>
-                    Low-Code & No-Code Development
-                    </Link>
+                    <Link href={"#"}>Low-Code & No-Code Development</Link>
                   </h5>
                   <Link className={styles.blogLink} href={"#"}>
                     read more <GoArrowUpRight />
@@ -559,7 +587,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

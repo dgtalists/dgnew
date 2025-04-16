@@ -50,7 +50,7 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/logistic-banner.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -60,7 +60,7 @@ export default function CaseStudy() {
                     text={
                       "AI-Driven Smart Logistics & Moving Management Platform"
                     }
-                    highlightText={"AI-Enabled"}
+                    highlightText={"AI-Driven"}
                   />
                 </h1>
               </div>
@@ -73,196 +73,27 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  In a fast-evolving logistics landscape, companies face challenges in real-time visibility, resource optimization, and customer coordination. DGTALISTS partnered with a leading logistics service provider to create an AI-powered smart logistics and moving management platform that optimizes operational workflows, improves resource planning, and enhances the end-user experience.
-                  </p>
-                  <p>Built for scale and intelligence, the platform integrates advanced automation, digital documentation, mobile access, and real-time tracking into a seamless ecosystem.
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Goals"}
-                          highlightText={"Goals"}
-                        />
-                      </h4>
-                      <ul>
-                         <li>The client required a comprehensive digital solution that would:
-                         </li>
-                        <li>
-                          <FaRegCircleCheck />Digitize manual processes in trailer, driver, and resource management.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enable real-time tracking of vehicles and order statuses.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Optimize route and trip planning with AI-based forecasting.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Improve communication between operations teams, drivers, and customers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Provide actionable insights for fleet utilization and order analytics.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Support regulatory compliance and safety monitoring.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-             
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                  DGTALISTS developed a modular, intelligent logistics platform using a LaaS (Logistics-as-a-Service) model. The solution is web and mobile compatible, designed with scalability and real-time coordination in mind. Here’s how we delivered:
-                 </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Core Platform Modules:
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                          <li>
-                         <strong> Master Data Management:</strong>
-                          <ul>
-                            <li>Centralized system for managing driver, tractor, trailer, and commodity   data. </li>
-                            <li>Location-wise access control and integrated approval workflows.</li>
-                            <li>Role-based dashboard for admins, planners, and operators.</li>
-                          </ul>
-                          </li>
-
-                          <li>
-                         <strong>  AI-Enhanced Planning Engine :</strong>
-                          <ul>
-                            <li>Intuitive drag-and-drop planning board for trip creation. </li>
-                            <li>Forecasts best route combinations based on traffic, distance, and order priority.</li>
-                            <li>Identifies opportunities for return trips and reduces empty runs.</li>
-                            <li>Detects over/under-utilization and recommends reallocation.</li>
-                          </ul>
-                          </li>
-                          
-                          <li>
-                         <strong>Real-Time Order & Resource Monitoring:</strong>
-                          <ul>
-                            <li>Live map with dynamic status indicators (Loading, In Transit, Delayed, Delivered). </li>
-                            <li>Tooltip insights, historical trail, and expected delivery timestamps.</li>
-                            <li>GPS and BLE-based tracking of vehicle movements and stoppages.</li>
-                          </ul>
-                          </li>
-
-                          <li>
-                         <strong>Trailer, Tractor & Driver Efficiency Dashboard:</strong>
-                          <ul>
-                            <li>Manages trailer availability, service schedules, and washing records.</li>
-                            <li>Tracks driver duty hours, fatigue scores, and pending documents.</li>
-                            <li>Triggers alerts for mismatched resource assignments and idle times.</li>
-                          </ul>
-                          </li>
-
-                          <li>
-                         <strong> Digital Documentation & Compliance:</strong>
-                          <ul>
-                            <li>Automated generation of trip sheets, gate passes, and delivery notes.</li>
-                            <li>Role-wise upload and review of digital documents.</li>
-                            <li>Compliance flags for expired licenses, PUC, and insurance.</li>
-                          </ul>
-                          </li>
-
-                          <li>
-                         <strong> Mobile App (Driver Companion App):</strong>
-                          <ul>
-                            <li>Real-time updates on assignments, navigation, and checkpoints.</li>
-                           <li>Push notifications for gate passes, load changes, and emergency stops.</li>
-                            <li>SOS alerts with location broadcast to control room.</li>
-                            <li>Integrated feedback and incident reporting module</li>
-                          </ul>
-                          </li>
-
-                          
-                          <li>
-                         <strong> Analytics & Insights:</strong>
-                          <ul>
-                            <li>Utilization reports for trailers, drivers, and tractors.</li>
-                           <li>Performance KPIs (On-Time Delivery %, Order Completion, SLA breaches).</li>
-                            <li>Delay root cause analysis and heatmap reports.</li>
-                            <li>Interactive dashboards powered by dynamic data filters.</li>
-                          </ul>
-                          </li>
-                       
-                      </ul>
-                    )}
-                  </div>
-
-                
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/logistic.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>Smart Logistics Management System</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
+                  <p>Transportation & Logistics</p>
                 </div>
-                <div className={styles.eachDetails}>
+                {/* <div className={styles.eachDetails}>
                   <h4>Duration</h4>
                   <p>4 month</p>
-                </div>
+                </div> */}
               </div>
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
@@ -284,7 +115,7 @@ export default function CaseStudy() {
                       <img src="/images/gps.png" />
                     </li>
                     <li>
-                      <img src="/images/bluetooth.png"/>
+                      <img src="/images/bluetooth.png" />
                     </li>
                     <li>
                       <img src="/images/sms.png" />
@@ -295,33 +126,7 @@ export default function CaseStudy() {
                     <li>
                       <img src="/images/aws.png" />
                     </li>
-                
                   </ul>
-                </div>
-              </div>
-              <div className={styles.projectDetails}>
-                <div className={styles.eachDetails}>
-                  <h4>Mobile App</h4>
-                  <Swiper
-                    modules={[Navigation]}
-                    // navigation
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    loop={true}
-                    autoplay={true}
-                    className="mySwiper"
-                  >
-                    {images.map((src, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                          className={styles.sliderImg}
-                          src={src}
-                          alt={`Slide ${index}`}
-                          style={{ width: "100%", borderRadius: "10px" }}
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
                 </div>
               </div>
              
@@ -329,48 +134,323 @@ export default function CaseStudy() {
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Real-World Impact"} highlightText={"Impact"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
             </h4>
-
-            <ul className={styles.solutionList}>
-                        <li>
-                         <strong>Operational Improvements:</strong>
-                          <ul>
-                            <li>30% reduction in planning time using the drag-and-drop board.</li>
-                           <li>40% increase in trailer & tractor utilization.</li>
-                            <li>25% reduction in delays via predictive planning.</li>
-                            <li>50% better SLA adherence through real-time monitoring and alerts.</li>
-                          </ul>
-                          </li>
-
-                          <li>
-                         <strong>Cost & Resource Savings:</strong>
-                          <ul>
-                            <li>Reduced fuel costs via optimized route suggestions  .</li>
-                           <li>Lowered idle driver hours and unutilized trailer instances.</li>
-                            <li>Significant cut in paper-based processes and documentation time.</li>
-                          </ul>
-                          </li>
-
-                          <li>
-                         <strong> Customer Experience:</strong>
-                          <ul>
-                            <li>Improved order transparency through live updates .</li>
-                           <li>Reduced disputes due to digital logs and proof of delivery.</li>
-                            <li>Enhanced driver safety and tracking reassured clients.</li>
-                          </ul>
-                          </li>
-
-
-                 </ul>
-            
+            <p>
+              In a fast-evolving logistics landscape, companies face challenges
+              in real-time visibility, resource optimization, and customer
+              coordination. DGTALISTS partnered with a leading logistics service
+              provider to create an AI-powered smart logistics and moving
+              management platform that optimizes operational workflows, improves
+              resource planning, and enhances the end-user experience.
+            </p>
+            <p>
+              Built for scale and intelligence, the platform integrates advanced
+              automation, digital documentation, mobile access, and real-time
+              tracking into a seamless ecosystem.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText text={"Goals"} highlightText={"Goals"} />
+                </h4>
+                <ul>
+                  <li>
+                    The client required a comprehensive digital solution that
+                    would:
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Digitize manual processes in trailer, driver, and resource
+                    management.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Enable real-time tracking of vehicles and order statuses.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Optimize route and trip planning with AI-based forecasting.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Improve communication between operations teams, drivers, and
+                    customers.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Provide actionable insights for fleet utilization and order
+                    analytics.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Support regulatory compliance and safety monitoring.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                    className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Why Dgtalists?"} highlightText={"Why Dgtalists?"} />
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
             </h4>
             <p>
-            DGTALISTS blends cutting-edge tech with real-world logistics experience to deliver solutions that scale. From digitizing your ground operations to AI-enhancing your decision-making, we help you:
+              DGTALISTS developed a modular, intelligent logistics platform
+              using a LaaS (Logistics-as-a-Service) model. The solution is web
+              and mobile compatible, designed with scalability and real-time
+              coordination in mind. Here’s how we delivered:
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Core Platform Modules:
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul
+                  className={`${styles.solutionList} ${styles.logisticSolutionList}`}
+                >
+                  <li>
+                    <strong> Master Data Management:</strong>
+                    <ul>
+                      <li>
+                        Centralized system for managing driver, tractor,
+                        trailer, and commodity data.{" "}
+                      </li>
+                      <li>
+                        Location-wise access control and integrated approval
+                        workflows.
+                      </li>
+                      <li>
+                        Role-based dashboard for admins, planners, and
+                        operators.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong> AI-Enhanced Planning Engine :</strong>
+                    <ul>
+                      <li>
+                        Intuitive drag-and-drop planning board for trip
+                        creation.{" "}
+                      </li>
+                      <li>
+                        Forecasts best route combinations based on traffic,
+                        distance, and order priority.
+                      </li>
+                      <li>
+                        Identifies opportunities for return trips and reduces
+                        empty runs.
+                      </li>
+                      <li>
+                        Detects over/under-utilization and recommends
+                        reallocation.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Real-Time Order & Resource Monitoring:</strong>
+                    <ul>
+                      <li>
+                        Live map with dynamic status indicators (Loading, In
+                        Transit, Delayed, Delivered).{" "}
+                      </li>
+                      <li>
+                        Tooltip insights, historical trail, and expected
+                        delivery timestamps.
+                      </li>
+                      <li>
+                        GPS and BLE-based tracking of vehicle movements and
+                        stoppages.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>
+                      Trailer, Tractor & Driver Efficiency Dashboard:
+                    </strong>
+                    <ul>
+                      <li>
+                        Manages trailer availability, service schedules, and
+                        washing records.
+                      </li>
+                      <li>
+                        Tracks driver duty hours, fatigue scores, and pending
+                        documents.
+                      </li>
+                      <li>
+                        Triggers alerts for mismatched resource assignments and
+                        idle times.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong> Digital Documentation & Compliance:</strong>
+                    <ul>
+                      <li>
+                        Automated generation of trip sheets, gate passes, and
+                        delivery notes.
+                      </li>
+                      <li>Role-wise upload and review of digital documents.</li>
+                      <li>
+                        Compliance flags for expired licenses, PUC, and
+                        insurance.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong> Mobile App (Driver Companion App):</strong>
+                    <ul>
+                      <li>
+                        Real-time updates on assignments, navigation, and
+                        checkpoints.
+                      </li>
+                      <li>
+                        Push notifications for gate passes, load changes, and
+                        emergency stops.
+                      </li>
+                      <li>
+                        SOS alerts with location broadcast to control room.
+                      </li>
+                      <li>Integrated feedback and incident reporting module</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong> Analytics & Insights:</strong>
+                    <ul>
+                      <li>
+                        Utilization reports for trailers, drivers, and tractors.
+                      </li>
+                      <li>
+                        Performance KPIs (On-Time Delivery %, Order Completion,
+                        SLA breaches).
+                      </li>
+                      <li>Delay root cause analysis and heatmap reports.</li>
+                      <li>
+                        Interactive dashboards powered by dynamic data filters.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/frontend.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/backend.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/backend.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Real-World Impact"}
+                highlightText={"Impact"}
+              />
+            </h4>
+
+            <ul
+              className={`${styles.solutionList} ${styles.logisticSolutionList}`}
+            >
+              <li>
+                <strong>Operational Improvements:</strong>
+                <ul>
+                  <li>
+                    30% reduction in planning time using the drag-and-drop
+                    board.
+                  </li>
+                  <li>40% increase in trailer & tractor utilization.</li>
+                  <li>25% reduction in delays via predictive planning.</li>
+                  <li>
+                    50% better SLA adherence through real-time monitoring and
+                    alerts.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Cost & Resource Savings:</strong>
+                <ul>
+                  <li>Reduced fuel costs via optimized route suggestions .</li>
+                  <li>
+                    Lowered idle driver hours and unutilized trailer instances.
+                  </li>
+                  <li>
+                    Significant cut in paper-based processes and documentation
+                    time.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong> Customer Experience:</strong>
+                <ul>
+                  <li>Improved order transparency through live updates .</li>
+                  <li>
+                    Reduced disputes due to digital logs and proof of delivery.
+                  </li>
+                  <li>
+                    Enhanced driver safety and tracking reassured clients.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Why Dgtalists?"} highlightText={"Why"} />
+            </h4>
+            <p>
+              DGTALISTS blends cutting-edge tech with real-world logistics
+              experience to deliver solutions that scale. From digitizing your
+              ground operations to AI-enhancing your decision-making, we help
+              you:
             </p>
             <p>Eliminate inefficiencies.</p>
             <p>Improve visibility & accountability.</p>
@@ -383,7 +463,9 @@ export default function CaseStudy() {
         <div className="container">
           <div className={styles.togetherBox}>
             <div className={styles.headerSection}>
-              <span className={styles.subtitle}>Ready to transform your logistics operations?</span>
+              <span className={styles.subtitle}>
+                Ready to transform your logistics operations?
+              </span>
               <h4 className={styles.title}>
                 <AnimatedText
                   text={"Let’s Build Your Next-Gen Enterprise Solution"}
@@ -414,9 +496,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

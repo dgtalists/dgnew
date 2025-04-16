@@ -50,7 +50,7 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/iod-1.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -60,7 +60,7 @@ export default function CaseStudy() {
                     text={
                       "Online Business Directory with Influencer Collaboration Platform "
                     }
-                    highlightText={"AI-Enabled"}
+                    highlightText={"Business Directory with Influencer"}
                   />
                 </h1>
               </div>
@@ -73,148 +73,22 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  In the evolving digital landscape, businesses increasingly seek innovative ways to boost visibility and connect with the right audiences. Our client, a prominent digital platform in the Middle East, envisioned a unique solution that combines a business directory with an influencer collaboration network—bridging brands and creators in one seamless ecosystem.
-                  </p>
-                  <p>Dgtalists was brought in to design, develop, and deploy a scalable, user-friendly web platform that supports thousands of listings and enables strategic influencer partnerships.
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Client & Requirements"}
-                          highlightText={"Client"}
-                        />
-                      </h4>
-                      <ul>
-                         <li>The client aimed to build a centralized platform that would:
-                         </li>
-                        <li>
-                          <FaRegCircleCheck />Allow businesses to register and list services in a professional directory.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Include powerful search and filtering options across categories, locations, and audience reach.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Provide personalized dashboards for both business users and influencers.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Offer admin-level control for managing users, listings, and collaboration requests.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />Support scalable infrastructure for future enhancements and high user volumes.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-             
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                  Dgtalists delivered a custom web-based solution built on the MERN stack (MongoDB, Express.js, React.js, Node.js), offering performance, flexibility, and a modern user experience.
-                 </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Key modules included:
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                          <li>
-                          <strong>Business Listing Directory:</strong>Verified businesses can list their offerings, update profiles, and showcase their work.
-                          </li>
-
-                        <li>
-                          <strong>Influencer Profiles :</strong>Creators can register, highlight their reach, link social platforms, and browse businesses.
-                        </li>
-                        <li>
-                          <strong>Collaboration Workflow:</strong>Businesses and influencers can send, receive, and manage collaboration proposals.
-                        </li>
-                        <li>
-                          <strong>Dynamic Search & Filters:</strong> Users can discover businesses or influencers by category, region, follower count, engagement metrics, and more.
-                        </li>
-                        <li>
-                          <strong>Personalized Dashboards:</strong>  Each user has access to a tailored dashboard for managing proposals, connections, and analytics.
-                        </li>
-                        <li>
-                          <strong>Admin Panel:</strong> A powerful backend for managing users, content, reports, and moderation.
-
-                        </li>
-                        <li>
-                          <strong> Secure Login & Notifications:</strong> Authentication via email and real-time alerts to ensure smooth interactions.
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-
-                
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/iod-2.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>Business Directory & Influencer Collaboration Tool</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
-                </div>
-                <div className={styles.eachDetails}>
-                  <h4>Duration</h4>
-                  <p>4 month</p>
+                  <p>Social Networking / Influencer Marketing</p>
                 </div>
               </div>
               <div className={styles.projectDetails}>
@@ -237,7 +111,7 @@ export default function CaseStudy() {
                       <img src="/images/json.png" />
                     </li>
                     <li>
-                      <img src="/images/scalable.png"/>
+                      <img src="/images/scalable.png" />
                     </li>
                     <li>
                       <img src="/images/google-map.png" />
@@ -245,66 +119,212 @@ export default function CaseStudy() {
                     <li>
                       <img src="/images/emailnoti.png" />
                     </li>
-                
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
-                <div className={styles.eachDetails}>
-                  <h4>Mobile App</h4>
-                  <Swiper
-                    modules={[Navigation]}
-                    // navigation
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    loop={true}
-                    autoplay={true}
-                    className="mySwiper"
-                  >
-                    {images.map((src, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                          className={styles.sliderImg}
-                          src={src}
-                          alt={`Slide ${index}`}
-                          style={{ width: "100%", borderRadius: "10px" }}
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-             
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Results & Impact"} highlightText={"Results"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              In the evolving digital landscape, businesses increasingly seek
+              innovative ways to boost visibility and connect with the right
+              audiences. Our client, a prominent digital platform in the Middle
+              East, envisioned a unique solution that combines a business
+              directory with an influencer collaboration network—bridging brands
+              and creators in one seamless ecosystem.
+            </p>
+            <p>
+              Dgtalists was brought in to design, develop, and deploy a
+              scalable, user-friendly web platform that supports thousands of
+              listings and enables strategic influencer partnerships.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Client & Requirements"}
+                    highlightText={"Client"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    The client aimed to build a centralized platform that would:
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Allow businesses to register and list services in a
+                    professional directory.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Include powerful search and filtering options across
+                    categories, locations, and audience reach.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Provide personalized dashboards for both business users and
+                    influencers.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Offer admin-level control for managing users, listings, and
+                    collaboration requests.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Support scalable infrastructure for future enhancements and
+                    high user volumes.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                    className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+            <p>
+              Dgtalists delivered a custom web-based solution built on the MERN
+              stack (MongoDB, Express.js, React.js, Node.js), offering
+              performance, flexibility, and a modern user experience.
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Key modules included:
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>Business Listing Directory:</strong>Verified
+                    businesses can list their offerings, update profiles, and
+                    showcase their work.
+                  </li>
+
+                  <li>
+                    <strong>Influencer Profiles :</strong>Creators can register,
+                    highlight their reach, link social platforms, and browse
+                    businesses.
+                  </li>
+                  <li>
+                    <strong>Collaboration Workflow:</strong>Businesses and
+                    influencers can send, receive, and manage collaboration
+                    proposals.
+                  </li>
+                  <li>
+                    <strong>Dynamic Search & Filters:</strong> Users can
+                    discover businesses or influencers by category, region,
+                    follower count, engagement metrics, and more.
+                  </li>
+                  <li>
+                    <strong>Personalized Dashboards:</strong> Each user has
+                    access to a tailored dashboard for managing proposals,
+                    connections, and analytics.
+                  </li>
+                  <li>
+                    <strong>Admin Panel:</strong> A powerful backend for
+                    managing users, content, reports, and moderation.
+                  </li>
+                  <li>
+                    <strong> Secure Login & Notifications:</strong>{" "}
+                    Authentication via email and real-time alerts to ensure
+                    smooth interactions.
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/my-spent.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/influencser-profile.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/influencser-details.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Results & Impact"}
+                highlightText={"Results"}
+              />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-              Over 5,000 business listings and 1,200 influencer collaborations in the first 90 days.
+                Over 5,000 business listings and 1,200 influencer collaborations
+                in the first 90 days.
               </li>
               <li>
-              Streamlined the brand-influencer partnership process with zero manual coordination.
+                Streamlined the brand-influencer partnership process with zero
+                manual coordination.
               </li>
               <li>
-              Increased visibility for local and regional businesses through influencer-driven reach.
+                Increased visibility for local and regional businesses through
+                influencer-driven reach.
               </li>
               <li>
-              Opened monetization channels for influencers and improved customer engagement for brands.
+                Opened monetization channels for influencers and improved
+                customer engagement for brands.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Why Dgtalists?"} highlightText={"Why Dgtalists?"} />
+              <AnimatedText
+                text={"Why Dgtalists?"}
+                highlightText={"Why Dgtalists?"}
+              />
             </h4>
             <p>
-            Dgtalists combined deep technical expertise with a clear understanding of business goals to bring this innovative platform to life. By focusing on user experience, scalability, and seamless collaboration workflows, we delivered a solution that drives real value for both businesses and influencers.
-
+              Dgtalists combined deep technical expertise with a clear
+              understanding of business goals to bring this innovative platform
+              to life. By focusing on user experience, scalability, and seamless
+              collaboration workflows, we delivered a solution that drives real
+              value for both businesses and influencers.
             </p>
           </div>
         </div>
@@ -344,9 +364,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

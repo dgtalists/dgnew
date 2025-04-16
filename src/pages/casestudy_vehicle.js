@@ -50,17 +50,15 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/bg_1.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={
-                      "Vehicle Booking Mobile App "
-                    }
-                    highlightText={"AI-Enabled"}
+                    text={"Vehicle Booking Mobile App "}
+                    highlightText={"Vehicle"}
                   />
                 </h1>
               </div>
@@ -73,161 +71,18 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  The rapid evolution of ride-hailing services has transformed urban mobility. Our client, a leading transportation startup, sought a scalable and user-friendly cab booking mobile app to provide a seamless experience for riders and drivers. The goal was to enhance efficiency, improve ride availability, and offer real-time tracking with transparent pricing and multiple payment options.
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Challenges & Requirements"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                         <li>The client needed a high-performance mobile application with:
-                         </li>
-                        <li>
-                          <FaRegCircleCheck /> Real-time ride booking with GPS tracking for accurate pickup and drop-off locations.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Seamless driver-rider communication for enhanced coordination.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Fare estimation based on distance, time, and current traffic conditions.
-
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          A secure, easy-to-use payment system supporting multiple options.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />A rating and feedback system for service quality improvement.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Admin dashboard for monitoring driver performance and managing ride requests.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-             
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                  Dgtalists Solutions developed a fully integrated Cab Booking Mobile App with a feature-rich interface, ensuring a smooth and efficient ride-hailing experience for both riders and drivers. The platform was designed with scalability, security, and real-time tracking capabilities, optimizing the urban commuting experience.
-
-                  </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Key Features Implemented
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                        <li>
-                          <strong>User-Friendly Registration & Profile Management:</strong> Riders and drivers can create and manage accounts effortlessly.
-                        </li>
-                        <li>
-                          <strong>GPS-Enabled Real-Time Ride Booking :</strong> Users can book cabs instantly and track their driver’s live location.
-
-                        </li>
-                        <li>
-                          <strong>Transparent Fare Estimation :</strong> Dynamic pricing based on distance, time, and traffic.
-                        </li>
-                        <li>
-                          <strong>Multiple Payment Options:</strong> Integrated secure payment gateways (credit/debit cards, wallets, and UPI).
-
-                        </li>
-                        <li>
-                          <strong>Driver Dashboard:</strong>  Allows drivers to accept/reject rides, view earnings, and track ride history.
-
-                        </li>
-                        <li>
-                          <strong>Live Ride Tracking & Route Optimization:</strong> Enhanced navigation using Google Maps API.
-                        </li>
-                        <li>
-                          <strong> Ride History & Earnings Reports:</strong> Riders and drivers can track past trips and payments.
-
-                        </li>
-                        <li>
-                          <strong>Rating & Review System:</strong>Ensures service quality by collecting rider and driver feedback.
-                        </li>
-                        <li>
-                          <strong> Admin Control Panel:</strong> Allows the company to manage drivers, track ride statistics, and monitor platform performance.
-
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-
-                
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img className={styles.mainImg} src="/images/booking.jpg" alt="intro" />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>Vehicle Booking</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
-                </div>
-                <div className={styles.eachDetails}>
-                  <h4>Duration</h4>
-                  <p>4 month</p>
+                  <p>Transportation</p>
                 </div>
               </div>
               <div className={styles.projectDetails}>
@@ -247,7 +102,7 @@ export default function CaseStudy() {
                       <img src="/images/express-js.png" />
                     </li>
                     <li>
-                      <img src="/images/firebase.png"/>
+                      <img src="/images/firebase.png" />
                     </li>
                     <li>
                       <img src="/images/stripe.png" />
@@ -261,56 +116,200 @@ export default function CaseStudy() {
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
-                <div className={styles.eachDetails}>
-                  <h4>Mobile App</h4>
-                  <Swiper
-                    modules={[Navigation]}
-                    // navigation
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    loop={true}
-                    autoplay={true}
-                    className="mySwiper"
-                  >
-                    {images.map((src, index) => (
-                      <SwiperSlide key={index}>
-                        <img
-                          className={styles.sliderImg}
-                          src={src}
-                          alt={`Slide ${index}`}
-                          style={{ width: "100%", borderRadius: "10px" }}
-                        />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-             
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Business Impact"} highlightText={"Business"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              The rapid evolution of ride-hailing services has transformed urban
+              mobility. Our client, a leading transportation startup, sought a
+              scalable and user-friendly cab booking mobile app to provide a
+              seamless experience for riders and drivers. The goal was to
+              enhance efficiency, improve ride availability, and offer real-time
+              tracking with transparent pricing and multiple payment options.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Challenges & Requirements"}
+                    highlightText={"Challenges"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    The client needed a high-performance mobile application
+                    with:
+                  </li>
+                  <li>
+                    <FaRegCircleCheck /> Real-time ride booking with GPS
+                    tracking for accurate pickup and drop-off locations.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Seamless driver-rider communication for enhanced
+                    coordination.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Fare estimation based on distance, time, and current traffic
+                    conditions.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />A secure, easy-to-use payment system
+                    supporting multiple options.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />A rating and feedback system for service
+                    quality improvement.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Admin dashboard for monitoring driver performance and
+                    managing ride requests.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                  className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+            <p>
+              Dgtalists Solutions developed a fully integrated Cab Booking
+              Mobile App with a feature-rich interface, ensuring a smooth and
+              efficient ride-hailing experience for both riders and drivers. The
+              platform was designed with scalability, security, and real-time
+              tracking capabilities, optimizing the urban commuting experience.
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Key Features Implemented
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>
+                      User-Friendly Registration & Profile Management:
+                    </strong>{" "}
+                    Riders and drivers can create and manage accounts
+                    effortlessly.
+                  </li>
+                  <li>
+                    <strong>GPS-Enabled Real-Time Ride Booking :</strong> Users
+                    can book cabs instantly and track their driver’s live
+                    location.
+                  </li>
+                  <li>
+                    <strong>Transparent Fare Estimation :</strong> Dynamic
+                    pricing based on distance, time, and traffic.
+                  </li>
+                  <li>
+                    <strong>Multiple Payment Options:</strong> Integrated secure
+                    payment gateways (credit/debit cards, wallets, and UPI).
+                  </li>
+                  <li>
+                    <strong>Driver Dashboard:</strong> Allows drivers to
+                    accept/reject rides, view earnings, and track ride history.
+                  </li>
+                  <li>
+                    <strong>Live Ride Tracking & Route Optimization:</strong>{" "}
+                    Enhanced navigation using Google Maps API.
+                  </li>
+                  <li>
+                    <strong> Ride History & Earnings Reports:</strong> Riders
+                    and drivers can track past trips and payments.
+                  </li>
+                  <li>
+                    <strong>Rating & Review System:</strong>Ensures service
+                    quality by collecting rider and driver feedback.
+                  </li>
+                  <li>
+                    <strong> Admin Control Panel:</strong> Allows the company to
+                    manage drivers, track ride statistics, and monitor platform
+                    performance.
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/spincab-1.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/spincab-2.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/spincab-3.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Business Impact"}
+                highlightText={"Business"}
+              />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>30% Increase in Ride Requests:</strong> The intuitive interface improved customer engagement and bookings.
-
+                <strong>30% Increase in Ride Requests:</strong> The intuitive
+                interface improved customer engagement and bookings.
               </li>
               <li>
-                <strong> Faster Ride Matching:</strong>Reduced wait times for riders and increased efficiency for drivers.
+                <strong> Faster Ride Matching:</strong>Reduced wait times for
+                riders and increased efficiency for drivers.
               </li>
               <li>
-                <strong>80% Digital Transactions:</strong>Majority of users opted for cashless payments, enhancing transaction security.
-
+                <strong>80% Digital Transactions:</strong>Majority of users
+                opted for cashless payments, enhancing transaction security.
               </li>
               <li>
-                <strong> Higher Customer Satisfaction:</strong> Live tracking, fair pricing, and easy booking boosted retention rates.
+                <strong> Higher Customer Satisfaction:</strong> Live tracking,
+                fair pricing, and easy booking boosted retention rates.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
@@ -318,8 +317,11 @@ export default function CaseStudy() {
             </h4>
 
             <p>
-            Dgtalists Solutions successfully delivered a feature-packed Cab Booking Mobile App, providing a convenient and secure ride-hailing experience. The platform is now operational in multiple regions, ensuring seamless urban mobility for riders and optimized earnings for drivers.
-
+              Dgtalists Solutions successfully delivered a feature-packed Cab
+              Booking Mobile App, providing a convenient and secure ride-hailing
+              experience. The platform is now operational in multiple regions,
+              ensuring seamless urban mobility for riders and optimized earnings
+              for drivers.
             </p>
           </div>
         </div>
@@ -359,9 +361,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

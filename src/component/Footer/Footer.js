@@ -32,24 +32,19 @@ const Footer = () => {
                 </p>
                 <div className={styles.footerSocialLink}>
                   <ul>
-                    <li>
-                      <Link href={"#"}>
+                  <li>
+                      <Link target="blank" href={"https://www.facebook.com/Dgtalistsofficial"}>
                         <FaFacebookF />
                       </Link>
                     </li>
                     <li>
-                      <Link href={"#"}>
+                      <Link target="blank" href={"#"}>
                         <FaInstagram />
                       </Link>
                     </li>
                     <li>
-                      <Link href={"#"}>
+                      <Link target="blank" href={"https://www.linkedin.com/company/dgtalists/"}>
                         <FaLinkedinIn />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href={"#"}>
-                        <FaXTwitter />
                       </Link>
                     </li>
                   </ul>
@@ -61,19 +56,19 @@ const Footer = () => {
                 <h4>Company</h4>
                 <ul>
                   <li>
-                    <Link href="#">About Us</Link>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
                     <Link href="#">Leadership Team</Link>
                   </li>
                   <li>
-                    <Link href="#">Our Portfolio</Link>
+                    <Link href="/allcase">Our Portfolio</Link>
                   </li>
                   <li>
-                    <Link href="#">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
-                    <Link href="#">Contact Us</Link>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -83,22 +78,22 @@ const Footer = () => {
                 <h4>Services</h4>
                 <ul>
                   <li>
-                    <Link href="#">Custom Software Development</Link>
+                    <Link href="/customsoftware">Custom Software Development</Link>
                   </li>
                   <li>
-                    <Link href="#">Enterprise Software Development</Link>
+                    <Link href="/enterprise">Enterprise Software Development</Link>
                   </li>
                   <li>
-                    <Link href="#">Custom Web Development</Link>
+                    <Link href="/saasaplication">SAAS Based Application</Link>
                   </li>
                   <li>
-                    <Link href="#">Mobile App Development</Link>
+                    <Link href="/dataanalytics">Data analytics & AI</Link>
                   </li>
                   <li>
-                    <Link href="#">AI Software Development</Link>
+                    <Link href="/mobileapp">Mobile Application Development</Link>
                   </li>
                   <li>
-                    <Link href="#">Internet of Things (IoT)</Link>
+                    <Link href="/marketing"> Marketing & Communication</Link>
                   </li>
                 </ul>
               </div>
@@ -144,7 +139,7 @@ const Footer = () => {
                   <p>
                     68 Circular Road, #02-01, <br /> Singapore 049422
                   </p>
-                  <Link href={"tel:+65 8625 4926 "}>+65 8625 4926</Link>
+                  {/* <Link href={"tel:+65 8625 4926 "}>+65 8625 4926</Link> */}
                 </div>
               </div>
             </div>

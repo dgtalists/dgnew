@@ -20,7 +20,7 @@ const ContinuousScrollingSlider = () => {
     });
 
     const totalWidth = slider.scrollWidth / 2;
-
+    console.log(totalWidth, "total width");
     gsap.to(slider, {
       x: `-${totalWidth}`,
       duration: 30, // slower = smoother
@@ -38,7 +38,7 @@ const ContinuousScrollingSlider = () => {
           "/images/1mg.png",
           "/images/shineroad.png",
           "/images/teramotors.png",
-          "/images/tcg.png",
+          "/images/logo-tcg.png",
           "/images/spincabs.png",
           "/images/sgone.png",
           "/images/waynik.png",

@@ -13,7 +13,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Footer from "@/component/Footer/Footer";
 import { DiCode } from "react-icons/di";
@@ -29,6 +29,13 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 export default function Customsoftware() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
+  useEffect(() => {
+    console.log("Active Tab Changed:", activeIndex);
+  }, [activeIndex]);
+  const handleClick = (index) => {
+    console.log("Clicked on:", index);
+    setActiveIndex(index);
+  };
 
   const serviceData = [
     {
@@ -346,8 +353,11 @@ export default function Customsoftware() {
                   />
                 </h4>
                 <p>
-                At DGTALISTS, we specialize in building custom software solutions that align with your unique business goals. Whether you are a start-up, scale-up, or enterprise, our bespoke software solutions enhance efficiency, improve customer experiences, and drive growth.
-
+                  At DGTALISTS, we specialize in building custom software
+                  solutions that align with your unique business goals. Whether
+                  you are a start-up, scale-up, or enterprise, our bespoke
+                  software solutions enhance efficiency, improve customer
+                  experiences, and drive growth.
                 </p>
                 <Link href="/" className={styles.cmnBtn}>
                   get started
@@ -462,8 +472,8 @@ export default function Customsoftware() {
                   {techStackData.map((tab, index) => (
                     <li
                       key={index}
+                      onClick={() => handleClick(index)}
                       className={activeIndex === index ? styles.activeTab : ""}
-                      onClick={() => setActiveIndex(index)}
                     >
                       {tab.title}
                     </li>
@@ -715,9 +725,7 @@ export default function Customsoftware() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

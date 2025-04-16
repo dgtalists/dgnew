@@ -50,17 +50,15 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/food-order.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={
-                      "Food Ordering & Management Platform"
-                    }
-                    highlightText={"AI-Enabled"}
+                    text={"Food Ordering & Management Platform"}
+                    highlightText={"Ordering & Management"}
                   />
                 </h1>
               </div>
@@ -73,152 +71,22 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  In the digital era, seamless food ordering and restaurant management solutions are crucial for enhancing customer experience and increasing business efficiency. Our client required a progressive food ordering and reservation system to streamline online and dine-in orders while ensuring smooth transaction processing and inventory management.
-
-                  </p>
-                  <p>Dgtalists developed a feature-rich, scalable food ordering application that simplifies the entire process—from reservations to payment—enhancing restaurant operations and customer satisfaction.
-
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Challenges & Requirements"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                         <li>The client needed a comprehensive food ordering platform that could:
-                         </li>
-                        <li>
-                          <FaRegCircleCheck /> Manage both online and dine-in orders with an integrated POS system.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Provide real-time tracking of tables to optimize seating arrangements.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Offer digital payments with split billing options.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Ensure seamless integration with social media platforms for promotions.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Deliver real-time insights and reporting for better business decisions.
-                        </li>
-                      </ul>
-                     
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-             
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                  Dgtalists designed and developed a progressive web and mobile application that provides end-to-end food ordering, payment, and reservation management. The solution ensures fast, secure, and convenient interactions between customers and restaurants.
-                  </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Key Features Implemented
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                        <li>
-                          <strong>POS System Integration:</strong> Manage both dine-in and online orders efficiently.
-                        </li>
-                        <li>
-                          <strong>Order & Transaction Management:</strong> Handle incoming orders, transactions, and deliveries with ease.
-                        </li>
-                        <li>
-                          <strong>Smart Reservations:</strong>  Customers can reserve tables via the app anytime, anywhere.
-                        </li>
-                        <li>
-                          <strong>Seamless Digital Payments:</strong> Users can pay bills through the app, with split billing options.
-                        </li>
-                        <li>
-                          <strong>Real-Time Table Status Monitoring:</strong>  Enables customers to order via smartphones for a hygienic experience.Prevents seating mistakes and optimizes restaurant capacity.
-
-                         </li>
-                        <li>
-                          <strong>Social Media Integration:</strong> Attracts food lovers and boosts promotions via social platforms.
-                        </li>
-                        <li>
-                          <strong> Data-Driven Insights & Reports:</strong>   Helps restaurant owners track revenue and user behavior.
-                        </li>
-                    
-                      </ul>
-                    )}
-                  </div>
-
-                
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/food-ordering-img.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>Web & Mobile Application / SaaS Platform</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
-                </div>
-                <div className={styles.eachDetails}>
-                  <h4>Duration</h4>
-                  <p>4 month</p>
+                  <p>Online Ordering Systems</p>
                 </div>
               </div>
               <div className={styles.projectDetails}>
@@ -237,16 +105,16 @@ export default function CaseStudy() {
                     <li>
                       <img src="/images/stripe.png" />
                     </li>
-                     <li>
-                      <img src="/images/paypal.png"/>
-                      </li>
-                      <li>
-                      <img src="/images/firebase.png"/>
-                      </li>
+                    <li>
+                      <img src="/images/paypal.png" />
+                    </li>
+                    <li>
+                      <img src="/images/firebase.png" />
+                    </li>
                     <li>
                       <img src="/images/facebook.png" />
                     </li>
-                   
+
                     <li>
                       <img src="/images/instagram.png" />
                     </li>
@@ -256,7 +124,7 @@ export default function CaseStudy() {
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
+              {/* <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Mobile App</h4>
                   <Swiper
@@ -280,30 +148,191 @@ export default function CaseStudy() {
                     ))}
                   </Swiper>
                 </div>
-              </div>
-             
+              </div> */}
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Business Impact"} highlightText={"Business"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              In the digital era, seamless food ordering and restaurant
+              management solutions are crucial for enhancing customer experience
+              and increasing business efficiency. Our client required a
+              progressive food ordering and reservation system to streamline
+              online and dine-in orders while ensuring smooth transaction
+              processing and inventory management.
+            </p>
+            <p>
+              Dgtalists developed a feature-rich, scalable food ordering
+              application that simplifies the entire process—from reservations
+              to payment—enhancing restaurant operations and customer
+              satisfaction.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Challenges & Requirements"}
+                    highlightText={"Challenges"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    The client needed a comprehensive food ordering platform
+                    that could:
+                  </li>
+                  <li>
+                    <FaRegCircleCheck /> Manage both online and dine-in orders
+                    with an integrated POS system.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Provide real-time tracking of tables to optimize seating
+                    arrangements.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Offer digital payments with split billing options.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Ensure seamless integration with social media platforms for
+                    promotions.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Deliver real-time insights and reporting for better business
+                    decisions.
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                    className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+            <p>
+              Dgtalists designed and developed a progressive web and mobile
+              application that provides end-to-end food ordering, payment, and
+              reservation management. The solution ensures fast, secure, and
+              convenient interactions between customers and restaurants.
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Key Features Implemented
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>POS System Integration:</strong> Manage both dine-in
+                    and online orders efficiently.
+                  </li>
+                  <li>
+                    <strong>Order & Transaction Management:</strong> Handle
+                    incoming orders, transactions, and deliveries with ease.
+                  </li>
+                  <li>
+                    <strong>Smart Reservations:</strong> Customers can reserve
+                    tables via the app anytime, anywhere.
+                  </li>
+                  <li>
+                    <strong>Seamless Digital Payments:</strong> Users can pay
+                    bills through the app, with split billing options.
+                  </li>
+                  <li>
+                    <strong>Real-Time Table Status Monitoring:</strong> Enables
+                    customers to order via smartphones for a hygienic
+                    experience.Prevents seating mistakes and optimizes
+                    restaurant capacity.
+                  </li>
+                  <li>
+                    <strong>Social Media Integration:</strong> Attracts food
+                    lovers and boosts promotions via social platforms.
+                  </li>
+                  <li>
+                    <strong> Data-Driven Insights & Reports:</strong> Helps
+                    restaurant owners track revenue and user behavior.
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/img-1.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/img-2.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/img-3.jpg"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Business Impact"}
+                highlightText={"Business"}
+              />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>Enhanced Customer Experience:</strong> 50% improvement in online reservations and order processing.
+                <strong>Enhanced Customer Experience:</strong> 50% improvement
+                in online reservations and order processing.
               </li>
               <li>
-                <strong> Optimized Restaurant Operations:</strong> Real-time table management reduced seating delays by 30%.
+                <strong> Optimized Restaurant Operations:</strong> Real-time
+                table management reduced seating delays by 30%.
               </li>
               <li>
-                <strong> Frictionless Payments:</strong>  Digital payments increased transaction speed and efficiency.
+                <strong> Frictionless Payments:</strong> Digital payments
+                increased transaction speed and efficiency.
               </li>
               <li>
-                <strong>Higher Revenue Generation:</strong> Promotions through social media led to a 40% increase in orders.
+                <strong>Higher Revenue Generation:</strong> Promotions through
+                social media led to a 40% increase in orders.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
@@ -311,7 +340,12 @@ export default function CaseStudy() {
             </h4>
 
             <p>
-            Dgtalists successfully developed a powerful, user-friendly Food Ordering Progressive Mobile App, transforming the way restaurants operate and interact with customers. This solution optimizes operations, boosts engagement, and enhances the overall dining experience, making it a must-have for modern restaurant businesses.
+              Dgtalists successfully developed a powerful, user-friendly Food
+              Ordering Progressive Mobile App, transforming the way restaurants
+              operate and interact with customers. This solution optimizes
+              operations, boosts engagement, and enhances the overall dining
+              experience, making it a must-have for modern restaurant
+              businesses.
             </p>
           </div>
         </div>
@@ -351,9 +385,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

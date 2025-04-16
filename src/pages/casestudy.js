@@ -50,7 +50,7 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/case-1-bg.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -58,7 +58,7 @@ export default function CaseStudy() {
                 <h1>
                   <AnimatedText
                     text={
-                      "AI-Enabled Smart Logistics & Moving Management Platform "
+                      "AI-Enabled Smart Movers & Packing Management Platform "
                     }
                     highlightText={"AI-Enabled"}
                   />
@@ -73,268 +73,11 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                    This is an AI enabled smart logistics and moving management
-                    system designed to streamline the moving process for both
-                    customers and moving companies. The platform leverages
-                    advanced automation and digital documentation to enhance
-                    efficiency, reduce manual workload, and ensure seamless
-                    coordination between all parties involved.
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Client Requirements"}
-                          highlightText={"Client"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck /> A centralized system to manage
-                          moving bookings and logistics.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Automated workflows to reduce manual intervention.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Digital document handling for contracts, invoices, and
-                          other paperwork.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Secure authentication and role-based access control.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />A comprehensive admin panel to
-                          manage users, bookings, and payments.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          AI-driven estimation and quotation system based on
-                          image analysis.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Booking monitoring for both moving companies
-                          (partners) and users.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Entity calculation based on AI analysis of uploaded
-                          images.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Admin access to view phone numbers and track completed
-                          steps in the booking process.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/case-2.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Our Challenges"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                        <li>
-                          <FaRegCircleCheck />
-                          Ensuring seamless communication between different
-                          system components.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Handling large volumes of bookings and digital
-                          documents efficiently.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Providing a secure and intuitive admin panel for
-                          operational control.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Integrating with third-party document handling
-                          services like PandaDoc.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Implementing AI-powered item recognition and
-                          estimation.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Enabling real-time tracking and monitoring for both
-                          users and moving companies.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                    We developed a robust and scalable logistics management
-                    platform with the following key implementations:
-                  </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Backend Implementation
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                        <li>
-                          <strong>API Development:</strong> Designed and
-                          implemented RESTful APIs to handle user
-                          authentication, booking management, and document
-                          workflows.
-                        </li>
-                        <li>
-                          <strong>User Role Management:</strong> Implemented
-                          secure role-based access for admins, moving companies,
-                          and customers.
-                        </li>
-                        <li>
-                          <strong>Document Handling:</strong> Integrated
-                          PandaDoc for digital contract and invoice management.
-                        </li>
-                        <li>
-                          <strong>Booking Management:</strong> Provided
-                          automated workflows to manage moving requests and
-                          schedule bookings seamlessly.
-                        </li>
-                        <li>
-                          <strong>AI-Powered Estimation:</strong> Users can
-                          upload pictures, and AI will analyze the number of
-                          items in the image.
-                        </li>
-                        <li>
-                          <strong>Quotation Calculation:</strong> Calculates
-                          estimated cost based on item count, truck type, and
-                          distance.
-                        </li>
-                        <li>
-                          <strong>Booking Monitoring:</strong> Real-time status
-                          tracking for both users and moving companies.
-                        </li>
-                        <li>
-                          <strong>Entity Calculation:</strong> AI detects item
-                          count from uploaded images and generates estimates.
-                        </li>
-                        <li>
-                          <strong>Admin Insights:</strong> Admins can view user
-                          phone numbers and monitor booking progress.
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowFrontend(!showFrontend)}
-                      className={styles.dropdownHeader}
-                    >
-                      2. Frontend Implementation
-                      {showFrontend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showFrontend && (
-                      <ul className={styles.solutionList}>
-                        <li>
-                          <strong>Admin Panel:</strong> Dashboard for managing
-                          users, bookings, payments, and documents.
-                        </li>
-                        <li>
-                          <strong>User Authentication:</strong> Secure login
-                          with role-based access control.
-                        </li>
-                        <li>
-                          <strong>Booking System:</strong> UI for scheduling and
-                          managing moves.
-                        </li>
-                        <li>
-                          <strong>AI-Driven User Input:</strong> Users can
-                          upload pictures for resource estimation and quotation.
-                        </li>
-                        <li>
-                          <strong>Booking Tracking:</strong> Track booking
-                          status in real time.
-                        </li>
-                        <li>
-                          <strong>Step Completion Monitoring:</strong> Admins
-                          can check completed steps and view user details.
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/intro.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
@@ -347,10 +90,10 @@ export default function CaseStudy() {
                   <h4>Category</h4>
                   <p>AI / ML</p>
                 </div>
-                <div className={styles.eachDetails}>
+                {/* <div className={styles.eachDetails}>
                   <h4>Duration</h4>
                   <p>4 month</p>
-                </div>
+                </div> */}
               </div>
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
@@ -400,7 +143,7 @@ export default function CaseStudy() {
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
+              {/* <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Mobile App</h4>
                   <Swiper
@@ -424,8 +167,268 @@ export default function CaseStudy() {
                     ))}
                   </Swiper>
                 </div>
+              </div> */}
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              This is an AI enabled smart logistics and moving management system
+              designed to streamline the moving process for both customers and
+              moving companies. The platform leverages advanced automation and
+              digital documentation to enhance efficiency, reduce manual
+              workload, and ensure seamless coordination between all parties
+              involved.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Client Requirements"}
+                    highlightText={"Client"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    <FaRegCircleCheck /> A centralized system to manage moving
+                    bookings and logistics.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Automated workflows to reduce manual intervention.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Digital document handling for contracts, invoices, and other
+                    paperwork.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Secure authentication and role-based access control.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />A comprehensive admin panel to manage
+                    users, bookings, and payments.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    AI-driven estimation and quotation system based on image
+                    analysis.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Booking monitoring for both moving companies (partners) and
+                    users.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Entity calculation based on AI analysis of uploaded images.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Admin access to view phone numbers and track completed steps
+                    in the booking process.
+                  </li>
+                </ul>
               </div>
-             
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                  className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal className={styles.keyImg} src={"/images/challenge.jpg"} alt="case-study-1" />
+                </div>
+              </div>
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Our Challenges"}
+                    highlightText={"Challenges"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    <FaRegCircleCheck />
+                    Ensuring seamless communication between different system
+                    components.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Handling large volumes of bookings and digital documents
+                    efficiently.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Providing a secure and intuitive admin panel for operational
+                    control.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Integrating with third-party document handling services like
+                    PandaDoc.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Implementing AI-powered item recognition and estimation.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Enabling real-time tracking and monitoring for both users
+                    and moving companies.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+            <p>
+              We developed a robust and scalable logistics management platform
+              with the following key implementations:
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Backend Implementation
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>API Development:</strong> Designed and implemented
+                    RESTful APIs to handle user authentication, booking
+                    management, and document workflows.
+                  </li>
+                  <li>
+                    <strong>User Role Management:</strong> Implemented secure
+                    role-based access for admins, moving companies, and
+                    customers.
+                  </li>
+                  <li>
+                    <strong>Document Handling:</strong> Integrated PandaDoc for
+                    digital contract and invoice management.
+                  </li>
+                  <li>
+                    <strong>Booking Management:</strong> Provided automated
+                    workflows to manage moving requests and schedule bookings
+                    seamlessly.
+                  </li>
+                  <li>
+                    <strong>AI-Powered Estimation:</strong> Users can upload
+                    pictures, and AI will analyze the number of items in the
+                    image.
+                  </li>
+                  <li>
+                    <strong>Quotation Calculation:</strong> Calculates estimated
+                    cost based on item count, truck type, and distance.
+                  </li>
+                  <li>
+                    <strong>Booking Monitoring:</strong> Real-time status
+                    tracking for both users and moving companies.
+                  </li>
+                  <li>
+                    <strong>Entity Calculation:</strong> AI detects item count
+                    from uploaded images and generates estimates.
+                  </li>
+                  <li>
+                    <strong>Admin Insights:</strong> Admins can view user phone
+                    numbers and monitor booking progress.
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowFrontend(!showFrontend)}
+                className={styles.dropdownHeader}
+              >
+                2. Frontend Implementation
+                {showFrontend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showFrontend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>Admin Panel:</strong> Dashboard for managing users,
+                    bookings, payments, and documents.
+                  </li>
+                  <li>
+                    <strong>User Authentication:</strong> Secure login with
+                    role-based access control.
+                  </li>
+                  <li>
+                    <strong>Booking System:</strong> UI for scheduling and
+                    managing moves.
+                  </li>
+                  <li>
+                    <strong>AI-Driven User Input:</strong> Users can upload
+                    pictures for resource estimation and quotation.
+                  </li>
+                  <li>
+                    <strong>Booking Tracking:</strong> Track booking status in
+                    real time.
+                  </li>
+                  <li>
+                    <strong>Step Completion Monitoring:</strong> Admins can
+                    check completed steps and view user details.
+                  </li>
+                </ul>
+              )}
+            </div>
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/frontend.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/backend.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/backend.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
@@ -464,7 +467,6 @@ export default function CaseStudy() {
                 user information and step completion status.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
@@ -522,9 +524,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

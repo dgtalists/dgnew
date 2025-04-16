@@ -211,7 +211,7 @@ export default function About() {
                     <p>Years Of Experience</p>
                   </div>
                 </div>
-                <Link href={"/contact"} className={styles.cmnBtn}>
+                <Link href={"/contact"} className={`${styles.cmnBtn} cursorButton`}>
                   get started
                   <FiChevronRight className={styles.arrowRight} />
                 </Link>

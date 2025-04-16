@@ -50,7 +50,7 @@ export default function CaseStudy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/smart-logistic.jpg">
+      <ParallaxBanner backgroundImage="/images/automation-bg.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -60,7 +60,7 @@ export default function CaseStudy() {
                     text={
                       "Web-Based Sales Process Automation for the Automobile Industry"
                     }
-                    highlightText={"AI-Enabled"}
+                    highlightText={"Automobile"}
                   />
                 </h1>
               </div>
@@ -73,155 +73,27 @@ export default function CaseStudy() {
           <div className="row">
             <div className="col-lg-9">
               <div className={styles.introContent}>
-                <img src="/images/intro.jpg" alt="intro" />
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Project Overview"}
-                      highlightText={"Project"}
-                    />
-                  </h4>
-                  <p>
-                  Managing sales processes in the automobile industry requires a structured and automated approach to streamline operations, enhance efficiency, and improve overall business performance. Our client, a leading automobile dealer network, needed a centralized ERP system that could handle user roles, inventory, order management, and dealer coordination.
-                  </p>
-                  <p>Dgtalists Solutions developed a custom web-based Sales Process Automation system tailored to the automotive sector, enabling seamless order tracking, role-based access, and streamlined dealer management.
-                  </p>
-                </div>
-                <div className={styles.introText} data-aos="fade-up">
-                  <div className="row">
-                    <div className="col-lg-7">
-                      <h4 className={styles.title}>
-                        <AnimatedText
-                          text={"Challenges & Requirements"}
-                          highlightText={"Challenges"}
-                        />
-                      </h4>
-                      <ul>
-                         <li>The client faced several operational challenges, including:
-                         </li>
-                        <li>
-                          <FaRegCircleCheck /> Lack of a centralized system to manage dealerships, products, and proforma invoices.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Manual order processing, leading to inefficiencies and delays.
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Limited role-based access, making it difficult to assign specific user permissions.
-
-                        </li>
-                        <li>
-                          <FaRegCircleCheck />
-                          Inefficient tracking of inventory and sales orders.
-
-                        </li>
-                      </ul>
-                      <p>The goal was to build a scalable ERP system to automate sales operations, enhance transparency, and improve dealership collaboration.
-                      </p>
-                    </div>
-                    <div className="col-lg-5">
-                      <div className={styles.introImage}>
-                        <ImageReveal
-                          src={"/images/challenges.png"}
-                          alt="case-study-1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-             
-                <div className={styles.introText} data-aos="fade-up">
-                  <h4 className={styles.title}>
-                    <AnimatedText
-                      text={"Our Solution"}
-                      highlightText={"Solution"}
-                    />
-                  </h4>
-                  <p>
-                  Dgtalists developed a feature-rich web-based ERP platform for sales process automation, ensuring seamless dealer, inventory, and order management for the automobile industry.
-                  </p>
-                  <div className={styles.dropdownSection}>
-                    <h5
-                      onClick={() => setShowBackend(!showBackend)}
-                      className={styles.dropdownHeader}
-                    >
-                      1. Key Features Implemented
-                      {showBackend ? (
-                        <HiOutlineChevronUp className={styles.arrowIcon} />
-                      ) : (
-                        <HiOutlineChevronDown className={styles.arrowIcon} />
-                      )}
-                    </h5>
-                    {showBackend && (
-                      <ul className={styles.solutionList}>
-                        <li>
-                          <strong>Role-Based User/Employee Login:</strong> Assigns different permissions to admin, dealers, and employees.
-
-                        </li>
-                        <li>
-                          <strong>Dealer Management:</strong> Add, edit, and delete dealers with real-time tracking of their activities.
-
-                        </li>
-                        <li>
-                          <strong>Product Catalog Management:</strong> Streamlined product listing, editing, and deletion for easy inventory updates.
-
-                        </li>
-                        <li>
-                          <strong>Proforma Invoice Managemen:</strong> Generate and manage invoices for multiple product orders with different quantities.
-                        </li>
-                        <li>
-                          <strong>Order Processing & Management:</strong>  Automates sales order tracking, ensuring real-time updates and reducing processing delays.
-                         </li>
-                        <li>
-                          <strong>Inventory Control:</strong> Provides real-time stock monitoring to prevent overstocking or shortages.
-
-                        </li>
-                        <li>
-                          <strong> Approval Workflow:</strong>  Enables multi-level approvals for sales orders and invoices.
-                        </li>
-                        <li>
-                          <strong>Secure & Scalable Architecture:</strong>Ensures data integrity, security, and high performance.
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-
-                
-                  <div className={styles.caseImage}>
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/frontend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                      <div className="col-lg-6">
-                        <ImageReveal
-                          src={"/images/backend.png"}
-                          alt="case-study-2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  className={styles.mainImg}
+                  src="/images/automation.jpg"
+                  alt="intro"
+                />
               </div>
             </div>
             <div className="col-lg-3">
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Project Type</h4>
-                  <p>AI-Enabled Smart Logistics & Moving Management</p>
+                  <p>Automotive Sales Automation System</p>
                 </div>
                 <div className={styles.eachDetails}>
                   <h4>Category</h4>
-                  <p>AI / ML</p>
+                  <p>Automotive / Auto & Vehicles</p>
                 </div>
-                <div className={styles.eachDetails}>
+                {/* <div className={styles.eachDetails}>
                   <h4>Duration</h4>
                   <p>4 month</p>
-                </div>
+                </div> */}
               </div>
               <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
@@ -239,23 +111,23 @@ export default function CaseStudy() {
                     <li>
                       <img src="/images/sql.png" />
                     </li>
-                     <li>
-                      <img src="/images/access.png"/>
-                      </li>
-                      <li>
-                      <img src="/images/payment.png"/>
-                      </li>
+                    <li>
+                      <img src="/images/access.png" />
+                    </li>
+                    <li>
+                      <img src="/images/payment.png" />
+                    </li>
                     <li>
                       <img src="/images/crm.png" />
                     </li>
-                   
+
                     <li>
                       <img src="/images/aws.png" />
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className={styles.projectDetails}>
+              {/* <div className={styles.projectDetails}>
                 <div className={styles.eachDetails}>
                   <h4>Mobile App</h4>
                   <Swiper
@@ -279,30 +151,195 @@ export default function CaseStudy() {
                     ))}
                   </Swiper>
                 </div>
-              </div>
-             
+              </div> */}
             </div>
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
-              <AnimatedText text={"Business Impact"} highlightText={"Business"} />
+              <AnimatedText
+                text={"Project Overview"}
+                highlightText={"Project"}
+              />
+            </h4>
+            <p>
+              Managing sales processes in the automobile industry requires a
+              structured and automated approach to streamline operations,
+              enhance efficiency, and improve overall business performance. Our
+              client, a leading automobile dealer network, needed a centralized
+              ERP system that could handle user roles, inventory, order
+              management, and dealer coordination.
+            </p>
+            <p>
+              Dgtalists Solutions developed a custom web-based Sales Process
+              Automation system tailored to the automotive sector, enabling
+              seamless order tracking, role-based access, and streamlined dealer
+              management.
+            </p>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <div className="row">
+              <div className="col-lg-7">
+                <h4 className={styles.title}>
+                  <AnimatedText
+                    text={"Challenges & Requirements"}
+                    highlightText={"Challenges"}
+                  />
+                </h4>
+                <ul>
+                  <li>
+                    The client faced several operational challenges, including:
+                  </li>
+                  <li>
+                    <FaRegCircleCheck /> Lack of a centralized system to manage
+                    dealerships, products, and proforma invoices.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Manual order processing, leading to inefficiencies and
+                    delays.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Limited role-based access, making it difficult to assign
+                    specific user permissions.
+                  </li>
+                  <li>
+                    <FaRegCircleCheck />
+                    Inefficient tracking of inventory and sales orders.
+                  </li>
+                </ul>
+                <p>
+                  The goal was to build a scalable ERP system to automate sales
+                  operations, enhance transparency, and improve dealership
+                  collaboration.
+                </p>
+              </div>
+              <div className="col-lg-5">
+                <div className={styles.introImage}>
+                  <ImageReveal
+                  className={styles.keyImg}
+                    src={"/images/challenges.png"}
+                    alt="case-study-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText text={"Our Solution"} highlightText={"Solution"} />
+            </h4>
+            <p>
+              Dgtalists developed a feature-rich web-based ERP platform for
+              sales process automation, ensuring seamless dealer, inventory, and
+              order management for the automobile industry.
+            </p>
+            <div className={styles.dropdownSection}>
+              <h5
+                onClick={() => setShowBackend(!showBackend)}
+                className={styles.dropdownHeader}
+              >
+                1. Key Features Implemented
+                {showBackend ? (
+                  <HiOutlineChevronUp className={styles.arrowIcon} />
+                ) : (
+                  <HiOutlineChevronDown className={styles.arrowIcon} />
+                )}
+              </h5>
+              {showBackend && (
+                <ul className={styles.solutionList}>
+                  <li>
+                    <strong>Role-Based User/Employee Login:</strong> Assigns
+                    different permissions to admin, dealers, and employees.
+                  </li>
+                  <li>
+                    <strong>Dealer Management:</strong> Add, edit, and delete
+                    dealers with real-time tracking of their activities.
+                  </li>
+                  <li>
+                    <strong>Product Catalog Management:</strong> Streamlined
+                    product listing, editing, and deletion for easy inventory
+                    updates.
+                  </li>
+                  <li>
+                    <strong>Proforma Invoice Managemen:</strong> Generate and
+                    manage invoices for multiple product orders with different
+                    quantities.
+                  </li>
+                  <li>
+                    <strong>Order Processing & Management:</strong> Automates
+                    sales order tracking, ensuring real-time updates and
+                    reducing processing delays.
+                  </li>
+                  <li>
+                    <strong>Inventory Control:</strong> Provides real-time stock
+                    monitoring to prevent overstocking or shortages.
+                  </li>
+                  <li>
+                    <strong> Approval Workflow:</strong> Enables multi-level
+                    approvals for sales orders and invoices.
+                  </li>
+                  <li>
+                    <strong>Secure & Scalable Architecture:</strong>
+                    Ensures data integrity, security, and high performance.
+                  </li>
+                </ul>
+              )}
+            </div>
+
+            <div className={styles.caseImage}>
+              <div className="row">
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/terra-1.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/terra-2.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+                <div className="col-lg-4">
+                  <ImageReveal
+                    className={styles.caseStudyImage}
+                    src={"/images/terra-3.png"}
+                    alt="case-study-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.introText} data-aos="fade-up">
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Business Impact"}
+                highlightText={"Business"}
+              />
             </h4>
 
             <ul className={styles.solutionList}>
               <li>
-                <strong>30% Improvement in Sales Efficiency:</strong>  Faster processing of dealer orders and approvals.
+                <strong>30% Improvement in Sales Efficiency:</strong> Faster
+                processing of dealer orders and approvals.
               </li>
               <li>
-                <strong> 50% Reduction in Manual Work:</strong>Automated workflows eliminated redundant tasks.
+                <strong> 50% Reduction in Manual Work:</strong>Automated
+                workflows eliminated redundant tasks.
               </li>
               <li>
-                <strong>Enhanced Dealer Coordination:</strong> Improved transparency and communication between sales teams and dealerships.
+                <strong>Enhanced Dealer Coordination:</strong> Improved
+                transparency and communication between sales teams and
+                dealerships.
               </li>
               <li>
-                <strong> Reduced Processing Errors:</strong> System-driven automation minimized order and invoicing mistakes.
+                <strong> Reduced Processing Errors:</strong> System-driven
+                automation minimized order and invoicing mistakes.
               </li>
             </ul>
-            
           </div>
           <div className={styles.introText} data-aos="fade-up">
             <h4 className={styles.title}>
@@ -310,8 +347,12 @@ export default function CaseStudy() {
             </h4>
 
             <p>
-            Dgtalists successfully developed a powerful and scalable web-based Sales Process Automation system tailored for the automobile industry, enabling efficient dealer management, automated order tracking, and seamless inventory control. This solution optimized operations, enhanced productivity, and provided a competitive edge in the automobile sales ecosystem.
-
+              Dgtalists successfully developed a powerful and scalable web-based
+              Sales Process Automation system tailored for the automobile
+              industry, enabling efficient dealer management, automated order
+              tracking, and seamless inventory control. This solution optimized
+              operations, enhanced productivity, and provided a competitive edge
+              in the automobile sales ecosystem.
             </p>
           </div>
         </div>
@@ -351,9 +392,7 @@ export default function CaseStudy() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>
