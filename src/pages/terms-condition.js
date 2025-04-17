@@ -165,9 +165,8 @@ export default function Tearms() {
           <div className={styles.eachPrivacyWrap}>
             <h4>10. Governing Law</h4>
             <p>
-              These Terms and Conditions shall be governed by and construed in
-              accordance with the laws of [insert your jurisdiction], without
-              regard to its conflict of law principles.
+            These Terms and Conditions shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.
+
             </p>
           </div>
           <div className={styles.eachPrivacyWrap}>

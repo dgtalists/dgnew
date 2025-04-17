@@ -108,6 +108,7 @@
   color: #fff;
   font-size: 20px;
   margin: 0 auto 30px;
+  max-width: 810px;
 }
 /* .sectionLeft h1 span {
   color: var(--btn-color);

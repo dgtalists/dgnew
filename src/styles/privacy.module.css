@@ -1,29 +1,82 @@
-.privacyWrapper{
+.mainBanner {
+  position: relative;
+  padding: 190px 0 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  z-index: 1;
+}
+.mainBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(180.07deg, rgba(0, 0, 0, 0) 0.06%, #000000 116.27%),
+    linear-gradient(359.91deg, rgba(0, 0, 0, 0) 55.58%, #000000 105.69%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.sectionLeft {
     position: relative;
-    padding: 60px 0;
+    z-index: 2;
+    /* text-align: center; */
+  }
+.sectionLeft h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+.breadcrumbWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
 }
-.privacyWrapTop{
-    border-bottom: 1px solid #ffffff1a;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+.breadcrumbList a,
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: #fff;
 }
-.privacyWrapTop h2{
-    color: #0096cf;
+.breadcrumbList a:hover {
+  color: #0096cf;
 }
-.eachPrivacyWrap{
-    margin-bottom: 15px;
+.privacyWrapper {
+  position: relative;
+  padding: 60px 0;
 }
-.eachPrivacyWrap p{
-    margin-bottom: 6px;
-    font-size: 18px;
+.privacyWrapTop {
+  border-bottom: 1px solid #ffffff1a;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
-.eachPrivacyWrap p a{
-    color: #0096cf;
+.privacyWrapTop h2 {
+  color: #0096cf;
 }
-.eachPrivacyWrap ul{
-    margin: 0;
+.eachPrivacyWrap {
+  margin-bottom: 15px;
 }
-.eachPrivacyWrap ul li{
-    list-style: disc;
-    font-size: 18px;
+.eachPrivacyWrap p {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+.eachPrivacyWrap p a {
+  color: #0096cf;
+}
+.eachPrivacyWrap ul {
+  margin: 0;
+}
+.eachPrivacyWrap ul li {
+  list-style: disc;
+  font-size: 18px;
 }

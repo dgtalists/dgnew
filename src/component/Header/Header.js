@@ -407,11 +407,11 @@ const Header = () => {
                         <FaFacebookF />
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link target="blank" href={"#"}>
                         <FaInstagram />
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link target="blank" href={"https://www.linkedin.com/company/dgtalists/"}>
                         <FaLinkedinIn />
