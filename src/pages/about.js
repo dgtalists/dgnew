@@ -200,14 +200,14 @@ export default function About() {
                 <div className={styles.counterSec}>
                   <div className={styles.eachCounter}>
                     <Counter value={130} suffix="+" />
-                    <p>Project Complete</p>
+                    <p>Project Completed</p>
                   </div>
                   <div className={styles.eachCounter}>
                     <Counter value={35} suffix="+" />
                     <p>Team Members</p>
                   </div>
                   <div className={styles.eachCounter}>
-                    <Counter value={5} />
+                    <Counter value={5} suffix="+" />
                     <p>Years Of Experience</p>
                   </div>
                 </div>
