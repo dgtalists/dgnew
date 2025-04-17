@@ -105,11 +105,11 @@ const Footer = () => {
                 <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <Link href="#">Privacy Policy</Link>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
 
                   <li>
-                    <Link href="#">Terms & Conditions</Link>
+                    <Link href="/terms-condition">Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,29 @@
+.privacyWrapper{
+    position: relative;
+    padding: 60px 0;
+}
+.privacyWrapTop{
+    border-bottom: 1px solid #ffffff1a;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.privacyWrapTop h2{
+    color: #0096cf;
+}
+.eachPrivacyWrap{
+    margin-bottom: 15px;
+}
+.eachPrivacyWrap p{
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.eachPrivacyWrap p a{
+    color: #0096cf;
+}
+.eachPrivacyWrap ul{
+    margin: 0;
+}
+.eachPrivacyWrap ul li{
+    list-style: disc;
+    font-size: 18px;
+}

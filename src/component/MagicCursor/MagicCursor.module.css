@@ -31,4 +31,8 @@
   transition: opacity 0.2s ease, transform 0.2s ease;
   pointer-events: none;
 }
-
+@media (max-width: 768px) {
+  .magicCursor {
+    display: none;
+  }
+}
