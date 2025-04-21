@@ -1,0 +1,269 @@
+.page {
+  --background: #121212;
+  --primary-text: #fff;
+  --btn-color: #0096cf;
+  --bgColor: #05091d;
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  align-items: center;
+  justify-items: center;
+  min-height: 100svh;
+  padding: 80px;
+  gap: 64px;
+  font-family: var(--font-geist-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+}
+
+.sectionLeft {
+  position: relative;
+  z-index: 2;
+  /* text-align: center; */
+}
+.sectionLeft h1 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.sectionLeft h2 {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.sectionLeft p {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto 30px;
+}
+.subtitle {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 40px;
+  color: var(--primary-text);
+  margin-bottom: 20px;
+}
+/* .sectionLeft h1 span {
+  color: var(--btn-color);
+} */
+.cmnBtn {
+  padding: 10px 25px;
+  font-size: 18px;
+  /* background-color: var(--btn-color); */
+  background: linear-gradient(219deg, #0096cf 0%, #052441 100%);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 15px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.4s;
+  /* border-radius: 12px; */
+}
+.cmnBtn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 500ms ease;
+  background: linear-gradient(219deg, #052441 0%, #0096cf 100%);
+}
+.cmnBtn:hover:before {
+  width: 100%;
+}
+.sectionRight {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.bannerImg1 {
+  position: relative;
+  margin-top: 50px;
+}
+.bannerImg2 figure,
+.bannerImg1 figure {
+  display: block;
+  /* border-radius: 999px; */
+  overflow: hidden;
+  max-width: 500px;
+}
+.bannerImg2 figure img,
+.bannerImg1 figure img {
+  width: 100%;
+  /* aspect-ratio: 1 / 1.65; */
+  object-fit: cover;
+  /* border-radius: 999px; */
+}
+.breadcrumbWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbList a,
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+.breadcrumbList a:hover {
+  color: var(--btn-color);
+}
+
+/* ================career================= */
+.careerTop {
+  position: relative;
+  padding: 60px 0;
+}
+.careerTop p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.careerLeft{
+  padding-right: 50px;
+}
+.eachBox {
+  position: relative;
+  padding: 20px;
+  height: calc(100% - 30px);
+  /* border: 1px solid #ffffff1a; */
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  background: #1b1b1b;
+}
+.eachBox:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 150, 207, 1) 0%,
+    rgba(5, 36, 65, 1) 100%
+  );
+}
+.eachBox .missionHeader {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.eachBox:hover img {
+  filter: brightness(0) invert(1);
+  /* transition: all 0.4s ease-in-out; */
+}
+.eachBox p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.eachBox .missionHeader img {
+  width: 44px;
+  height: 44px;
+}
+.eachBox .missionHeader h5 {
+  margin: 0;
+  font-size: 20px;
+}
+/* ==============workTogether============== */
+.workTogether {
+  position: relative;
+}
+.workTogether .headerSection p {
+  font-size: 20px;
+}
+.togetherBox {
+  padding: 60px 0 90px 0;
+  position: relative;
+}
+.togetherBox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(/images/work-together-bg-gradient9.png) no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.eachContactItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contactIcon {
+  position: relative;
+  height: 54px;
+  width: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #101010;
+  border: 1px solid #313131;
+}
+.contactIcon svg {
+  font-size: 24px;
+  color: #0096cf;
+}
+.contactContent {
+  position: relative;
+}
+.contactContent h5 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.contactContent a {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.eachContactItem:hover .contactIcon {
+  background-color: #0096cf;
+  border-color: #0096cf;
+}
+.eachContactItem:hover .contactIcon svg {
+  color: #fff;
+}
