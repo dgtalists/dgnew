@@ -18,8 +18,88 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { LuSearchCode } from "react-icons/lu";
+import JobApplyModal from "@/component/JobApplyModal/JobApplyModal";
+import { HiOutlineArrowRight, HiOutlineLocationMarker } from "react-icons/hi";
+import { BsSuitcaseLg } from "react-icons/bs";
+import { AiOutlineTags } from "react-icons/ai";
 
 export default function Career() {
+  const jobData = [
+    {
+      id: 1,
+      title: "Frontend Developer",
+      location: "Remote",
+      jobType:"Full Time",
+      experience: "2+ Years",
+      description: "Build and maintain responsive web interfaces using React, HTML, and CSS. Work closely with designers and backend developers to deliver polished user experiences.",
+    },
+    {
+      id: 2,
+      title: "Backend Developer",
+      location: "Bangalore, India",
+      jobType:"Full Time",
+      experience: "3+ Years",
+      description: "Design and implement scalable RESTful APIs using Node.js, Express, and MongoDB. Optimize database queries and improve application performance.",
+    },
+    {
+      id: 3,
+      title: "UI/UX Designer",
+      location: "Hybrid - Pune",
+      jobType:"Full Time",
+      experience: "1+ Years",
+      description: "Create wireframes, prototypes, and UI mockups that align with user needs and business goals. Work closely with product teams to improve usability.",
+    },
+    {
+      id: 4,
+      title: "DevOps Engineer",
+      location: "Chennai, India",
+      jobType:"Full Time",
+      experience: "3–5 Years",
+      description: "Manage CI/CD pipelines, automate deployments, and ensure high availability of applications. Experience with AWS, Docker, and Kubernetes preferred.",
+    },
+    {
+      id: 5,
+      title: "Mobile App Developer",
+      location: "Remote",
+      jobType:"Full Time",
+      experience: "2+ Years",
+      description: "Develop and maintain cross-platform mobile apps using React Native. Integrate third-party APIs and ensure smooth user interactions across devices.",
+    },
+    {
+      id: 6,
+      title: "QA Engineer",
+      location: "Delhi NCR",
+      jobType:"Full Time",
+      experience: "2–4 Years",
+      description: "Write and execute test cases, identify bugs, and ensure product quality across web and mobile applications. Knowledge of automation tools is a plus.",
+    },
+    {
+      id: 7,
+      title: "Project Manager",
+      location: "Hybrid - Mumbai",
+      jobType:"Full Time",
+      experience: "5+ Years",
+      description: "Lead project planning, track progress, and coordinate between cross-functional teams. Ensure timely delivery and manage client communication effectively.",
+    },
+    {
+      id: 8,
+      title: "Full Stack Developer",
+      location: "Remote",
+      jobType:"Full Time",
+      experience: "3+ Years",
+      description: "Work on both frontend (React) and backend (Node.js) technologies. Build and maintain full-stack web applications, ensuring performance and scalability.",
+    },
+  ];
+  
+  const [selectedJob, setSelectedJob] = useState(null);
+
+  const handleApplyClick = (job) => {
+    setSelectedJob(job);
+  };
+
+  const closeModal = () => {
+    setSelectedJob(null);
+  };
   return (
     <>
       <Head>
@@ -87,7 +167,7 @@ export default function Career() {
                     <div className={styles.eachBox}>
                       <div className={styles.missionHeader}>
                         <div className={styles.missionIcon}>
-                          <img src="/images/mission.png" alt="mission icon" />
+                          <img src="/images/payroll.png" alt="mission icon" />
                         </div>
                         <h5>Competitive Remuneration</h5>
                       </div>
@@ -101,7 +181,7 @@ export default function Career() {
                     <div className={styles.eachBox}>
                       <div className={styles.missionHeader}>
                         <div className={styles.missionIcon}>
-                          <img src="/images/mission.png" alt="mission icon" />
+                          <img src="/images/deadline.png" alt="mission icon" />
                         </div>
                         <h5>Paid Time Off</h5>
                       </div>
@@ -115,7 +195,7 @@ export default function Career() {
                     <div className={styles.eachBox}>
                       <div className={styles.missionHeader}>
                         <div className={styles.missionIcon}>
-                          <img src="/images/mission.png" alt="mission icon" />
+                          <img src="/images/learn.png" alt="mission icon" />
                         </div>
                         <h5>Learning & Development</h5>
                       </div>
@@ -129,7 +209,10 @@ export default function Career() {
                     <div className={styles.eachBox}>
                       <div className={styles.missionHeader}>
                         <div className={styles.missionIcon}>
-                          <img src="/images/mission.png" alt="mission icon" />
+                          <img
+                            src="/images/working-hours.png"
+                            alt="mission icon"
+                          />
                         </div>
                         <h5>Flexible Work Hours</h5>
                       </div>
@@ -142,6 +225,44 @@ export default function Career() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.openPosition}>
+        <div className="container">
+          <div className={styles.careerHeader}>
+            <span className={styles.subtitle}>Join Us</span>
+            <h4 className={styles.title}>
+              <AnimatedText
+                text={"Current Openings"}
+                highlightText={"Openings"}
+              />
+            </h4>
+          </div>
+          <div className="row">
+            {jobData.map((job) => (
+              <div className="col-lg-6" key={job.id}>
+                <div className={styles.jobList}>
+                  <h4>{job.title}</h4>
+                  <ul>
+                    <li><HiOutlineLocationMarker />{job.location}</li>
+                    <li><BsSuitcaseLg />{job.experience}</li>
+                    <li><AiOutlineTags />{job.jobType}</li>
+                  </ul>
+                  <p>{job.description}</p>
+                  <button
+                    className={styles.cmnBtn}
+                    onClick={() => handleApplyClick(job)}
+                  >
+                    Apply
+                    <HiOutlineArrowRight className={styles.arrowRight} />
+                  </button>
+                </div>
+              </div>
+            ))}
+            {selectedJob && (
+              <JobApplyModal job={selectedJob} onClose={closeModal} />
+            )}
           </div>
         </div>
       </section>

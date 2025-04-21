@@ -32,7 +32,7 @@
 .sectionLeft h1 {
   color: #fff;
   font-size: 48px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   text-align: center;
 }
 .sectionLeft h2 {
@@ -151,7 +151,7 @@
   color: #fff;
   margin-bottom: 25px;
 }
-.careerLeft{
+.careerLeft {
   padding-right: 50px;
 }
 .eachBox {
@@ -179,15 +179,15 @@
   display: flex;
   /* align-items: center; */
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 7px;
+  margin-bottom: 10px;
 }
 .eachBox:hover img {
   filter: brightness(0) invert(1);
   /* transition: all 0.4s ease-in-out; */
 }
 .eachBox p {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   margin-bottom: 0;
 }
@@ -199,12 +199,62 @@
   margin: 0;
   font-size: 20px;
 }
+
+/* ==============openPosition================= */
+.openPosition {
+  position: relative;
+  padding: 0px 0 60px 0;
+}
+.openPosition .careerHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.jobList {
+  position: relative;
+  padding: 20px;
+  height: calc(100% - 30px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  background: #1b1b1b;
+}
+.jobList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  gap: 20px;
+}
+.jobList ul li {
+  display: inline-flex;
+  gap: 8px;
+  padding: 5px 10px;
+  font-size: 14px;
+  align-items: center;
+  font-family: Aileron, sans-serif;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #2a2a2a;
+  background-clip: padding-box;
+}
+.jobList .cmnBtn{
+  border: none;
+  padding: 8px 25px;
+}
 /* ==============workTogether============== */
 .workTogether {
   position: relative;
 }
 .workTogether .headerSection p {
   font-size: 20px;
+}
+.workTogether .headerSection {
+  text-align: center;
+  margin-bottom: 50px;
 }
 .togetherBox {
   padding: 60px 0 90px 0;

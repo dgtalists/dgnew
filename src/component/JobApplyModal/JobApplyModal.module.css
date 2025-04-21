@@ -1,0 +1,111 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  background-color: rgb(18, 18, 18);
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+.modalContent h3{
+  margin-bottom: 30px;
+}
+.eachInput {
+  position: relative;
+  margin-bottom: 20px;
+}
+.eachInputItem {
+  background-color: #0000;
+  border: 1px solid #0094cf67;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 10px;
+  color: #fff;
+}
+.eachInputItem::placeholder {
+  color: #fff;
+}
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #0096cf;
+}
+.fileUploadLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0000;
+  border: 1px solid #0094cf67;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.fileUploadLabel:hover {
+  background: #007ab8;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadIcon {
+  font-size: 18px;
+}
+.cmnBtn {
+  padding: 10px 25px;
+  font-size: 18px;
+  /* background-color: var(--btn-color); */
+  background: linear-gradient(219deg, #0096cf 0%, #052441 100%);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 15px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.4s;
+  /* border-radius: 12px; */
+  border: none;
+}
+.cmnBtn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 500ms ease;
+  background: linear-gradient(219deg, #052441 0%, #0096cf 100%);
+}
+.cmnBtn:hover:before {
+  width: 100%;
+}
