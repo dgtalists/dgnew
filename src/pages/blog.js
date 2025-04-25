@@ -123,15 +123,15 @@ export default function Blog() {
               <div className={styles.eachBlog}>
                 <div className={styles.blogImg}>
                   {/* <img src="/images/post-1.jpg" alt="post"/> */}
-                  <ImageReveal src={"/images/blog-4.png"} alt={"post"} />
+                  <ImageReveal src={"/images/quantum.jpg"} alt={"post"} />
                 </div>
                 <div className={styles.postContent}>
                   <h5>
-                    <Link href={"#"}>
-                    Quantum Computing Advancements in the Healthcare Sector
+                    <Link href={"/quantum-computing"}>
+                    Quantum Computing: The Next Big Leap in Healthcare — And How Dgtalists Is Empowering It
                     </Link>
                   </h5>
-                  <Link className={styles.blogLink} href={"#"}>
+                  <Link className={styles.blogLink} href={"/quantum-computing"}>
                     read more <GoArrowUpRight />
                   </Link>
                 </div>

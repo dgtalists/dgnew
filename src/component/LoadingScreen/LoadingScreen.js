@@ -66,7 +66,7 @@ const LoadingScreen = ({ onComplete }) => {
         {text.split("").map((char, i) => (
           <span
             key={i}
-            className="skew-letter"
+            className={"skew-letter"}
             style={{
               display: "inline-block",
               color: "white",

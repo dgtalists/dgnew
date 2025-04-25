@@ -58,9 +58,9 @@ const Footer = () => {
                   <li>
                     <Link href="/about">About Us</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#">Leadership Team</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/allcase">Our Portfolio</Link>
                   </li>
@@ -160,7 +160,7 @@ const Footer = () => {
         </div>
         <div className={styles.copyright}>
           <p>
-            Copyright © 2025 <Link href={"#"}>Dgtalists. All rights resrved. </Link>
+            Copyright © 2025 <Link href={"/"}>Dgtalists. All rights resrved. </Link>
           </p>
           {/* <div className={styles.footerQuickLink}>
             <ul>

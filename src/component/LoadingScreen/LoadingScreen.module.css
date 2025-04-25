@@ -49,3 +49,9 @@
   fill: none;
   stroke-linecap: round;
 }
+
+@media (max-width: 575px) {
+  .skewLetter {
+    font-size: 30px;
+  }
+}

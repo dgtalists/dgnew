@@ -1050,291 +1050,6 @@
   color: #fff;
 }
 
-/* ============portfolio=============== */
-.portfolio {
-  position: relative;
-  padding: 0 0 60px 0;
-}
-
-.portfolio .headerSection {
-  text-align: left;
-  position: relative;
-}
-
-.portfolio .headerSection .cmnBtn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.eachPortfolio {
-  position: relative;
-  padding: 20px;
-  height: calc(100% - 30px);
-  border: 1px solid #ffffff1a;
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
-  border-radius: 20px;
-  padding: 20px;
-  margin-bottom: 30px;
-  overflow: hidden;
-  transition: all 0.4s ease-in-out;
-  background: #1b1b1b;
-}
-
-.portImgWrap {
-  position: relative;
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.portImgWrap::after {
-  content: "";
-  position: absolute;
-  width: 215%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: #ffffff4d;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  z-index: 1;
-}
-
-.eachPortfolio:hover .portImgWrap::after {
-  height: 250%;
-  transition: all 0.6s linear;
-  background-color: #0000;
-}
-
-.portimg {
-  width: 100%;
-  border-radius: 20px;
-  transition: all 0.4s ease-in-out;
-}
-
-.eachPortfolio:hover .portimg {
-  transform: scale(1.1);
-}
-
-.portfolioContent h4 {
-  font-size: 24px;
-  text-transform: capitalize;
-  color: #fff;
-}
-
-.portfolioContent h4 a {
-  color: inherit;
-}
-
-.portfolioContent h4:hover a {
-  color: #0096cf;
-}
-
-.portfolioContent p {
-  font-size: 16px;
-  color: #fff;
-}
-
-.techStack h6 {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.techStack ul {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 0;
-}
-
-.techStack ul li {
-  display: inline-block;
-}
-
-.techStack ul li img {
-  width: 30px;
-  height: 30px;
-}
-
-.industrySection {
-  padding-top: 60px;
-}
-
-/* =====================testimonial================= */
-.testimonial {
-  position: relative;
-  padding: 0 0 60px 0;
-}
-
-.testimonial .headerSection {
-  text-align: left;
-  position: relative;
-}
-
-.eachTestiSlider {
-  position: relative;
-  padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: #1f1f1f;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-.eachTestiSlider img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.eachTestiSlider .authorDetails h6 {
-  font-size: 20px;
-  color: #0096cf;
-}
-
-.quoteIcon {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  opacity: 0.3;
-  font-size: 66px;
-  transition: 0.5s;
-}
-
-.eachTestiSlider:hover .quoteIcon {
-  color: #0096cf;
-  opacity: 1;
-  animation: shake 0.4s ease-in-out;
-}
-
-@keyframes shake {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(5deg);
-  }
-
-  50% {
-    transform: rotate(-5deg);
-  }
-
-  75% {
-    transform: rotate(3deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.customNav {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  transform: translateY(-50%);
-}
-
-.prevBtn,
-.nextBtn {
-  background: #000;
-  color: #fff;
-  font-size: 22px;
-  display: flex;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.prevBtn:hover,
-.nextBtn:hover {
-  background: #0096cf;
-}
-
-/* ================latestBlogs============ */
-.latestBlogs {
-  position: relative;
-  padding: 0 0 60px 0;
-}
-
-.eachBlog {
-  position: relative;
-  width: 100%;
-}
-
-.eachBlog img {
-  width: 100%;
-  border-radius: 20px;
-  transition: all 0.5s ease-in-out;
-}
-
-.blogImg {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.blogImg::after {
-  content: "";
-  position: absolute;
-  width: 215%;
-  height: 0%;
-  left: 50%;
-  top: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  z-index: 1;
-}
-
-.eachBlog:hover .blogImg::after {
-  height: 250%;
-  transition: all 600ms linear;
-  background-color: transparent;
-}
-
-.eachBlog:hover img {
-  transform: scale(1.1);
-}
-
-.eachBlog h5 {
-  font-size: 24px;
-  text-transform: capitalize;
-  color: #fff;
-}
-
-.eachBlog h5 a {
-  color: inherit;
-}
-
-.postContent .blogLink {
-  color: #0096cf;
-  font-size: 18px;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-
-.postContent .blogLink svg {
-  transition: all 0.4s;
-  font-size: 20px;
-}
-
-.eachBlog:hover .blogLink svg {
-  transform: rotate(45deg);
-  transition: all 0.4s;
-}
-
 @media (max-width: 575px) {
   .sectionLeft h1 {
     font-size: 26px;
@@ -1403,7 +1118,7 @@
   }
 
   .aboutRight .cmnBtn {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .counterSec {
@@ -1420,32 +1135,109 @@
   .cmnBtn {
     padding: 6px 15px;
     font-size: 16px;
+    margin-top: 20px;
   }
 
   .aboutRight {
     margin-left: 0;
     margin-top: 25px;
   }
-  .solution_desc>div>h5 ,
+
+  .solution_desc>div>h5,
   .slider_content>h5 {
     font-size: 18px;
     line-height: 24px;
   }
-  .solution_desc>div>ul li ,
+
+  .solution_desc>div>ul li,
   .solution_desc>div>p {
     font-size: 16px;
     line-height: 24px;
   }
-  .whyUsCount h2{
+
+  .whyUsCount h2 {
     font-size: 40px;
     line-height: 50px;
   }
+
   .eachWhyUs {
     padding-top: 50px;
     margin-bottom: 20px;
     height: auto;
   }
-  .eachWhyUs svg{
+
+  .eachWhyUs svg {
     font-size: 36px;
+  }
+
+  .techStackRight ul {
+    padding: 0;
+    gap: 15px;
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  .techStackRight ul li {
+    padding: 10px;
+  }
+
+  .techStackRight ul li img {
+    height: 25px;
+  }
+
+  .techStackRight ul li p {
+    font-size: 14px;
+  }
+
+  .ourWorkProcess {
+    padding: 30px 0;
+  }
+
+  .headerSection,
+  .ourWorkProcess .headerSection {
+    margin-bottom: 25px;
+  }
+
+  .serviceList {
+    padding: 0 0 30px;
+  }
+
+  .whyUs {
+    padding: 30px 0;
+  }
+
+  .howWorkList ul {
+    display: block;
+  }
+
+  .howWorkList .iconWrap {
+    flex-direction: column-reverse;
+    margin-bottom: 32px;
+    gap: 10px;
+  }
+
+  .howWorkList .iconWrap img {
+    animation: none;
+    width: 90px;
+  }
+
+  .workTogether .headerSection p {
+    font-size: 16px;
+  }
+
+  .eachContactItem {
+    margin-bottom: 20px;
+  }
+
+  .contactContent h5 {
+    font-size: 15px;
+  }
+
+  .contactContent a {
+    font-size: 18px;
+  }
+
+  .togetherBox {
+    padding: 30px 0 35px;
   }
 }
