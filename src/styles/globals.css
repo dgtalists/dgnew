@@ -97,3 +97,33 @@ ul{
   margin: 0;
   list-style: none;
 }
+.pdf-image-scroll-container {
+  max-height: 90vh; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right:3px; /* Room for scrollbar */
+}
+
+/* Scrollbar styling */
+.pdf-image-scroll-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.pdf-image-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.pdf-image-scroll-container::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.pdf-image-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox scrollbar */
+.pdf-image-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #0096cf #fff;
+}

@@ -386,7 +386,7 @@ const Header = () => {
                       router.pathname === "/blog" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="blog" className={Styles.eachNavMenu}>
+                    <Link href="/blog" className={Styles.eachNavMenu}>
                       Insights & Resources
                     </Link>
                   </li>
@@ -395,8 +395,17 @@ const Header = () => {
                       router.pathname === "/contact" ? Styles.active : ""
                     }`}
                   >
-                    <Link href="contact" className={Styles.eachNavMenu}>
+                    <Link href="/contact" className={Styles.eachNavMenu}>
                       Contact
+                    </Link>
+                  </li>
+                  <li
+                    className={`${Styles.eachNav} ${
+                      router.pathname === "/hire_us" ? Styles.active : ""
+                    }`}
+                  >
+                    <Link href="/hire_us" className={Styles.eachNavMenu}>
+                      Hire Us
                     </Link>
                   </li>
                 </ul>
