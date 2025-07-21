@@ -205,6 +205,12 @@ const Header = () => {
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
+                                <li>
+                                  <Link href="/strategy_consulting">
+                                    Strategy & Consulting 
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
                               </ul>
                               <ul>
                                 <li>
@@ -225,14 +231,20 @@ const Header = () => {
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
+                                <li>
+                                  <Link href="/cloud_infrastructure">
+                                    Cloud & Infrastructure
+                                    <GoArrowUpRight />
+                                  </Link>
+                                </li>
                               </ul>
-                              <div
+                              {/* <div
                                 className={Styles.imdustryImg}
                                 data-aos="fade-left"
                               >
-                                {/* <h3>Case Study</h3> */}
+                                <h3>Case Study</h3>
                                 <img src="/images/menu_img.jpg" />
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
