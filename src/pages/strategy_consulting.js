@@ -42,7 +42,7 @@ export default function Customsoftware() {
       title: "Digital Transformation Strategy",
       intro:
         "We guide organizations through their digital evolution by aligning technology initiatives with business objectives. Our team helps modernize operations, digitize customer experiences, and adopt innovative solutions to drive long-term growth.",
-      image: "/images/bespoke.png",
+      image: "/images/DigitalTransformationStrategy.png",
       link: "#",
     },
     {
@@ -50,7 +50,7 @@ export default function Customsoftware() {
       intro:
         "From selecting the right tech stack to planning infrastructure upgrades, we provide expert advice to optimize your IT investments. Our consulting ensures you're using the right technologies to stay agile, efficient, and competitive.",
       
-      image: "/images/web-application.png",
+      image: "/images/it_tech.png",
       link: "#",
     },
     {
@@ -58,7 +58,7 @@ export default function Customsoftware() {
       intro:
         "We analyze your current workflows to identify inefficiencies and automation opportunities. Our goal is to streamline operations, reduce overhead, and enhance productivity through data-driven process improvements.",
       
-      image: "/images/aiml.png",
+      image: "/images/bpo.png",
       link: "#",
     },
     {
@@ -66,7 +66,7 @@ export default function Customsoftware() {
       intro:
         "Whether you're launching a new product or enhancing an existing one, we help define the right vision, features, and timeline. Our approach ensures alignment between market needs, business goals, and development efforts.",
       
-      image: "/images/cloud-app.png",
+      image: "/images/product_strategy.png",
       link: "#",
     },
     {
@@ -74,7 +74,7 @@ export default function Customsoftware() {
       intro:
         "We help you plan, implement, and manage your move to the cloud. From selecting the right platform to ensuring secure migration, our team ensures cost-effective, scalable, and future-ready cloud solutions.",
      
-      image: "/images/api-dev.png",
+      image: "/images/cloud_strategy.png",
       link: "#",
     },
     {
@@ -82,7 +82,7 @@ export default function Customsoftware() {
       intro:
         "We turn raw data into strategic assets. Our experts design data strategies that support better decision-making, including BI tool selection, dashboard creation, and analytics implementation that delivers actionable insights.",
       
-      image: "/images/agile.png",
+      image: "/images/data_strategy.png",
       link: "#",
     },
   ];
@@ -270,7 +270,7 @@ export default function Customsoftware() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/csdev.jpg">
+      <ParallaxBanner backgroundImage="/images/strategy.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -294,7 +294,7 @@ export default function Customsoftware() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/custom-about.png"}
+                    src={"/images/strategy-about.png"}
                     alt={"about img"}
                   />
                 </div>

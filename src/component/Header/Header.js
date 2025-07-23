@@ -411,7 +411,7 @@ const Header = () => {
                       Contact
                     </Link>
                   </li>
-                  <li
+                  {/* <li
                     className={`${Styles.eachNav} ${
                       router.pathname === "/hire_us" ? Styles.active : ""
                     }`}
@@ -419,7 +419,7 @@ const Header = () => {
                     <Link href="/hire_us" className={Styles.eachNavMenu}>
                       Hire Us
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className={Styles.socialIcon}>
                   <ul>

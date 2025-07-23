@@ -34,7 +34,7 @@ const ContinuousScrollingSlider = () => {
       <div ref={sliderRef} className={styles.sliderWrap}>
         {[
           "/images/safco.png",
-          "/images/flipcart.png",
+          // "/images/flipcart.png",
           "/images/1mg.png",
           "/images/shineroad.png",
           "/images/teramotors.png",

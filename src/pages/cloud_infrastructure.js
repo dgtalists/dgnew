@@ -42,7 +42,7 @@ export default function Customsoftware() {
       title: "Cloud Architecture Design",
       intro:
         "We help you design a robust, scalable, and secure cloud architecture tailored to your business needs. Whether it's AWS, Azure, or Google Cloud, our solutions prioritize performance, reliability, and cost-efficiency from the ground up.",
-      image: "/images/bespoke.png",
+      image: "/images/cloud_architect.png",
       link: "#",
     },
     {
@@ -50,7 +50,7 @@ export default function Customsoftware() {
       intro:
         "Our experts manage end-to-end migration from on-premise or legacy systems to the cloud. We ensure minimal downtime, secure data transfer, and seamless integration with your existing systems.",
       
-      image: "/images/web-application.png",
+      image: "/images/cloud_migration.png",
       link: "#",
     },
     {
@@ -58,7 +58,7 @@ export default function Customsoftware() {
       intro:
         "We offer continuous infrastructure monitoring and maintenance services to ensure optimal performance, uptime, and security. Our proactive approach helps prevent issues before they impact your business.",
       
-      image: "/images/aiml.png",
+      image: "/images/infra_manage.png",
       link: "#",
     },
     {
@@ -66,7 +66,7 @@ export default function Customsoftware() {
       intro:
         "We implement DevOps practices to streamline your development and deployment pipelines. From CI/CD setup to infrastructure-as-code, we improve agility, reduce deployment times, and enhance team collaboration.",
       
-      image: "/images/cloud-app.png",
+      image: "/images/devops.png",
       link: "#",
     },
     {
@@ -74,7 +74,7 @@ export default function Customsoftware() {
       intro:
         "We ensure your cloud infrastructure meets industry standards for security and compliance. From access control to data encryption and threat detection, we keep your environment protected and audit-ready.",
      
-      image: "/images/api-dev.png",
+      image: "/images/cloud_secretary.png",
       link: "#",
     },
     {
@@ -82,7 +82,7 @@ export default function Customsoftware() {
       intro:
         "Our team helps you manage complex cloud strategies involving multiple providers or hybrid setups. We optimize performance, avoid vendor lock-in, and ensure seamless data and workload portability. ",
       
-      image: "/images/agile.png",
+      image: "/images/HybridSolutions.png",
       link: "#",
     },
   ];
@@ -270,7 +270,7 @@ export default function Customsoftware() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/csdev.jpg">
+      <ParallaxBanner backgroundImage="/images/cloud_bg.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
@@ -294,7 +294,7 @@ export default function Customsoftware() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/custom-about.png"}
+                    src={"/images/cloud_about.png"}
                     alt={"about img"}
                   />
                 </div>

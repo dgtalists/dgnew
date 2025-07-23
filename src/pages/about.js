@@ -62,7 +62,6 @@ export default function About() {
   useEffect(() => {
     processRef.current.forEach((el, index) => {
       const fromX = index % 2 === 0 ? -100 : 100;
-
       gsap.fromTo(
         el,
         {
@@ -75,7 +74,7 @@ export default function About() {
           opacity: 1,
           autoAlpha: 1,
           duration: 1,
-          ease: "power2.out", // smoother than power3 for subtle movement
+          ease: "power4.out", // smoother than power3 for subtle movement
           scrollTrigger: {
             trigger: el,
             start: "top 85%",

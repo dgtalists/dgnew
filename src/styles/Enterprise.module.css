@@ -577,6 +577,7 @@
   border: 1px solid #313131;
   padding: 10px 20px;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .techStackLeft ul li.activeTab {
