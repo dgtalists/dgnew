@@ -13,12 +13,13 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Footer from "@/component/Footer/Footer";
 import { DiCode } from "react-icons/di";
 import {
   BsBoxSeam,
+  BsBrush,
   BsCodeSlash,
   BsCodeSquare,
   BsPatchCheck,
@@ -26,88 +27,83 @@ import {
 } from "react-icons/bs";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { HiOutlineArrowRight } from "react-icons/hi";
-export default function Customsoftware() {
+import { AiOutlineHourglass } from "react-icons/ai";
+
+export default function DataAnalytics() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
-  useEffect(() => {
-    console.log("Active Tab Changed:", activeIndex);
-  }, [activeIndex]);
-  const handleClick = (index) => {
-    console.log("Clicked on:", index);
-    setActiveIndex(index);
-  };
 
   const serviceData = [
     {
-      title: "Bespoke Software Development",
+      title: "Data Strategy & Consulting",
       intro:
-        "From concept to deployment, we develop custom applications tailored to your business needs.",
+        "We help businesses define a robust data strategy that aligns with their goals and maximizes data value.",
       features: [
-        "Scalable web and mobile applications",
-        "Custom enterprise-grade solutions",
-        "End-to-end software lifecycle management",
+        "Data governance and architecture",
+        "Data integration and management",
+        "AI-driven business intelligence",
       ],
-      image: "/images/bespoke.png",
+      image: "/images/ai-1.png",
       link: "#",
     },
     {
-      title: "Web & Mobile Application Development",
+      title: "Big Data Analytics",
       intro:
-        "Deliver high-performing web and mobile applications with intuitive user experiences.",
+        "Leverage big data to uncover actionable insights and drive business growth.",
       features: [
-        "Cross-platform and native mobile apps (iOS, Android)",
-        "Progressive web apps (PWA)",
-        "Cloud-based and SaaS solutions",
+        "Data warehousing and ETL solutions",
+        "Real-time data processing and analytics",
+        "Predictive and prescriptive analytics",
       ],
-      image: "/images/web-application.png",
+      image: "/images/ai-2.png",
       link: "#",
     },
     {
-      title: "AI & Machine Learning Solutions",
+      title: "Machine Learning & AI Development",
       intro:
-        "Leverage artificial intelligence to automate workflows, analyze data, and enhance decision-making.",
+        "Enhance decision-making with AI-powered automation and predictive capabilities.",
       features: [
-        "Predictive analytics",
-        "Chatbots and virtual assistants",
-        "AI-powered automation",
+        "Machine learning model development",
+        "Deep learning and NLP solutions",
+        "AI-driven anomaly detection",
       ],
-      image: "/images/aiml.png",
+      image: "/images/ai-3.png",
       link: "#",
     },
     {
-      title: "Cloud Application Development",
+      title: "Business Intelligence & Visualization",
       intro:
-        "Build and scale applications on secure, cost-effective cloud platforms.",
+        "Transform complex data into meaningful insights through interactive dashboards.",
       features: [
-        "Cloud-native applications",
-        "Multi-cloud and hybrid cloud solutions",
-        "Cloud migration and optimization",
+        "BI dashboard development (Power BI, Tableau)",
+        "KPI monitoring and reporting",
+        "Self-service analytics platforms",
       ],
-      image: "/images/cloud-app.png",
+      image: "/images/ai-4.png",
       link: "#",
     },
     {
-      title: "Software Integration & API Development",
+      title: "AI-Powered Process Automation",
       intro:
-        "Seamlessly integrate new software with existing systems to optimize business operations.",
+        "Optimize workflows and improve efficiency with AI-driven automation.",
       features: [
-        "API design and development",
-        "CRM, ERP, and third-party system integration",
-        "Data synchronization and workflow automation",
+        "Robotic Process Automation (RPA)",
+        "AI chatbots and virtual assistants",
+        "Intelligent document processing",
       ],
-      image: "/images/api-dev.png",
+      image: "/images/ai-6.png",
       link: "#",
     },
     {
-      title: "DevOps & Agile Development",
+      title: "AI Model Deployment & MLOps",
       intro:
-        "Accelerate software delivery with agile methodologies and DevOps best practices.",
+        "Ensure seamless deployment, monitoring, and optimization of AI models in production.",
       features: [
-        "Continuous integration and deployment (CI/CD)",
-        "Cloud infrastructure automation",
-        "Performance optimization",
+        "Model training and evaluation",
+        "CI/CD for machine learning (MLOps)",
+        "Scalable cloud-based AI deployment",
       ],
-      image: "/images/agile.png",
+      image: "/images/ai-5.png",
       link: "#",
     },
   ];
@@ -155,31 +151,31 @@ export default function Customsoftware() {
   const whyUsData = [
     {
       count: "01",
-      title: "Proven Expertise & Innovation",
+      title: "Scalable & Secure SaaS Solutions",
       description:
-        "With 19+ years of experience, we build future-proof software using cutting-edge technologies.",
+        "We develop SaaS applications that grow with your business while ensuring robust security.",
       icon: <BsSuitcaseLg />,
     },
     {
       count: "02",
-      title: "Scalable & Secure Development",
+      title: "Deep Cloud & DevOps Expertise",
       description:
-        "We develop software that scales with your business while ensuring top-tier security and compliance.",
+        "Our cloud-native approach and DevOps best practices optimize performance and reliability.",
       icon: <BsCodeSquare />,
     },
     {
       count: "03",
-      title: "Agile & Transparent Process",
+      title: "User-Centric Design & Development",
       description:
-        "Our agile development approach ensures flexibility, faster time-to-market, and seamless collaboration.",
-      icon: <BsBoxSeam />,
+        "We focus on delivering intuitive, engaging, and seamless user experiences.",
+      icon: <BsBrush />,
     },
     {
       count: "04",
-      title: "Tailored Solutions for Business Growth",
+      title: "Agile Development & Faster Time-to-Market",
       description:
-        "We align technology with your business strategy to deliver software that drives results.",
-      icon: <BsPatchCheck />,
+        "Our agile methodologies ensure faster iterations, high-quality code, and quicker deployment.",
+      icon: <AiOutlineHourglass />,
     },
   ];
   const techStackData = [
@@ -289,21 +285,21 @@ export default function Customsoftware() {
   return (
     <>
       <Head>
-        <title>Custom Software Development</title>
-        <meta name="description" content="Generated by create next app" />
+        <title>Dgtalists | Trusted AI and Data Analytics Company for Business Growth</title>
+        <meta name="description" content="Dgtalists, an AI and data analytics company, optimizes data management with secure, efficient processing and deep insights. Contact us now to get started!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/csdev.jpg">
+      <ParallaxBanner backgroundImage="/images/enterprise_soft.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={"Custom Software Development Services"}
-                    highlightText={"Software Development"}
+                    text={"Data Analytics & AI"}
+                    highlightText={"AI"}
                   />
                 </h1>
               </div>
@@ -319,7 +315,7 @@ export default function Customsoftware() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/custom-about.png"}
+                    src={"/images/about-data.png"}
                     alt={"about img"}
                   />
                 </div>
@@ -347,19 +343,16 @@ export default function Customsoftware() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Drive Digital Transformation with Tailored Software Solutions"
+                      "Unlock the Power of Data with AI-Driven Insights"
                     }
-                    highlightText={"Digital Transformation"}
+                    highlightText={"Data with AI-Driven"}
                   />
                 </h4>
                 <p>
-                  At DGTALISTS, we specialize in building custom software
-                  solutions that align with your unique business goals. Whether
-                  you are a start-up, scale-up, or enterprise, our bespoke
-                  software solutions enhance efficiency, improve customer
-                  experiences, and drive growth.
+                At DGTALISTS, we empower businesses with advanced data analytics and AI solutions to drive smarter decision-making, optimize operations, and enhance customer experiences. Our expertise in big data, machine learning, and AI automation enables start-ups, scale-ups, and enterprises to harness the full potential of their data.
+
                 </p>
-                <Link href="/" className={styles.cmnBtn}>
+                <Link href="/contact" className={styles.cmnBtn}>
                   get started
                   <HiOutlineArrowRight className={styles.arrowRight} />
                 </Link>
@@ -388,8 +381,8 @@ export default function Customsoftware() {
             <span className={styles.subtitle}>Our Services</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Our Custom Software Development Services"}
-                highlightText={"Custom Software"}
+                text={"Our Data Analytics & AI Services"}
+                highlightText={"Data Analytics & AI"}
               />
             </h4>
           </div>
@@ -426,13 +419,13 @@ export default function Customsoftware() {
           </div>
         </div>
       </section>
-      <section className={styles.whyUs}>
+      {/* <section className={styles.whyUs}>
         <div className="container">
           <div className={styles.headerSection}>
             <span className={styles.subtitle}>Why Choose Us</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Trusted Custom Software Development with DGTALISTS"}
+                text={"Trusted Enterprise Software Development with DGTALISTS"}
                 highlightText={"DGTALISTS"}
               />
             </h4>
@@ -452,14 +445,14 @@ export default function Customsoftware() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <section className={styles.ourTechStack}>
         <div className="container">
           <div className={styles.headerSection}>
             <span className={styles.subtitle}>Our Tech Stack</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Technologies We Use for Custom Software Development"}
+                text={"Technologies We Use for Data analytics & AI"}
                 highlightText={"Technologies"}
               />
             </h4>
@@ -472,8 +465,8 @@ export default function Customsoftware() {
                   {techStackData.map((tab, index) => (
                     <li
                       key={index}
-                      onClick={() => handleClick(index)}
                       className={activeIndex === index ? styles.activeTab : ""}
+                      onClick={() => setActiveIndex(index)}
                     >
                       {tab.title}
                     </li>
@@ -697,13 +690,12 @@ export default function Customsoftware() {
               <span className={styles.subtitle}>Let's Collaborate</span>
               <h4 className={styles.title}>
                 <AnimatedText
-                  text={"Let’s Build Your Next-Gen Enterprise Solution"}
-                  highlightText={"Next-Gen Enterprise"}
+                  text={"Leverage Data & AI for Business Growth"}
+                  highlightText={"Data & AI"}
                 />
               </h4>
               <p>
-                Looking to enhance your enterprise operations with a scalable,
-                secure, and high-performance software solution? Let’s talk!
+              Unlock new opportunities with our AI-powered data analytics solutions. Let’s discuss how DGTALISTS can help transform your business with data-driven intelligence.
               </p>
             </div>
             <div className="row">
@@ -725,7 +717,9 @@ export default function Customsoftware() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
+                    <Link href={"https://dgtalists.com"}>
+                      dgtalists.com
+                    </Link>
                   </div>
                 </div>
               </div>

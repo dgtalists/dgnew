@@ -1,13 +1,10 @@
 import Head from "next/head";
 import styles from "@/styles/Enterprise.module.css";
 import Header from "@/component/Header/Header";
-import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
-import { HiOutlineArrowRight } from "react-icons/hi";
 import ImageReveal from "@/component/ImageReveal/ImageReveal";
 import AnimatedText from "@/component/AnimatedText/AnimatedText";
-import { GoArrowRight, GoArrowUpRight, GoGlobe } from "react-icons/go";
-import ContinuousScrollingSlider from "@/component/Continious/ContinuousScrolig";
+import { GoArrowUpRight, GoGlobe } from "react-icons/go";
 import { PiSuitcaseSimpleLight } from "react-icons/pi";
 import ParallaxBanner from "@/component/ParralaxBanner/ParallaxBanner";
 import Counter from "@/component/Counter/Counter";
@@ -17,95 +14,95 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useRef, useState } from "react";
-import { BiSolidPhoneCall, BiSolidQuoteRight } from "react-icons/bi";
-import { IoArrowBack } from "react-icons/io5";
-import { IoArrowForward } from "react-icons/io5";
+import { BiSolidPhoneCall } from "react-icons/bi";
 import Footer from "@/component/Footer/Footer";
 import { DiCode } from "react-icons/di";
 import {
   BsBoxSeam,
+  BsBrush,
   BsCodeSlash,
   BsCodeSquare,
   BsPatchCheck,
   BsSuitcaseLg,
 } from "react-icons/bs";
 import { RxEnvelopeClosed } from "react-icons/rx";
-import GSAPParticles from "@/component/GSAPParticle/GSAPParticles";
-export default function Enterprise() {
+import { HiOutlineArrowRight } from "react-icons/hi";
+import { AiOutlineHourglass } from "react-icons/ai";
+export default function SaasApplication() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
 
   const serviceData = [
     {
-      title: "Custom Enterprise Software Development",
+      title: "Custom SaaS Application Development",
       intro:
-        "We design and develop scalable, high-performance enterprise applications that streamline operations, enhance collaboration, and drive productivity.",
+        "We build tailored SaaS applications that meet your unique business needs and ensure seamless user experiences.",
       features: [
-        "End-to-end custom software development",
-        "Cloud-based and on-premise solutions",
-        "AI-driven and data-centric applications",
+        "Multi-tenant cloud-based applications",
+        "Scalable web and mobile SaaS solutions",
+        "End-to-end SaaS product lifecycle management",
       ],
-      image: "/images/custom-enterprise.png",
+      image: "/images/saas-1.png",
       link: "#",
     },
     {
-      title: "Enterprise Application Integration (EAI)",
+      title: "SaaS Platform Architecture & Design",
       intro:
-        "Seamlessly connect disparate business systems for smooth data flow and operational efficiency.",
+        "Our expert team designs robust SaaS architectures for performance, scalability, and security",
       features: [
-        "API development and integration",
-        "CRM, ERP, and third-party software integration",
-        "Legacy system modernization",
+        "Microservices-based architectures",
+        "API-first and serverless architectures",
+        "Cloud-native application design",
       ],
-      image: "/images/eai.png",
+      image: "/images/saas-2.png",
       link: "#",
     },
     {
-      title: "Enterprise Mobility Solutions",
+      title: "Cloud Deployment & Optimization",
       intro:
-        "Enable seamless mobile experiences for employees, customers, and partners with secure enterprise-grade applications.",
+        "We ensure your SaaS application is optimized for the cloud, leveraging top cloud platforms.",
       features: [
-        "Cross-platform mobile app development",
-        "Enterprise-wide security and compliance",
-        "BYOD and MDM implementation",
+        "AWS, Azure, Google Cloud deployment",
+        "Auto-scaling and load balancing",
+        "Cost-effective cloud infrastructure",
       ],
-      image: "/images/enter-mobility.png",
+      image: "/images/saas-3.png",
       link: "#",
     },
     {
-      title: "Cloud Enterprise Solutions",
+      title: "SaaS Product Modernization",
       intro:
-        "Leverage cloud computing for scalable, flexible, and cost-effective enterprise solutions.",
+        "Transform legacy applications into modern SaaS platforms to drive efficiency and innovation.",
       features: [
-        "Cloud migration and optimization",
-        "SaaS, PaaS, and IaaS development",
-        "Multi-cloud and hybrid cloud solutions",
+        "Migration from monolithic to microservices architecture",
+        "UI/UX enhancements and reengineering",
+        "Performance optimization and security upgrades",
       ],
-      image: "/images/cloud-enterprise.png",
+      image: "/images/saas-4.png",
       link: "#",
     },
     {
-      title: "AI & Automation for Enterprises",
+      title: "AI & Automation for SaaS Applications",
       intro:
-        "Enhance decision-making, automate processes, and optimize business operations with AI-driven solutions.",
+        "Enhance your SaaS product with AI-driven automation and analytics.",
       features: [
-        "Machine learning and predictive analytics",
-        "RPA (Robotic Process Automation)",
-        "Chatbots and virtual assistants",
+        "AI-powered chatbots and virtual assistants",
+        "Predictive analytics and machine learning",
+        "Workflow automation and intelligent decision-making",
       ],
-      image: "/images/custom-enterprise.png",
+      image: "/images/saas-6.png",
       link: "#",
     },
     {
-      title: "Enterprise Data Management & Analytics",
+      title: "SaaS Security & Compliance",
       intro:
-        "Transform raw data into actionable insights to drive informed business decisions.",
+        "We ensure your SaaS solution meets industry security and compliance standards.",
       features: [
-        "Big data solutions",
-        "Business intelligence dashboards",
-        "Data security and compliance",
+        "Data encryption and access controls",
+        "GDPR, HIPAA, and SOC 2 compliance",
+        "Identity and access management (IAM)",
       ],
-      image: "/images/enter-mobility.png",
+      image: "/images/saas-5.png",
       link: "#",
     },
   ];
@@ -153,31 +150,31 @@ export default function Enterprise() {
   const whyUsData = [
     {
       count: "01",
-      title: "Industry Expertise & Innovation",
+      title: "Scalable & Secure SaaS Solutions",
       description:
-        "With 19+ years of experience, we combine deep industry knowledge with the latest technologies to build solutions that deliver real business value.",
+        "We develop SaaS applications that grow with your business while ensuring robust security.",
       icon: <BsSuitcaseLg />,
     },
     {
       count: "02",
-      title: "End-to-End Development & Support",
+      title: "Deep Cloud & DevOps Expertise",
       description:
-        "From ideation to deployment and beyond, we provide full-cycle development and support for a seamless enterprise experience.",
+        "Our cloud-native approach and DevOps best practices optimize performance and reliability.",
       icon: <BsCodeSquare />,
     },
     {
       count: "03",
-      title: "Agile & Scalable Solutions",
+      title: "User-Centric Design & Development",
       description:
-        "Our agile approach ensures flexibility and scalability, enabling your enterprise to adapt to evolving business needs.",
-      icon: <BsBoxSeam />,
+        "We focus on delivering intuitive, engaging, and seamless user experiences.",
+      icon: <BsBrush />,
     },
     {
       count: "04",
-      title: "Security & Compliance",
+      title: "Agile Development & Faster Time-to-Market",
       description:
-        "We prioritize your data with enterprise-grade security practices and adhere to global compliance standards.",
-      icon: <BsPatchCheck />,
+        "Our agile methodologies ensure faster iterations, high-quality code, and quicker deployment.",
+      icon: <AiOutlineHourglass />,
     },
   ];
   const techStackData = [
@@ -287,21 +284,21 @@ export default function Enterprise() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Generated by create next app" />
+        <title>Dgtalists | Expert SaaS Development Services for Any Device</title>
+        <meta name="description" content="We specialize in SaaS development services, creating applications that perform seamlessly on desktop, mobile, and tablets, helping businesses scale with confidence." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/enterprise_soft.jpg">
+      <ParallaxBanner backgroundImage="/images/saas-bg.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={"Custom Enterprise Software Development "}
-                    highlightText={"Enterprise"}
+                    text={"SAAS Based Application Development"}
+                    highlightText={"SAAS Based"}
                   />
                 </h1>
               </div>
@@ -317,7 +314,7 @@ export default function Enterprise() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/what-we-do-image.jpg"}
+                    src={"/images/about-saas.png"}
                     alt={"about img"}
                   />
                 </div>
@@ -345,23 +342,14 @@ export default function Enterprise() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Comprehensive Enterprise Software Development Services to Drive Business Growth"
+                      "Build Scalable & High-Performance SaaS Applications with DGTALISTS"
                     }
-                    highlightText={"Business"}
+                    highlightText={"SaaS Applications"}
                   />
                 </h4>
                 <p>
-                  At Dgtalists, we craft enterprise software solutions that
-                  empower organizations to excel in a digital-first world. From
-                  reimagining legacy systems to integrating advanced
-                  technologies like AI, Blockchain, and cloud platforms, our
-                  skilled team delivers applications that drive growth and
-                  streamline operations. With a passion for innovation and a
-                  commitment to excellence, we partner with businesses of all
-                  sizes to create software that’s as unique as your vision. With
-                  deep industry expertise and a business-centric approach, we
-                  empower start-ups, scale-ups, and enterprises to drive
-                  efficiency, innovation, and growth.
+                DGTALISTS specializes in designing and developing secure, scalable, and high-performance SaaS (Software-as-a-Service) applications. Whether you’re a start-up, scale-up, or enterprise, our SaaS solutions help you reduce costs, improve accessibility, and enhance business operations.
+
                 </p>
                 <Link href="/contact" className={styles.cmnBtn}>
                   get started
@@ -392,8 +380,8 @@ export default function Enterprise() {
             <span className={styles.subtitle}>Our Services</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Our Enterprise Software Development Services"}
-                highlightText={"Enterprise"}
+                text={"Our SaaS Development Services"}
+                highlightText={"SaaS Development"}
               />
             </h4>
           </div>
@@ -436,7 +424,7 @@ export default function Enterprise() {
             <span className={styles.subtitle}>Why Choose Us</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Trusted Enterprise Software Development with DGTALISTS"}
+                text={"Why Choose DGTALISTS for SaaS Development?"}
                 highlightText={"DGTALISTS"}
               />
             </h4>
@@ -463,7 +451,7 @@ export default function Enterprise() {
             <span className={styles.subtitle}>Our Tech Stack</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Technologies We Use for Enterprise Solutions"}
+                text={"Technologies We Use for SaaS Development"}
                 highlightText={"Technologies"}
               />
             </h4>
@@ -701,13 +689,12 @@ export default function Enterprise() {
               <span className={styles.subtitle}>Let's Collaborate</span>
               <h4 className={styles.title}>
                 <AnimatedText
-                  text={"Let’s Build Your Next-Gen Enterprise Solution"}
-                  highlightText={"Next-Gen Enterprise"}
+                  text={"Let’s Build Your Next-Gen SaaS Solution"}
+                  highlightText={"Next-Gen SaaS"}
                 />
               </h4>
               <p>
-                Looking to enhance your enterprise operations with a scalable,
-                secure, and high-performance software solution? Let’s talk!
+              Looking to launch or scale your SaaS application? Let’s talk about how DGTALISTS can help you build a high-performing, scalable, and secure SaaS platform
               </p>
             </div>
             <div className="row">

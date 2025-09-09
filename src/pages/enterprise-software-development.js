@@ -1,10 +1,13 @@
 import Head from "next/head";
 import styles from "@/styles/Enterprise.module.css";
 import Header from "@/component/Header/Header";
+import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
+import { HiOutlineArrowRight } from "react-icons/hi";
 import ImageReveal from "@/component/ImageReveal/ImageReveal";
 import AnimatedText from "@/component/AnimatedText/AnimatedText";
-import { GoArrowUpRight, GoGlobe } from "react-icons/go";
+import { GoArrowRight, GoArrowUpRight, GoGlobe } from "react-icons/go";
+import ContinuousScrollingSlider from "@/component/Continious/ContinuousScrolig";
 import { PiSuitcaseSimpleLight } from "react-icons/pi";
 import ParallaxBanner from "@/component/ParralaxBanner/ParallaxBanner";
 import Counter from "@/component/Counter/Counter";
@@ -14,96 +17,95 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useRef, useState } from "react";
-import { BiSolidPhoneCall } from "react-icons/bi";
+import { BiSolidPhoneCall, BiSolidQuoteRight } from "react-icons/bi";
+import { IoArrowBack } from "react-icons/io5";
+import { IoArrowForward } from "react-icons/io5";
 import Footer from "@/component/Footer/Footer";
 import { DiCode } from "react-icons/di";
 import {
   BsBoxSeam,
-  BsBrush,
   BsCodeSlash,
   BsCodeSquare,
   BsPatchCheck,
   BsSuitcaseLg,
 } from "react-icons/bs";
 import { RxEnvelopeClosed } from "react-icons/rx";
-import { HiOutlineArrowRight } from "react-icons/hi";
-import { AiOutlineHourglass } from "react-icons/ai";
-
-export default function MobileApp() {
+import GSAPParticles from "@/component/GSAPParticle/GSAPParticles";
+export default function Enterprise() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
 
   const serviceData = [
     {
-      title: "Custom Mobile App Development",
+      title: "Custom Enterprise Software Development",
       intro:
-        "We design and develop tailor-made mobile applications that enhance user experiences and business processes.",
+        "We design and develop scalable, high-performance enterprise applications that streamline operations, enhance collaboration, and drive productivity.",
       features: [
-        "iOS and Android app development",
-        "Feature-rich native and hybrid applications",
-        "Scalable and high-performance mobile solutions",
+        "End-to-end custom software development",
+        "Cloud-based and on-premise solutions",
+        "AI-driven and data-centric applications",
       ],
-      image: "/images/ui.png",
+      image: "/images/custom-enterprise.png",
       link: "#",
     },
     {
-      title: "Cross-Platform & Hybrid App Development",
+      title: "Enterprise Application Integration (EAI)",
       intro:
-        "Reach a broader audience with applications that work seamlessly across multiple platforms.",
+        "Seamlessly connect disparate business systems for smooth data flow and operational efficiency.",
       features: [
-        "React Native and Flutter development",
-        "Progressive Web Apps (PWA)",
-        "Single codebase for iOS and Android",
+        "API development and integration",
+        "CRM, ERP, and third-party software integration",
+        "Legacy system modernization",
       ],
-      image: "/images/mobile-7.png",
+      image: "/images/eai.png",
       link: "#",
     },
     {
-      title: "UI/UX Design for Mobile Apps",
+      title: "Enterprise Mobility Solutions",
       intro:
-        "Create visually appealing and intuitive mobile experiences that drive engagement.",
+        "Enable seamless mobile experiences for employees, customers, and partners with secure enterprise-grade applications.",
       features: [
-        "User-centric design and prototyping",
-        "Mobile-friendly interfaces and navigation",
-        "Responsive and interactive app experiences",
+        "Cross-platform mobile app development",
+        "Enterprise-wide security and compliance",
+        "BYOD and MDM implementation",
       ],
-      image: "/images/mobile-3.png",
+      image: "/images/enter-mobility.png",
       link: "#",
     },
     {
-      title: "Enterprise Mobile App Solutions",
+      title: "Cloud Enterprise Solutions",
       intro:
-        "Empower your workforce with secure, scalable enterprise mobile applications.",
+        "Leverage cloud computing for scalable, flexible, and cost-effective enterprise solutions.",
       features: [
-        "Employee productivity apps",
-        "Workflow automation solutions",
-        "Secure enterprise mobility solutions",
+        "Cloud migration and optimization",
+        "SaaS, PaaS, and IaaS development",
+        "Multi-cloud and hybrid cloud solutions",
       ],
-      image: "/images/mobile-4.png",
+      image: "/images/cloud-enterprise.png",
       link: "#",
     },
     {
-      title: "AI-Powered Mobile Applications",
+      title: "AI & Automation for Enterprises",
       intro:
-        "Leverage AI and machine learning to enhance mobile app intelligence.",
+        "Enhance decision-making, automate processes, and optimize business operations with AI-driven solutions.",
       features: [
-        "AI-driven chatbots and virtual assistants",
-        "Personalized user experiences",
-        "Predictive analytics and recommendation engines",
+        "Machine learning and predictive analytics",
+        "RPA (Robotic Process Automation)",
+        "Chatbots and virtual assistants",
       ],
-      image: "/images/mobile-5.png",
+      image: "/images/custom-enterprise.png",
       link: "#",
     },
     {
-      title: "Mobile App Testing & QA",
+      title: "Enterprise Data Management & Analytics",
       intro:
-        "Ensure flawless performance and security with rigorous testing methodologies.",
+        "Transform raw data into actionable insights to drive informed business decisions.",
       features: [
-        "Manual and automated testing",
-        "Security and compliance testing",
-        "Performance and usability optimization",
+        "Big data solutions",
+        "Business intelligence dashboards",
+        "Data security and compliance",
       ],
-      image: "/images/mobile-6.png",
+      image: "/images/enter-mobility.png",
       link: "#",
     },
   ];
@@ -151,31 +153,31 @@ export default function MobileApp() {
   const whyUsData = [
     {
       count: "01",
-      title: "Innovative & Scalable Solutions",
+      title: "Industry Expertise & Innovation",
       description:
-        "We build future-proof mobile applications that grow with your business.",
+        "With 19+ years of experience, we combine deep industry knowledge with the latest technologies to build solutions that deliver real business value.",
       icon: <BsSuitcaseLg />,
     },
     {
       count: "02",
-      title: "User-Centric Design & Performance",
+      title: "End-to-End Development & Support",
       description:
-        "Our apps are designed for seamless user experiences and high engagement rates.",
-      icon: <BsBrush />,
-    },
-    {
-      count: "03",
-      title: "Full-Cycle Development & Support",
-      description:
-        "From ideation to deployment and beyond, we provide end-to-end mobile app solutions.",
+        "From ideation to deployment and beyond, we provide full-cycle development and support for a seamless enterprise experience.",
       icon: <BsCodeSquare />,
     },
     {
-      count: "04",
-      title: "Agile Development & Faster Time-to-Market",
+      count: "03",
+      title: "Agile & Scalable Solutions",
       description:
-        "We follow agile methodologies to deliver high-quality mobile applications quickly.",
-      icon: <AiOutlineHourglass />,
+        "Our agile approach ensures flexibility and scalability, enabling your enterprise to adapt to evolving business needs.",
+      icon: <BsBoxSeam />,
+    },
+    {
+      count: "04",
+      title: "Security & Compliance",
+      description:
+        "We prioritize your data with enterprise-grade security practices and adhere to global compliance standards.",
+      icon: <BsPatchCheck />,
     },
   ];
   const techStackData = [
@@ -285,8 +287,8 @@ export default function MobileApp() {
   return (
     <>
       <Head>
-        <title>Let's Build Your Next-Gen Mobile App</title>
-        <meta name="description" content="Generated by create next app" />
+        <title>Enterprise Software Development Services | Custom Solutions by Dgtalists</title>
+        <meta name="description" content="Looking for reliable enterprise software development services? Dgtalists helps businesses deliver next-gen corporate software solutions across web, mobile, and desktop platforms." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -298,8 +300,8 @@ export default function MobileApp() {
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={"Mobile Application Development"}
-                    highlightText={"Mobile"}
+                    text={"Custom Enterprise Software Development "}
+                    highlightText={"Enterprise"}
                   />
                 </h1>
               </div>
@@ -315,7 +317,7 @@ export default function MobileApp() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/about-mobile.png"}
+                    src={"/images/what-we-do-image.jpg"}
                     alt={"about img"}
                   />
                 </div>
@@ -343,13 +345,23 @@ export default function MobileApp() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Build Cutting-Edge Mobile Apps for Business Growth"
+                      "Comprehensive Enterprise Software Development Services to Drive Business Growth"
                     }
-                    highlightText={"Mobile Apps"}
+                    highlightText={"Business"}
                   />
                 </h4>
                 <p>
-                At DGTALISTS, we specialize in developing high-performance, user-friendly mobile applications that drive engagement and business success. Whether you need a native, hybrid, or cross-platform app, our team delivers scalable, secure, and feature-rich solutions tailored to your business needs. 
+                  At Dgtalists, we craft enterprise software solutions that
+                  empower organizations to excel in a digital-first world. From
+                  reimagining legacy systems to integrating advanced
+                  technologies like AI, Blockchain, and cloud platforms, our
+                  skilled team delivers applications that drive growth and
+                  streamline operations. With a passion for innovation and a
+                  commitment to excellence, we partner with businesses of all
+                  sizes to create software that’s as unique as your vision. With
+                  deep industry expertise and a business-centric approach, we
+                  empower start-ups, scale-ups, and enterprises to drive
+                  efficiency, innovation, and growth.
                 </p>
                 <Link href="/contact" className={styles.cmnBtn}>
                   get started
@@ -380,8 +392,8 @@ export default function MobileApp() {
             <span className={styles.subtitle}>Our Services</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Our Mobile App Development Services"}
-                highlightText={"Mobile App"}
+                text={"Our Enterprise Software Development Services"}
+                highlightText={"Enterprise"}
               />
             </h4>
           </div>
@@ -424,7 +436,7 @@ export default function MobileApp() {
             <span className={styles.subtitle}>Why Choose Us</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Trusted  Mobile App Development with DGTALISTS"}
+                text={"Trusted Enterprise Software Development with DGTALISTS"}
                 highlightText={"DGTALISTS"}
               />
             </h4>
@@ -451,7 +463,7 @@ export default function MobileApp() {
             <span className={styles.subtitle}>Our Tech Stack</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Technologies We Use for Data analytics & AI"}
+                text={"Technologies We Use for Enterprise Solutions"}
                 highlightText={"Technologies"}
               />
             </h4>
@@ -499,7 +511,7 @@ export default function MobileApp() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Our Proven Approach to  Mobile App Development"
+                      "Our Proven Approach to Enterprise Software Development"
                     }
                     highlightText={"Proven Approach"}
                   />
@@ -689,12 +701,13 @@ export default function MobileApp() {
               <span className={styles.subtitle}>Let's Collaborate</span>
               <h4 className={styles.title}>
                 <AnimatedText
-                  text={"Let's Build Your Next-Gen Mobile App"}
-                  highlightText={"Next-Gen Mobile"}
+                  text={"Let’s Build Your Next-Gen Enterprise Solution"}
+                  highlightText={"Next-Gen Enterprise"}
                 />
               </h4>
               <p>
-              Looking to create a high-performing mobile application? Let’s talk about how DGTALISTS can bring your vision to life with cutting-edge mobile solutions.
+                Looking to enhance your enterprise operations with a scalable,
+                secure, and high-performance software solution? Let’s talk!
               </p>
             </div>
             <div className="row">

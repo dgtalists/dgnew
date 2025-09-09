@@ -188,25 +188,25 @@ const Header = () => {
                               </div>
                               <ul>
                                 <li>
-                                  <Link href="/customsoftware">
+                                  <Link href="/custom-software-development">
                                     Custom Software Development
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="/enterprise">
+                                  <Link href="/enterprise-software-development">
                                     Enterprise Software Development{" "}
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="/saasaplication">
+                                  <Link href="/saas-development">
                                     SAAS Based Application
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="/strategy_consulting">
+                                  <Link href="/strategy-and-consulting">
                                     Strategy & Consulting 
                                     <GoArrowUpRight />
                                   </Link>
@@ -214,25 +214,25 @@ const Header = () => {
                               </ul>
                               <ul>
                                 <li>
-                                  <Link href="/dataanalytics">
+                                  <Link href="/ai-and-data-analytics">
                                     Data analytics & AI
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="/mobileapp">
+                                  <Link href="/mobile-app-development">
                                     Mobile Application Development
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="/marketing">
+                                  <Link href="/marketing-and-communication">
                                     Marketing & Communication
                                     <GoArrowUpRight />
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="/cloud_infrastructure">
+                                  <Link href="/cloud-and-infrastructure">
                                     Cloud & Infrastructure
                                     <GoArrowUpRight />
                                   </Link>

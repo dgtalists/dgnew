@@ -29,81 +29,81 @@ import { RxEnvelopeClosed } from "react-icons/rx";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { AiOutlineHourglass } from "react-icons/ai";
 
-export default function DataAnalytics() {
+export default function MobileApp() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
 
   const serviceData = [
     {
-      title: "Data Strategy & Consulting",
+      title: "Custom Mobile App Development",
       intro:
-        "We help businesses define a robust data strategy that aligns with their goals and maximizes data value.",
+        "We design and develop tailor-made mobile applications that enhance user experiences and business processes.",
       features: [
-        "Data governance and architecture",
-        "Data integration and management",
-        "AI-driven business intelligence",
+        "iOS and Android app development",
+        "Feature-rich native and hybrid applications",
+        "Scalable and high-performance mobile solutions",
       ],
-      image: "/images/ai-1.png",
+      image: "/images/ui.png",
       link: "#",
     },
     {
-      title: "Big Data Analytics",
+      title: "Cross-Platform & Hybrid App Development",
       intro:
-        "Leverage big data to uncover actionable insights and drive business growth.",
+        "Reach a broader audience with applications that work seamlessly across multiple platforms.",
       features: [
-        "Data warehousing and ETL solutions",
-        "Real-time data processing and analytics",
-        "Predictive and prescriptive analytics",
+        "React Native and Flutter development",
+        "Progressive Web Apps (PWA)",
+        "Single codebase for iOS and Android",
       ],
-      image: "/images/ai-2.png",
+      image: "/images/mobile-7.png",
       link: "#",
     },
     {
-      title: "Machine Learning & AI Development",
+      title: "UI/UX Design for Mobile Apps",
       intro:
-        "Enhance decision-making with AI-powered automation and predictive capabilities.",
+        "Create visually appealing and intuitive mobile experiences that drive engagement.",
       features: [
-        "Machine learning model development",
-        "Deep learning and NLP solutions",
-        "AI-driven anomaly detection",
+        "User-centric design and prototyping",
+        "Mobile-friendly interfaces and navigation",
+        "Responsive and interactive app experiences",
       ],
-      image: "/images/ai-3.png",
+      image: "/images/mobile-3.png",
       link: "#",
     },
     {
-      title: "Business Intelligence & Visualization",
+      title: "Enterprise Mobile App Solutions",
       intro:
-        "Transform complex data into meaningful insights through interactive dashboards.",
+        "Empower your workforce with secure, scalable enterprise mobile applications.",
       features: [
-        "BI dashboard development (Power BI, Tableau)",
-        "KPI monitoring and reporting",
-        "Self-service analytics platforms",
+        "Employee productivity apps",
+        "Workflow automation solutions",
+        "Secure enterprise mobility solutions",
       ],
-      image: "/images/ai-4.png",
+      image: "/images/mobile-4.png",
       link: "#",
     },
     {
-      title: "AI-Powered Process Automation",
+      title: "AI-Powered Mobile Applications",
       intro:
-        "Optimize workflows and improve efficiency with AI-driven automation.",
+        "Leverage AI and machine learning to enhance mobile app intelligence.",
       features: [
-        "Robotic Process Automation (RPA)",
-        "AI chatbots and virtual assistants",
-        "Intelligent document processing",
+        "AI-driven chatbots and virtual assistants",
+        "Personalized user experiences",
+        "Predictive analytics and recommendation engines",
       ],
-      image: "/images/ai-6.png",
+      image: "/images/mobile-5.png",
       link: "#",
     },
     {
-      title: "AI Model Deployment & MLOps",
+      title: "Mobile App Testing & QA",
       intro:
-        "Ensure seamless deployment, monitoring, and optimization of AI models in production.",
+        "Ensure flawless performance and security with rigorous testing methodologies.",
       features: [
-        "Model training and evaluation",
-        "CI/CD for machine learning (MLOps)",
-        "Scalable cloud-based AI deployment",
+        "Manual and automated testing",
+        "Security and compliance testing",
+        "Performance and usability optimization",
       ],
-      image: "/images/ai-5.png",
+      image: "/images/mobile-6.png",
       link: "#",
     },
   ];
@@ -151,30 +151,30 @@ export default function DataAnalytics() {
   const whyUsData = [
     {
       count: "01",
-      title: "Scalable & Secure SaaS Solutions",
+      title: "Innovative & Scalable Solutions",
       description:
-        "We develop SaaS applications that grow with your business while ensuring robust security.",
+        "We build future-proof mobile applications that grow with your business.",
       icon: <BsSuitcaseLg />,
     },
     {
       count: "02",
-      title: "Deep Cloud & DevOps Expertise",
+      title: "User-Centric Design & Performance",
       description:
-        "Our cloud-native approach and DevOps best practices optimize performance and reliability.",
-      icon: <BsCodeSquare />,
+        "Our apps are designed for seamless user experiences and high engagement rates.",
+      icon: <BsBrush />,
     },
     {
       count: "03",
-      title: "User-Centric Design & Development",
+      title: "Full-Cycle Development & Support",
       description:
-        "We focus on delivering intuitive, engaging, and seamless user experiences.",
-      icon: <BsBrush />,
+        "From ideation to deployment and beyond, we provide end-to-end mobile app solutions.",
+      icon: <BsCodeSquare />,
     },
     {
       count: "04",
       title: "Agile Development & Faster Time-to-Market",
       description:
-        "Our agile methodologies ensure faster iterations, high-quality code, and quicker deployment.",
+        "We follow agile methodologies to deliver high-quality mobile applications quickly.",
       icon: <AiOutlineHourglass />,
     },
   ];
@@ -285,8 +285,8 @@ export default function DataAnalytics() {
   return (
     <>
       <Head>
-        <title>Data Analytics & AI</title>
-        <meta name="description" content="Generated by create next app" />
+        <title>Best Mobile App Development Company | Dgtalists</title>
+        <meta name="description" content="Choose Dgtalists for top-tier Android, iOS & hybrid app development. As the best mobile app development company, we deliver results. Call now to get started!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -298,8 +298,8 @@ export default function DataAnalytics() {
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={"Data Analytics & AI"}
-                    highlightText={"AI"}
+                    text={"Mobile Application Development"}
+                    highlightText={"Mobile"}
                   />
                 </h1>
               </div>
@@ -315,7 +315,7 @@ export default function DataAnalytics() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/about-data.png"}
+                    src={"/images/about-mobile.png"}
                     alt={"about img"}
                   />
                 </div>
@@ -343,14 +343,13 @@ export default function DataAnalytics() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Unlock the Power of Data with AI-Driven Insights"
+                      "Build Cutting-Edge Mobile Apps for Business Growth"
                     }
-                    highlightText={"Data with AI-Driven"}
+                    highlightText={"Mobile Apps"}
                   />
                 </h4>
                 <p>
-                At DGTALISTS, we empower businesses with advanced data analytics and AI solutions to drive smarter decision-making, optimize operations, and enhance customer experiences. Our expertise in big data, machine learning, and AI automation enables start-ups, scale-ups, and enterprises to harness the full potential of their data.
-
+                At DGTALISTS, we specialize in developing high-performance, user-friendly mobile applications that drive engagement and business success. Whether you need a native, hybrid, or cross-platform app, our team delivers scalable, secure, and feature-rich solutions tailored to your business needs. 
                 </p>
                 <Link href="/contact" className={styles.cmnBtn}>
                   get started
@@ -381,8 +380,8 @@ export default function DataAnalytics() {
             <span className={styles.subtitle}>Our Services</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Our Data Analytics & AI Services"}
-                highlightText={"Data Analytics & AI"}
+                text={"Our Mobile App Development Services"}
+                highlightText={"Mobile App"}
               />
             </h4>
           </div>
@@ -419,13 +418,13 @@ export default function DataAnalytics() {
           </div>
         </div>
       </section>
-      {/* <section className={styles.whyUs}>
+      <section className={styles.whyUs}>
         <div className="container">
           <div className={styles.headerSection}>
             <span className={styles.subtitle}>Why Choose Us</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Trusted Enterprise Software Development with DGTALISTS"}
+                text={"Trusted  Mobile App Development with DGTALISTS"}
                 highlightText={"DGTALISTS"}
               />
             </h4>
@@ -445,7 +444,7 @@ export default function DataAnalytics() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
       <section className={styles.ourTechStack}>
         <div className="container">
           <div className={styles.headerSection}>
@@ -500,7 +499,7 @@ export default function DataAnalytics() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Our Proven Approach to Enterprise Software Development"
+                      "Our Proven Approach to  Mobile App Development"
                     }
                     highlightText={"Proven Approach"}
                   />
@@ -690,12 +689,12 @@ export default function DataAnalytics() {
               <span className={styles.subtitle}>Let's Collaborate</span>
               <h4 className={styles.title}>
                 <AnimatedText
-                  text={"Leverage Data & AI for Business Growth"}
-                  highlightText={"Data & AI"}
+                  text={"Let's Build Your Next-Gen Mobile App"}
+                  highlightText={"Next-Gen Mobile"}
                 />
               </h4>
               <p>
-              Unlock new opportunities with our AI-powered data analytics solutions. Let’s discuss how DGTALISTS can help transform your business with data-driven intelligence.
+              Looking to create a high-performing mobile application? Let’s talk about how DGTALISTS can bring your vision to life with cutting-edge mobile solutions.
               </p>
             </div>
             <div className="row">

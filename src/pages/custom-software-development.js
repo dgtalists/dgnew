@@ -13,13 +13,12 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Footer from "@/component/Footer/Footer";
 import { DiCode } from "react-icons/di";
 import {
   BsBoxSeam,
-  BsBrush,
   BsCodeSlash,
   BsCodeSquare,
   BsPatchCheck,
@@ -27,82 +26,88 @@ import {
 } from "react-icons/bs";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { HiOutlineArrowRight } from "react-icons/hi";
-import { AiOutlineHourglass } from "react-icons/ai";
-export default function SaasApplication() {
+export default function Customsoftware() {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
+  useEffect(() => {
+    console.log("Active Tab Changed:", activeIndex);
+  }, [activeIndex]);
+  const handleClick = (index) => {
+    console.log("Clicked on:", index);
+    setActiveIndex(index);
+  };
 
   const serviceData = [
     {
-      title: "Custom SaaS Application Development",
+      title: "Bespoke Software Development",
       intro:
-        "We build tailored SaaS applications that meet your unique business needs and ensure seamless user experiences.",
+        "From concept to deployment, we develop custom applications tailored to your business needs.",
       features: [
-        "Multi-tenant cloud-based applications",
-        "Scalable web and mobile SaaS solutions",
-        "End-to-end SaaS product lifecycle management",
+        "Scalable web and mobile applications",
+        "Custom enterprise-grade solutions",
+        "End-to-end software lifecycle management",
       ],
-      image: "/images/saas-1.png",
+      image: "/images/bespoke.png",
       link: "#",
     },
     {
-      title: "SaaS Platform Architecture & Design",
+      title: "Web & Mobile Application Development",
       intro:
-        "Our expert team designs robust SaaS architectures for performance, scalability, and security",
+        "Deliver high-performing web and mobile applications with intuitive user experiences.",
       features: [
-        "Microservices-based architectures",
-        "API-first and serverless architectures",
-        "Cloud-native application design",
+        "Cross-platform and native mobile apps (iOS, Android)",
+        "Progressive web apps (PWA)",
+        "Cloud-based and SaaS solutions",
       ],
-      image: "/images/saas-2.png",
+      image: "/images/web-application.png",
       link: "#",
     },
     {
-      title: "Cloud Deployment & Optimization",
+      title: "AI & Machine Learning Solutions",
       intro:
-        "We ensure your SaaS application is optimized for the cloud, leveraging top cloud platforms.",
+        "Leverage artificial intelligence to automate workflows, analyze data, and enhance decision-making.",
       features: [
-        "AWS, Azure, Google Cloud deployment",
-        "Auto-scaling and load balancing",
-        "Cost-effective cloud infrastructure",
+        "Predictive analytics",
+        "Chatbots and virtual assistants",
+        "AI-powered automation",
       ],
-      image: "/images/saas-3.png",
+      image: "/images/aiml.png",
       link: "#",
     },
     {
-      title: "SaaS Product Modernization",
+      title: "Cloud Application Development",
       intro:
-        "Transform legacy applications into modern SaaS platforms to drive efficiency and innovation.",
+        "Build and scale applications on secure, cost-effective cloud platforms.",
       features: [
-        "Migration from monolithic to microservices architecture",
-        "UI/UX enhancements and reengineering",
-        "Performance optimization and security upgrades",
+        "Cloud-native applications",
+        "Multi-cloud and hybrid cloud solutions",
+        "Cloud migration and optimization",
       ],
-      image: "/images/saas-4.png",
+      image: "/images/cloud-app.png",
       link: "#",
     },
     {
-      title: "AI & Automation for SaaS Applications",
+      title: "Software Integration & API Development",
       intro:
-        "Enhance your SaaS product with AI-driven automation and analytics.",
+        "Seamlessly integrate new software with existing systems to optimize business operations.",
       features: [
-        "AI-powered chatbots and virtual assistants",
-        "Predictive analytics and machine learning",
-        "Workflow automation and intelligent decision-making",
+        "API design and development",
+        "CRM, ERP, and third-party system integration",
+        "Data synchronization and workflow automation",
       ],
-      image: "/images/saas-6.png",
+      image: "/images/api-dev.png",
       link: "#",
     },
     {
-      title: "SaaS Security & Compliance",
+      title: "DevOps & Agile Development",
       intro:
-        "We ensure your SaaS solution meets industry security and compliance standards.",
+        "Accelerate software delivery with agile methodologies and DevOps best practices.",
       features: [
-        "Data encryption and access controls",
-        "GDPR, HIPAA, and SOC 2 compliance",
-        "Identity and access management (IAM)",
+        "Continuous integration and deployment (CI/CD)",
+        "Cloud infrastructure automation",
+        "Performance optimization",
       ],
-      image: "/images/saas-5.png",
+      image: "/images/agile.png",
       link: "#",
     },
   ];
@@ -150,31 +155,31 @@ export default function SaasApplication() {
   const whyUsData = [
     {
       count: "01",
-      title: "Scalable & Secure SaaS Solutions",
+      title: "Proven Expertise & Innovation",
       description:
-        "We develop SaaS applications that grow with your business while ensuring robust security.",
+        "With 19+ years of experience, we build future-proof software using cutting-edge technologies.",
       icon: <BsSuitcaseLg />,
     },
     {
       count: "02",
-      title: "Deep Cloud & DevOps Expertise",
+      title: "Scalable & Secure Development",
       description:
-        "Our cloud-native approach and DevOps best practices optimize performance and reliability.",
+        "We develop software that scales with your business while ensuring top-tier security and compliance.",
       icon: <BsCodeSquare />,
     },
     {
       count: "03",
-      title: "User-Centric Design & Development",
+      title: "Agile & Transparent Process",
       description:
-        "We focus on delivering intuitive, engaging, and seamless user experiences.",
-      icon: <BsBrush />,
+        "Our agile development approach ensures flexibility, faster time-to-market, and seamless collaboration.",
+      icon: <BsBoxSeam />,
     },
     {
       count: "04",
-      title: "Agile Development & Faster Time-to-Market",
+      title: "Tailored Solutions for Business Growth",
       description:
-        "Our agile methodologies ensure faster iterations, high-quality code, and quicker deployment.",
-      icon: <AiOutlineHourglass />,
+        "We align technology with your business strategy to deliver software that drives results.",
+      icon: <BsPatchCheck />,
     },
   ];
   const techStackData = [
@@ -284,21 +289,21 @@ export default function SaasApplication() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Generated by create next app" />
+        <title>Dgtalists | Custom Software Company | Tailored Solutions for Your Business</title>
+        <meta name="description" content="Dgtalists provides world-class custom software development services for startups, SMBs, and enterprises. Partner with us for innovative, scalable software solutions." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <ParallaxBanner backgroundImage="/images/saas-bg.jpg">
+      <ParallaxBanner backgroundImage="/images/csdev.jpg">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9">
               <div className={styles.sectionLeft}>
                 <h1>
                   <AnimatedText
-                    text={"SAAS Based Application Development"}
-                    highlightText={"SAAS Based"}
+                    text={"Custom Software Development Services"}
+                    highlightText={"Software Development"}
                   />
                 </h1>
               </div>
@@ -314,7 +319,7 @@ export default function SaasApplication() {
                 <div className={styles.imageWrap}>
                   <ImageReveal
                     className={styles.aboutImage}
-                    src={"/images/about-saas.png"}
+                    src={"/images/custom-about.png"}
                     alt={"about img"}
                   />
                 </div>
@@ -342,16 +347,19 @@ export default function SaasApplication() {
                 <h4 className={styles.title}>
                   <AnimatedText
                     text={
-                      "Build Scalable & High-Performance SaaS Applications with DGTALISTS"
+                      "Drive Digital Transformation with Tailored Software Solutions"
                     }
-                    highlightText={"SaaS Applications"}
+                    highlightText={"Digital Transformation"}
                   />
                 </h4>
                 <p>
-                DGTALISTS specializes in designing and developing secure, scalable, and high-performance SaaS (Software-as-a-Service) applications. Whether you’re a start-up, scale-up, or enterprise, our SaaS solutions help you reduce costs, improve accessibility, and enhance business operations.
-
+                  At DGTALISTS, we specialize in building custom software
+                  solutions that align with your unique business goals. Whether
+                  you are a start-up, scale-up, or enterprise, our bespoke
+                  software solutions enhance efficiency, improve customer
+                  experiences, and drive growth.
                 </p>
-                <Link href="/contact" className={styles.cmnBtn}>
+                <Link href="/" className={styles.cmnBtn}>
                   get started
                   <HiOutlineArrowRight className={styles.arrowRight} />
                 </Link>
@@ -380,8 +388,8 @@ export default function SaasApplication() {
             <span className={styles.subtitle}>Our Services</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Our SaaS Development Services"}
-                highlightText={"SaaS Development"}
+                text={"Our Custom Software Development Services"}
+                highlightText={"Custom Software"}
               />
             </h4>
           </div>
@@ -424,7 +432,7 @@ export default function SaasApplication() {
             <span className={styles.subtitle}>Why Choose Us</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Why Choose DGTALISTS for SaaS Development?"}
+                text={"Trusted Custom Software Development with DGTALISTS"}
                 highlightText={"DGTALISTS"}
               />
             </h4>
@@ -451,7 +459,7 @@ export default function SaasApplication() {
             <span className={styles.subtitle}>Our Tech Stack</span>
             <h4 className={styles.title}>
               <AnimatedText
-                text={"Technologies We Use for SaaS Development"}
+                text={"Technologies We Use for Custom Software Development"}
                 highlightText={"Technologies"}
               />
             </h4>
@@ -464,8 +472,8 @@ export default function SaasApplication() {
                   {techStackData.map((tab, index) => (
                     <li
                       key={index}
+                      onClick={() => handleClick(index)}
                       className={activeIndex === index ? styles.activeTab : ""}
-                      onClick={() => setActiveIndex(index)}
                     >
                       {tab.title}
                     </li>
@@ -689,12 +697,13 @@ export default function SaasApplication() {
               <span className={styles.subtitle}>Let's Collaborate</span>
               <h4 className={styles.title}>
                 <AnimatedText
-                  text={"Let’s Build Your Next-Gen SaaS Solution"}
-                  highlightText={"Next-Gen SaaS"}
+                  text={"Let’s Build Your Next-Gen Enterprise Solution"}
+                  highlightText={"Next-Gen Enterprise"}
                 />
               </h4>
               <p>
-              Looking to launch or scale your SaaS application? Let’s talk about how DGTALISTS can help you build a high-performing, scalable, and secure SaaS platform
+                Looking to enhance your enterprise operations with a scalable,
+                secure, and high-performance software solution? Let’s talk!
               </p>
             </div>
             <div className="row">
@@ -716,9 +725,7 @@ export default function SaasApplication() {
                   </div>
                   <div className={styles.contactContent}>
                     <h5>Our Website</h5>
-                    <Link href={"https://dgtalists.com"}>
-                      dgtalists.com
-                    </Link>
+                    <Link href={"https://dgtalists.com"}>dgtalists.com</Link>
                   </div>
                 </div>
               </div>

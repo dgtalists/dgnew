@@ -32,7 +32,7 @@ const Footer = () => {
                 </p>
                 <div className={styles.footerSocialLink}>
                   <ul>
-                  <li>
+                    <li>
                       <Link target="blank" href={"https://www.facebook.com/Dgtalistsofficial"}>
                         <FaFacebookF />
                       </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
                   <li>
                     <Link href="/career">Career</Link>
                   </li>
-                  
+
                 </ul>
               </div>
             </div>
@@ -79,22 +79,28 @@ const Footer = () => {
                 <h4>Services</h4>
                 <ul>
                   <li>
-                    <Link href="/customsoftware">Custom Software Development</Link>
+                    <Link href="/custom-software-development">Custom Software Development</Link>
                   </li>
                   <li>
-                    <Link href="/enterprise">Enterprise Software Development</Link>
+                    <Link href="/enterprise-software-development">Enterprise Software Development</Link>
                   </li>
                   <li>
-                    <Link href="/saasaplication">SAAS Based Application</Link>
+                    <Link href="/saas-development">SAAS Based Application</Link>
                   </li>
                   <li>
-                    <Link href="/dataanalytics">Data analytics & AI</Link>
+                    <Link href="/strategy-and-consulting">Strategy & Consulting </Link>
                   </li>
                   <li>
-                    <Link href="/mobileapp">Mobile Application Development</Link>
+                    <Link href="/ai-and-data-analytics">Data analytics & AI</Link>
                   </li>
                   <li>
-                    <Link href="/marketing"> Marketing & Communication</Link>
+                    <Link href="/mobile-app-development">Mobile Application Development</Link>
+                  </li>
+                  <li>
+                    <Link href="/marketing-and-communication"> Marketing & Communication</Link>
+                  </li>
+                  <li>
+                    <Link href="/cloud-and-infrastructure"> Cloud & Infrastructure</Link>
                   </li>
                 </ul>
               </div>
@@ -124,13 +130,12 @@ const Footer = () => {
         </div>
         <div className={styles.footerBottom}>
           <div className="row justify-content-center">
-            <div className="col-lg-4">
+            <div className="col-lg-5">
               <div className={styles.eachAddress}>
                 <h2>IND</h2>
                 <div className={styles.oficeAddress}>
                   <p>
-                    Stesalit Towers, 7th floor, Block GP, Sector V,
-                    Kolkata-700091, West Bengal
+                    Unit NO 4WS8C, 4TH Floor, West Block, Mani Casadona,   Newtown, Kolkata, West Bengal, 700160
                   </p>
                   <Link href={"tel:+91 89104 35874 "}>+91 89104 35874 </Link>
                 </div>
