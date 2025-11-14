@@ -21,10 +21,14 @@ const ContinuousScrollingSlider = () => {
 
     const totalWidth = slider.scrollWidth / 2;
     console.log(totalWidth, "total width");
+
+    // Check if it's mobile
+    const isMobile = window.innerWidth <= 768; // You can adjust the breakpoint if needed
+
     gsap.to(slider, {
       x: `-${totalWidth}`,
-      duration: 30, // slower = smoother
-      ease: "none", // must be 'none' for seamless scroll
+      duration: isMobile ? 15 : 30, // faster on mobile
+      ease: "linear",
       repeat: -1,
     });
   }, []);
