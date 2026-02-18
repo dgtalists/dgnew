@@ -773,6 +773,7 @@
 /* ==============workTogether============== */
 .workTogether {
   position: relative;
+  padding-top: 30px;
 }
 .workTogether .headerSection {
   text-align: center;

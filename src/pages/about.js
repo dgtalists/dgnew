@@ -404,7 +404,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className={styles.teamMember}>
+      {/* <section className={styles.teamMember}>
         <div className="container">
           <div className={styles.teamHeader}>
             <span className={styles.subtitle}>Meet our team</span>
@@ -439,14 +439,7 @@ export default function About() {
                     alt={"team member"}
                     className={styles.teamImage}
                   />
-                  {/* <div className={styles.teamSocial}>
-                    <ul>
-                      <li><Link href={"#"}><FaLinkedinIn /></Link></li>
-                      <li><Link href={"#"}><FaFacebookF /></Link></li>
-                      <li><Link href={"#"}><FaLinkedinIn /></Link></li>
-                      <li><Link href={"#"}><FaLinkedinIn /></Link></li>
-                    </ul>
-                  </div> */}
+                 
                 </div>
                 <div className={styles.teamMemberContent}>
                   <h5>Dipanjan Mondal</h5>
@@ -456,7 +449,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.workTogether}>
         <div className="container">
